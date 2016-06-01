@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0DateTime: Class Ts0DateTime</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="2240"><H1>Class Ts0DateTime</H1>
+</A><H2>Unit</H2>
+<A href="s0DateTime.htm">s0DateTime</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0DateTime = class(TPersistent)</CODE></P><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateTime.htm#2241"><CODE>constructor <B>Create</B>(ADateTime: TDateTime);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateTime.htm#2242"><CODE>class function <B>DayOfWeekToInt</B>(Value: K0DayOfWeekKind; Origin: Integer = 1): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateTime.htm#2243"><CODE>class function <B>IntToDayOfWeek</B>(Value: Integer; Origin: Integer = 1): K0DayOfWeekKind;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateTime.htm#2244"><CODE>procedure <B>Prepare</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateTime.htm#2245"><CODE>procedure <B>SetJPDate</B>(AEra: K0JapaneseEra; AYear, AMonth, ADay: Word);</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2241"><TD><CODE>constructor <B>Create</B>(ADateTime: TDateTime);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2242"><TD><CODE>class function <B>DayOfWeekToInt</B>(Value: <A href="s0DateTime.htm#2235">K0DayOfWeekKind</A>; Origin: Integer = 1): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2243"><TD><CODE>class function <B>IntToDayOfWeek</B>(Value: Integer; Origin: Integer = 1): <A href="s0DateTime.htm#2235">K0DayOfWeekKind</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2244"><TD><CODE>procedure <B>Prepare</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2245"><TD><CODE>procedure <B>SetJPDate</B>(AEra: <A href="s0DateHelper.htm#2205">K0JapaneseEra</A>; AYear, AMonth, ADay: Word);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>Japanese Date</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0DateTime.htm#2246"><B>AsDateTime</B>: TDateTime;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0DateTime.htm#2247"><B>AsString</B>[const AFormat: string]: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0DateTime.htm#2248"><B>Day</B>: Word;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0DateTime.htm#2249"><B>DayOfWeek</B>: K0DayOfWeekKind;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0DateTime.htm#2250"><B>Hour</B>: Word;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0DateTime.htm#2251"><B>JPEra</B>: K0JapaneseEra;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0DateTime.htm#2252"><B>JPYear</B>: Integer;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0DateTime.htm#2253"><B>MiliSec</B>: Word;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0DateTime.htm#2254"><B>Minute</B>: Word;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0DateTime.htm#2255"><B>Month</B>: Word;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0DateTime.htm#2256"><B>Second</B>: Word;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0DateTime.htm#2257"><B>Year</B>: Word;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2246"><CODE><B>AsDateTime</B>: TDateTime;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2247"><CODE><B>AsString</B>[const AFormat: string]: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2248"><CODE><B>Day</B>: Word;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2249"><CODE><B>DayOfWeek</B>: <A href="s0DateTime.htm#2235">K0DayOfWeekKind</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2250"><CODE><B>Hour</B>: Word;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2251"><CODE><B>JPEra</B>: <A href="s0DateHelper.htm#2205">K0JapaneseEra</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2252"><CODE><B>JPYear</B>: Integer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2253"><CODE><B>MiliSec</B>: Word;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2254"><CODE><B>Minute</B>: Word;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2255"><CODE><B>Month</B>: Word;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2256"><CODE><B>Second</B>: Word;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2257"><CODE><B>Year</B>: Word;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Christian Date & Time</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:39</EM>
+</BODY>
+</HTML>

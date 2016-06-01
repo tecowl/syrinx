@@ -1,0 +1,46 @@
+新規プロジェクト作成手順
+
+１．EntityBuilder3で対象ﾌﾟﾛｼﾞｪｸﾄのﾕﾆｯﾄを作成する。
+
+２．Delphiで対象ﾌﾟﾛｼﾞｪｸﾄを作成する。
+　　①ﾌﾟﾛｼﾞｪｸﾄﾏﾈｰｼﾞｬからUnit1を削除する。
+　　②新規ﾌﾟﾛｼﾞｪｸﾄに名前をつけて保存する。
+　　③Formsのﾕﾆｯﾄをﾌﾟﾛｼﾞｪｸﾄに追加する。
+　　　　・d8CtrlCenter.pas
+　　　　・s0f0EntityDisplay.pas
+　　　　・s0f1EntityDBGridList.pas
+　　　　・s0f1EntityDetail.pas
+　　④EntityBuilder3で作成したﾕﾆｯﾄ(4ﾌｧｲﾙ)をﾌﾟﾛｼﾞｪｸﾄに追加する。
+　　⑤Commonのu8EntityIDs.pasをﾌﾟﾛｼﾞｪｸﾄに追加する。
+　　⑥ﾌﾟﾛｼﾞｪｸﾄ ｵﾌﾟｼｮﾝ
+　　　・ﾌｫｰﾑを変更する。
+　　　・ﾃﾞｨﾚｸﾄﾘ/条件の出力ﾃﾞｨﾚｸﾄﾘを指定する。
+
+３．対象ﾌﾟﾛｼﾞｪｸﾄを編集する。
+　　①ﾃﾞｰﾀﾓｼﾞｭｰﾙにID生成ｺﾝﾎﾟｰﾈﾝﾄを追加する。
+　　②ﾃﾞｰﾀﾓｼﾞｭｰﾙのselEntitiesをQueryからTableに変更する。
+　　③ｴﾝﾃｨﾃｨのGetCaption・SetCaptionを指定する。
+
+
+
+●List・Detail画面の変更をする。
+　　・各ｺﾝﾎﾟｰﾈﾝﾄの追加・表示位置・ｻｲｽﾞ・非表示。
+　　・画面表示ｻｲｽﾞ。
+　　・画面表示位置(PositionをpoScreenCenter)。
+　　・表示順・検索ｷｰの設定。
+　　・GridのdgRowSelectをTrueに変更する。
+　　・初期表示ｶｰｿﾙ位置を確認する。
+　　・画面印刷(ﾊｰﾄﾞｺﾋﾟｰ)の設定。
+●impListのModeOfShowSelectedﾌﾟﾛﾊﾟﾃｨをk0ddmEditに変更する。
+●s0UnifiedObjCtrl1のAutoUpdateKindsをすべてFalseに変更する。
+●Ts0NaviEditを設定する。
+●tblEntitiesの参照先ﾏｽﾀｰ名称を表示する。
+●登録(新規・修正)・削除のﾒｯｾｰｼﾞを表示する。
+
+
+●区分を設定する。(TZ2Enum.ini)
+●Memo内容をDBGridに表示する。
+●二重起動防止をする。
+●ﾃﾞｰﾀ変更ﾁｪｯｸ及び保存確認ﾒｯｾｰｼﾞを表示する。
+●ｺｰﾄﾞ番号等(ﾕﾆｰｸな項目)の重複ﾁｪｯｸをする。
+

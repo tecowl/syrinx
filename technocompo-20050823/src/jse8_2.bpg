@@ -1,0 +1,350 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = Js7Syu_K.exe Js7Syu_200204.exe Js7yum.exe Js7urik.exe Js7uria.exe \
+  Js7ubk.exe Js7tsrm.exe Js7tom_d.exe Js7tom1.exe JS7TIK_SC.exe Js7tik.exe \
+  Js7teik_2.exe Js7teik.exe Js7syuu.exe Js7syo.exe SYASd0.exe SYAS0.exe \
+  Js7syak_2.exe js7syako.exe Js7syak.exe js7ssrm.exe Js7ssm.exe Js7srs.exe \
+  Js7smei.exe Js7skm.exe Js7sgs.exe Js7set_d.exe Js7set.exe Js7seih.exe \
+  Js7seha.exe Js7sbs_d.exe js7sbms.exe js7sbmh.exe js7sbg_d.exe js7sbmg.exe \
+  js7sbmb.exe Js7sbh_d.exe Js7sbb_d.exe js7sb30.exe js7sb20.exe PTesuu.exe \
+  Js7prm.exe PKHaisya.exe PJyoto.exe PInin.exe js7Nyuko.exe Js7nym.exe \
+  js7nipo.exe Js7msg_s.exe Js7msg_r.exe js7motp.exe Js7mit.exe js7minu.exe \
+  MarkSheet03S.exe MarkSheet033.exe MarkSheet032.exe MarkSheet03.exe \
+  MarkSheet02S.exe MarkSheet02.exe MarkSheet01S.exe MarkSheet01.exe Js7main.exe \
+  Js7kym.exe Js7ksya.exe KMarkSheet43.exe KMarkSheet42.exe KMarkSheet4.exe \
+  KMarkSheet3S.exe KMarkSheet3.exe KMarkSheet2S.exe KMarkSheet2.exe \
+  KMarkSheet1S.exe KMarkSheet1.exe Js7tei.exe Js7sit.exe js7KensaNew.exe \
+  Js7Kensa2.exe Js7Kensa.exe Js7ken1.exe Js7ke1.exe Js7ju2.exe Js7ju1.exe \
+  Js7Ver2.exe Js7SyoG.exe Js7SbmMsg.exe Js7Call.exe Js7jbi.exe Js7ins.exe \
+  JS7HOM.exe js7hokan2.exe js7hokan1.exe js7hoan.exe js7gepA.exe js7gepo.exe \
+  js7dm.exe ColorSet.exe JS7CHYUS.exe TecSample.bpl Conv7to8.exe RecyclePut.exe \
+  RecycleMenu.exe RecycleGet.exe RecycleDifFrm.exe RecycleChk.exe teccompo.bpl
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+Js7Syu_K.exe: ..\..\Jse8\Source\Jse\Syutoku\K_CarTax\Js7Syu_K.dpr
+  $(DCC)
+
+Js7Syu_200204.exe: ..\..\Jse8\Source\Jse\Syutoku\200204\Js7Syu_200204.dpr
+  $(DCC)
+
+Js7yum.exe: ..\..\Jse8\Source\Jse\yum\Js7yum.dpr
+  $(DCC)
+
+Js7urik.exe: ..\..\Jse8\Source\Jse\urik\Js7urik.dpr
+  $(DCC)
+
+Js7uria.exe: ..\..\Jse8\Source\Jse\uria\Js7uria.dpr
+  $(DCC)
+
+Js7ubk.exe: ..\..\Jse8\Source\Jse\ubk\Js7ubk.dpr
+  $(DCC)
+
+Js7tsrm.exe: ..\..\Jse8\Source\Jse\tsrm\Js7tsrm.dpr
+  $(DCC)
+
+Js7tom_d.exe: ..\..\Jse8\Source\Jse\tom_d\Js7tom_d.dpr
+  $(DCC)
+
+Js7tom1.exe: ..\..\Jse8\Source\Jse\Tom\Js7tom1.dpr
+  $(DCC)
+
+JS7TIK_SC.exe: ..\..\Jse8\Source\Jse\TIK_SEACH_t\JS7TIK_SC.dpr
+  $(DCC)
+
+Js7tik.exe: ..\..\Jse8\Source\Jse\tik\Js7tik.dpr
+  $(DCC)
+
+Js7teik_2.exe: ..\..\Jse8\Source\Jse\Teiki_2\Js7teik_2.dpr
+  $(DCC)
+
+Js7teik.exe: ..\..\Jse8\Source\Jse\teiki\Js7teik.dpr
+  $(DCC)
+
+Js7syuu.exe: ..\..\Jse8\Source\Jse\Syuu\Js7syuu.dpr
+  $(DCC)
+
+Js7syo.exe: ..\..\Jse8\Source\Jse\Syo\Js7syo.dpr
+  $(DCC)
+
+SYASd0.exe: ..\..\Jse8\Source\Jse\Syas_d1\SYASd0.dpr
+  $(DCC)
+
+SYAS0.exe: ..\..\Jse8\Source\Jse\Syas\SYAS0.dpr
+  $(DCC)
+
+Js7syak_2.exe: ..\..\Jse8\Source\Jse\Syak_2\Js7syak_2.dpr
+  $(DCC)
+
+js7syako.exe: ..\..\Jse8\Source\Jse\syako\js7syako.dpr
+  $(DCC)
+
+Js7syak.exe: ..\..\Jse8\Source\Jse\syak\Js7syak.dpr
+  $(DCC)
+
+js7ssrm.exe: ..\..\Jse8\Source\Jse\ssrm\js7ssrm.dpr
+  $(DCC)
+
+Js7ssm.exe: ..\..\Jse8\Source\Jse\ssm\Js7ssm.dpr
+  $(DCC)
+
+Js7srs.exe: ..\..\Jse8\Source\Jse\Srs\Js7srs.dpr
+  $(DCC)
+
+Js7smei.exe: ..\..\Jse8\Source\Jse\smei\Js7smei.dpr
+  $(DCC)
+
+Js7skm.exe: ..\..\Jse8\Source\Jse\skm\Js7skm.dpr
+  $(DCC)
+
+Js7sgs.exe: ..\..\Jse8\Source\Jse\Sgs\Js7sgs.dpr
+  $(DCC)
+
+Js7set_d.exe: ..\..\Jse8\Source\Jse\set_d\Js7set_d.dpr
+  $(DCC)
+
+Js7set.exe: ..\..\Jse8\Source\Jse\set\Js7set.dpr
+  $(DCC)
+
+Js7seih.exe: ..\..\Jse8\Source\Jse\seih\Js7seih.dpr
+  $(DCC)
+
+Js7seha.exe: ..\..\Jse8\Source\Jse\seha\Js7seha.dpr
+  $(DCC)
+
+Js7sbs_d.exe: ..\..\Jse8\Source\Jse\sbs_d\Js7sbs_d.dpr
+  $(DCC)
+
+js7sbms.exe: ..\..\Jse8\Source\Jse\sbms\js7sbms.dpr
+  $(DCC)
+
+js7sbmh.exe: ..\..\Jse8\Source\Jse\sbmh\js7sbmh.dpr
+  $(DCC)
+
+js7sbg_d.exe: ..\..\Jse8\Source\Jse\sbmg_d\js7sbg_d.dpr
+  $(DCC)
+
+js7sbmg.exe: ..\..\Jse8\Source\Jse\sbmg\js7sbmg.dpr
+  $(DCC)
+
+js7sbmb.exe: ..\..\Jse8\Source\Jse\sbmb\js7sbmb.dpr
+  $(DCC)
+
+Js7sbh_d.exe: ..\..\Jse8\Source\Jse\sbh_d\Js7sbh_d.dpr
+  $(DCC)
+
+Js7sbb_d.exe: ..\..\Jse8\Source\Jse\sbb_d\Js7sbb_d.dpr
+  $(DCC)
+
+js7sb30.exe: ..\..\Jse8\Source\Jse\sb3\js7sb30.dpr
+  $(DCC)
+
+js7sb20.exe: ..\..\Jse8\Source\Jse\sb2\js7sb20.dpr
+  $(DCC)
+
+PTesuu.exe: ..\..\Jse8\Source\Jse\PTesuu\PTesuu.dpr
+  $(DCC)
+
+Js7prm.exe: ..\..\Jse8\Source\Jse\prm\Js7prm.dpr
+  $(DCC)
+
+PKHaisya.exe: ..\..\Jse8\Source\Jse\PKHaisya\PKHaisya.dpr
+  $(DCC)
+
+PJyoto.exe: ..\..\Jse8\Source\Jse\PJyoto\PJyoto.dpr
+  $(DCC)
+
+PInin.exe: ..\..\Jse8\Source\Jse\PInin\PInin.dpr
+  $(DCC)
+
+js7Nyuko.exe: ..\..\Jse8\Source\Jse\Nyuko\js7Nyuko.dpr
+  $(DCC)
+
+Js7nym.exe: ..\..\Jse8\Source\Jse\nym\Js7nym.dpr
+  $(DCC)
+
+js7nipo.exe: ..\..\Jse8\Source\Jse\nipo\js7nipo.dpr
+  $(DCC)
+
+Js7msg_s.exe: ..\..\Jse8\Source\Jse\Msg_s\Js7msg_s.dpr
+  $(DCC)
+
+Js7msg_r.exe: ..\..\Jse8\Source\Jse\Msg_r\Js7msg_r.dpr
+  $(DCC)
+
+js7motp.exe: ..\..\Jse8\Source\Jse\motp\js7motp.DPR
+  $(DCC)
+
+Js7mit.exe: ..\..\Jse8\Source\Jse\Mit\Js7mit.dpr
+  $(DCC)
+
+js7minu.exe: ..\..\Jse8\Source\Jse\minu\js7minu.DPR
+  $(DCC)
+
+MarkSheet03S.exe: ..\..\Jse8\Source\Jse\MarkSheet_03S\MarkSheet03S.dpr
+  $(DCC)
+
+MarkSheet033.exe: ..\..\Jse8\Source\Jse\MarkSheet_033\MarkSheet033.dpr
+  $(DCC)
+
+MarkSheet032.exe: ..\..\Jse8\Source\Jse\MarkSheet_032\MarkSheet032.dpr
+  $(DCC)
+
+MarkSheet03.exe: ..\..\Jse8\Source\Jse\MarkSheet_03\MarkSheet03.dpr
+  $(DCC)
+
+MarkSheet02S.exe: ..\..\Jse8\Source\Jse\MarkSheet_02S\MarkSheet02S.dpr
+  $(DCC)
+
+MarkSheet02.exe: ..\..\Jse8\Source\Jse\MarkSheet_02\MarkSheet02.dpr
+  $(DCC)
+
+MarkSheet01S.exe: ..\..\Jse8\Source\Jse\MarkSheet_01S\MarkSheet01S.dpr
+  $(DCC)
+
+MarkSheet01.exe: ..\..\Jse8\Source\Jse\MarkSheet_01\MarkSheet01.dpr
+  $(DCC)
+
+Js7main.exe: ..\..\Jse8\Source\Jse\Main\Js7main.dpr
+  $(DCC)
+
+Js7kym.exe: ..\..\Jse8\Source\Jse\kym\Js7kym.dpr
+  $(DCC)
+
+Js7ksya.exe: ..\..\Jse8\Source\Jse\Ksya\Js7ksya.dpr
+  $(DCC)
+
+KMarkSheet43.exe: ..\..\Jse8\Source\Jse\KMarkSheet_43\KMarkSheet43.dpr
+  $(DCC)
+
+KMarkSheet42.exe: ..\..\Jse8\Source\Jse\KMarksheet_42\KMarkSheet42.dpr
+  $(DCC)
+
+KMarkSheet4.exe: ..\..\Jse8\Source\Jse\KMarkSheet_4\KMarkSheet4.dpr
+  $(DCC)
+
+KMarkSheet3S.exe: ..\..\Jse8\Source\Jse\KMarkSheet_3S\KMarkSheet3S.dpr
+  $(DCC)
+
+KMarkSheet3.exe: ..\..\Jse8\Source\Jse\KMarkSheet_3\KMarkSheet3.dpr
+  $(DCC)
+
+KMarkSheet2S.exe: ..\..\Jse8\Source\Jse\KMarkSheet_2S\KMarkSheet2S.dpr
+  $(DCC)
+
+KMarkSheet2.exe: ..\..\Jse8\Source\Jse\KMarkSheet_2\KMarkSheet2.dpr
+  $(DCC)
+
+KMarkSheet1S.exe: ..\..\Jse8\Source\Jse\KMarkSheet_1S\KMarkSheet1S.dpr
+  $(DCC)
+
+KMarkSheet1.exe: ..\..\Jse8\Source\Jse\KMarkSheet_1\KMarkSheet1.dpr
+  $(DCC)
+
+Js7tei.exe: ..\..\Jse8\Source\Jse\kiroku2\Js7tei.dpr
+  $(DCC)
+
+Js7sit.exe: ..\..\Jse8\Source\Jse\kiroku1\Js7sit.dpr
+  $(DCC)
+
+js7KensaNew.exe: ..\..\Jse8\Source\Jse\KensaNew\js7KensaNew.dpr
+  $(DCC)
+
+Js7Kensa2.exe: ..\..\Jse8\Source\Jse\kensa2\Js7Kensa2.dpr
+  $(DCC)
+
+Js7Kensa.exe: ..\..\Jse8\Source\Jse\kensa\Js7Kensa.dpr
+  $(DCC)
+
+Js7ken1.exe: ..\..\Jse8\Source\Jse\ken\Js7ken1.dpr
+  $(DCC)
+
+Js7ke1.exe: ..\..\Jse8\Source\Jse\ke1\Js7ke1.dpr
+  $(DCC)
+
+Js7ju2.exe: ..\..\Jse8\Source\Jse\ju2\Js7ju2.dpr
+  $(DCC)
+
+Js7ju1.exe: ..\..\Jse8\Source\Jse\ju1\Js7ju1.dpr
+  $(DCC)
+
+Js7Ver2.exe: ..\..\Jse8\Source\Jse\Js7Ver2\Js7Ver2.dpr
+  $(DCC)
+
+Js7SyoG.exe: ..\..\Jse8\Source\Jse\Js7ShoG\Js7SyoG.dpr
+  $(DCC)
+
+Js7SbmMsg.exe: ..\..\Jse8\Source\Jse\Js7SbmMsg\Js7SbmMsg.dpr
+  $(DCC)
+
+Js7Call.exe: ..\..\Jse8\Source\Jse\Js7Call\Js7Call.dpr
+  $(DCC)
+
+Js7jbi.exe: ..\..\Jse8\Source\Jse\jbi\Js7jbi.dpr
+  $(DCC)
+
+Js7ins.exe: ..\..\Jse8\Source\Jse\ins\Js7ins.dpr
+  $(DCC)
+
+JS7HOM.exe: ..\..\Jse8\Source\Jse\Hom\JS7HOM.dpr
+  $(DCC)
+
+js7hokan2.exe: ..\..\Jse8\Source\Jse\Hokan2\js7hokan2.dpr
+  $(DCC)
+
+js7hokan1.exe: ..\..\Jse8\Source\Jse\Hokan1\js7hokan1.dpr
+  $(DCC)
+
+js7hoan.exe: ..\..\Jse8\Source\Jse\Hoan\js7hoan.dpr
+  $(DCC)
+
+js7gepA.exe: ..\..\Jse8\Source\Jse\gepoA\js7gepA.dpr
+  $(DCC)
+
+js7gepo.exe: ..\..\Jse8\Source\Jse\gepo\js7gepo.dpr
+  $(DCC)
+
+js7dm.exe: ..\..\Jse8\Source\Jse\dm\js7dm.DPR
+  $(DCC)
+
+ColorSet.exe: ..\..\Jse8\Source\Jse\ColorSet\ColorSet.dpr
+  $(DCC)
+
+JS7CHYUS.exe: ..\..\Jse8\Source\Jse\Chyu_srm\JS7CHYUS.dpr
+  $(DCC)
+
+TecSample.bpl: ..\..\Jse8\Source\Package\TecSample\TecSample.dpk
+  $(DCC)
+
+Conv7to8.exe: ..\..\Jse8\Source\Conv\Conv7to8\Conv7to8.dpr
+  $(DCC)
+
+RecyclePut.exe: ..\..\Jse8\Source\Recycle\RecyclePut\RecyclePut.dpr
+  $(DCC)
+
+RecycleMenu.exe: ..\..\Jse8\Source\Recycle\RecycleMenu\RecycleMenu.dpr
+  $(DCC)
+
+RecycleGet.exe: ..\..\Jse8\Source\Recycle\RecycleGet\RecycleGet.dpr
+  $(DCC)
+
+RecycleDifFrm.exe: ..\..\Jse8\Source\Recycle\RecycleDifFrm\RecycleDifFrm.dpr
+  $(DCC)
+
+RecycleChk.exe: ..\..\Jse8\Source\Recycle\RecycleChk\RecycleChk.dpr
+  $(DCC)
+
+teccompo.bpl: teccompo.dpk
+  $(DCC)
+
+

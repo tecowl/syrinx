@@ -1,0 +1,36 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = s0p_Core50.bpl s0p_Additional50.bpl s0p_DB50.bpl s0p_Entity50.bpl \
+  s0p_EntityDB50.bpl s0p_DataSnap50.bpl
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+s0p_Core50.bpl: s0p_Core50.dpk
+  $(DCC)
+
+s0p_Additional50.bpl: s0p_Additional50.dpk
+  $(DCC)
+
+s0p_DB50.bpl: s0p_DB50.dpk
+  $(DCC)
+
+s0p_Entity50.bpl: s0p_Entity50.dpk
+  $(DCC)
+
+s0p_EntityDB50.bpl: s0p_EntityDB50.dpk
+  $(DCC)
+
+s0p_DataSnap50.bpl: s0p_DataSnap50.dpk
+  $(DCC)
+
+

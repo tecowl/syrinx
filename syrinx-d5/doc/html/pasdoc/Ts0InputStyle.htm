@@ -1,0 +1,444 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>Qs0InputStyle: Class Ts0InputStyle</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="919"><H1>Class Ts0InputStyle</H1>
+</A><H2>Unit</H2>
+<A href="Qs0InputStyle.htm">Qs0InputStyle</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0InputStyle = class(<CODE><A href="Ts0CLXPersistent.htm">Ts0CLXPersistent</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0CLXPersistent.htm">Ts0CLXPersistent</A></CODE>&nbsp;&gt; <CODE><A href="Ts0Persistent.htm">Ts0Persistent</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0InputStyle.htm#920"><CODE>constructor <B>Create</B>(AOwner: TPersistent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0InputStyle.htm#921"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0InputStyle.htm#922"><CODE>procedure <B>Assign</B>(Source: TPersistent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0InputStyle.htm#923"><CODE>procedure <B>Change</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0InputStyle.htm#924"><CODE>procedure <B>CMSetReadOnly</B>(var AColor, AFontColor: TColor); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0InputStyle.htm#925"><CODE>procedure <B>Deselect</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#926"><CODE>procedure <B>DoFilledUp</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#927"><CODE>procedure <B>FilledUp</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#928"><CODE>procedure <B>FontChanged</B>(Sender: TObject);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#929"><CODE>function <B>GetAlignment</B>: TAlignment; virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#930"><CODE>function <B>GetCharCase</B>: TEditCharCase; virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#931"><CODE>function <B>GetControl</B>: TWinControl; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#932"><CODE>function <B>GetCtrlAutoWidth</B>: Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#933"><CODE>function <B>GetFont</B>: TFont; virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#934"><CODE>function <B>GetMaxLength</B>: Integer; virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#935"><CODE>function <B>GetModified</B>: Boolean; virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#936"><CODE>function <B>GetReadOnly</B>: Boolean; virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#937"><CODE>function <B>GetText</B>: string; virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#938"><CODE>function <B>GetTitle</B>: string; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0InputStyle.htm#939"><CODE>function <B>KeyPress</B>(var Key: Char): Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0InputStyle.htm#940"><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0InputStyle.htm#941"><CODE>procedure <B>SelectAll</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#942"><CODE>procedure <B>SetAcceptCharType</B>(const Value: k1InpCharSet); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#943"><CODE>procedure <B>SetAlignment</B>(const Value: TAlignment); virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#944"><CODE>procedure <B>SetAutoWidth</B>(const Value: Boolean); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#945"><CODE>procedure <B>SetCharCase</B>(const Value: TEditCharCase); virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#946"><CODE>procedure <B>SetFont</B>(const Value: TFont); virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#947"><CODE>procedure <B>SetMaxLength</B>(const Value: Integer); virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#948"><CODE>procedure <B>SetModified</B>(const Value: Boolean); virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#949"><CODE>procedure <B>SetReadOnly</B>(const Value: Boolean); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#950"><CODE>procedure <B>SetText</B>(const Value: string); virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#951"><CODE>procedure <B>SetTitle</B>(const Value: string); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0InputStyle.htm#952"><CODE>procedure <B>SetTitleDisplay</B>(const Value: TCustomLabel); virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="920"><TD><CODE>constructor <B>Create</B>(AOwner: TPersistent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="921"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="922"><TD><CODE>procedure <B>Assign</B>(Source: TPersistent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="923"><TD><CODE>procedure <B>Change</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="924"><TD><CODE>procedure <B>CMSetReadOnly</B>(var AColor, AFontColor: TColor); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="925"><TD><CODE>procedure <B>Deselect</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>abstract;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="926"><TD><CODE>procedure <B>DoFilledUp</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="927"><TD><CODE>procedure <B>FilledUp</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="928"><TD><CODE>procedure <B>FontChanged</B>(Sender: TObject);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="929"><TD><CODE>function <B>GetAlignment</B>: TAlignment; virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="930"><TD><CODE>function <B>GetCharCase</B>: TEditCharCase; virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="931"><TD><CODE>function <B>GetControl</B>: TWinControl; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="932"><TD><CODE>function <B>GetCtrlAutoWidth</B>: Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="933"><TD><CODE>function <B>GetFont</B>: TFont; virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="934"><TD><CODE>function <B>GetMaxLength</B>: Integer; virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="935"><TD><CODE>function <B>GetModified</B>: Boolean; virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="936"><TD><CODE>function <B>GetReadOnly</B>: Boolean; virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="937"><TD><CODE>function <B>GetText</B>: string; virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="938"><TD><CODE>function <B>GetTitle</B>: string; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="939"><TD><CODE>function <B>KeyPress</B>(var Key: Char): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="940"><TD><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="941"><TD><CODE>procedure <B>SelectAll</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="942"><TD><CODE>procedure <B>SetAcceptCharType</B>(const Value: k1InpCharSet); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="943"><TD><CODE>procedure <B>SetAlignment</B>(const Value: TAlignment); virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="944"><TD><CODE>procedure <B>SetAutoWidth</B>(const Value: Boolean); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="945"><TD><CODE>procedure <B>SetCharCase</B>(const Value: TEditCharCase); virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="946"><TD><CODE>procedure <B>SetFont</B>(const Value: TFont); virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="947"><TD><CODE>procedure <B>SetMaxLength</B>(const Value: Integer); virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="948"><TD><CODE>procedure <B>SetModified</B>(const Value: Boolean); virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="949"><TD><CODE>procedure <B>SetReadOnly</B>(const Value: Boolean); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="950"><TD><CODE>procedure <B>SetText</B>(const Value: string); virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="951"><TD><CODE>procedure <B>SetTitle</B>(const Value: string); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="952"><TD><CODE>procedure <B>SetTitleDisplay</B>(const Value: TCustomLabel); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#953"><B>AcceptCharType</B>: k1InpCharSet;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#954"><B>Alignment</B>: TAlignment;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#955"><B>AutoTab</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#956"><B>AutoWidth</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#957"><B>AutoWidthMargin</B>: Integer;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#958"><B>CancelAutoTab</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#959"><B>CharCase</B>: TEditCharCase;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#960"><B>Control</B>: TWinControl;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#961"><B>ExclusiveAcceptChar</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#962"><B>Font</B>: TFont;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#963"><B>MaxLength</B>: Integer;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#964"><B>Modified</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#965"><B>OnFilledUp</B>: TNotifyEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#966"><B>ReadOnly</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#967"><B>ResizingCtrl</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#968"><B>Text</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#969"><B>Title</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0InputStyle.htm#970"><B>TitleDisplay</B>: TCustomLabel;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="953"><CODE><B>AcceptCharType</B>: k1InpCharSet;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Original Property</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="954"><CODE><B>Alignment</B>: TAlignment;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Control's Property</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="955"><CODE><B>AutoTab</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="956"><CODE><B>AutoWidth</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="957"><CODE><B>AutoWidthMargin</B>: Integer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="958"><CODE><B>CancelAutoTab</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="959"><CODE><B>CharCase</B>: TEditCharCase;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="960"><CODE><B>Control</B>: TWinControl;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="961"><CODE><B>ExclusiveAcceptChar</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="962"><CODE><B>Font</B>: TFont;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="963"><CODE><B>MaxLength</B>: Integer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="964"><CODE><B>Modified</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="965"><CODE><B>OnFilledUp</B>: TNotifyEvent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="966"><CODE><B>ReadOnly</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="967"><CODE><B>ResizingCtrl</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="968"><CODE><B>Text</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="969"><CODE><B>Title</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="970"><CODE><B>TitleDisplay</B>: TCustomLabel;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:37</EM>
+</BODY>
+</HTML>

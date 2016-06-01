@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>Qs0TreeViewController: Class Ts0TreeViewController</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="1524"><H1>Class Ts0TreeViewController</H1>
+</A><H2>Unit</H2>
+<A href="Qs0TreeViewController.htm">Qs0TreeViewController</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0TreeViewController = class(<CODE><A href="Ts0CLXComponent.htm">Ts0CLXComponent</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0CLXComponent.htm">Ts0CLXComponent</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TreeViewController.htm#1525"><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TreeViewController.htm#1526"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1527"><CODE>procedure <B>CreateMenus</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1528"><CODE>procedure <B>DoAddItem</B>(AParent: TTreeNode; var ACaption: string; var AData: TObject);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1529"><CODE>procedure <B>DoAfterShowProp</B>(ATarget: TTreeNode);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1530"><CODE>procedure <B>DoBeforeShowProp</B>(ATarget: TTreeNode);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1531"><CODE>function <B>DoCanAddItem</B>(AParent: TTreeNode): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1532"><CODE>function <B>DoCanRemoveItem</B>(ATarget: TTreeNode): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1533"><CODE>procedure <B>DoGetSubItems</B>(AItem: Ts0CollectionItem; Proc: K0CallSubItems);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1534"><CODE>procedure <B>DoRefreshView</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1535"><CODE>procedure <B>DoRemoveItem</B>(ATarget: TTreeNode);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1536"><CODE>procedure <B>InitTreeView</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1537"><CODE>procedure <B>Loaded</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1538"><CODE>procedure <B>MenuAddChildClick</B>(Sender: TObject);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1539"><CODE>procedure <B>MenuAddClick</B>(Sender: TObject);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1540"><CODE>procedure <B>MenuPopup</B>(Sender: TObject);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1541"><CODE>procedure <B>MenuPropertyClick</B>(Sender: TObject);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1542"><CODE>procedure <B>MenuRefreshClick</B>(Sender: TObject);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1543"><CODE>procedure <B>MenuRemoveClick</B>(Sender: TObject);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1544"><CODE>procedure <B>ModelUpdated</B>(Sender: TObject);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1545"><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TreeViewController.htm#1546"><CODE>procedure <B>RefreshView</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1547"><CODE>procedure <B>TreeViewDragDrop</B>(Sender, Source: TObject; X, Y: Integer);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TreeViewController.htm#1548"><CODE>procedure <B>TreeViewDragOver</B>(Sender, Source: TObject; X, Y: Integer; State: TDragState; var Accept: Boolean);</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1525"><TD><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1526"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1527"><TD><CODE>procedure <B>CreateMenus</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1528"><TD><CODE>procedure <B>DoAddItem</B>(AParent: TTreeNode; var ACaption: string; var AData: TObject);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1529"><TD><CODE>procedure <B>DoAfterShowProp</B>(ATarget: TTreeNode);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1530"><TD><CODE>procedure <B>DoBeforeShowProp</B>(ATarget: TTreeNode);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1531"><TD><CODE>function <B>DoCanAddItem</B>(AParent: TTreeNode): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1532"><TD><CODE>function <B>DoCanRemoveItem</B>(ATarget: TTreeNode): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1533"><TD><CODE>procedure <B>DoGetSubItems</B>(AItem: <A href="Ts0CollectionItem.htm">Ts0CollectionItem</A>; Proc: <A href="Qs0TreeViewController.htm#1512">K0CallSubItems</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1534"><TD><CODE>procedure <B>DoRefreshView</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1535"><TD><CODE>procedure <B>DoRemoveItem</B>(ATarget: TTreeNode);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1536"><TD><CODE>procedure <B>InitTreeView</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1537"><TD><CODE>procedure <B>Loaded</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1538"><TD><CODE>procedure <B>MenuAddChildClick</B>(Sender: TObject);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1539"><TD><CODE>procedure <B>MenuAddClick</B>(Sender: TObject);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1540"><TD><CODE>procedure <B>MenuPopup</B>(Sender: TObject);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1541"><TD><CODE>procedure <B>MenuPropertyClick</B>(Sender: TObject);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1542"><TD><CODE>procedure <B>MenuRefreshClick</B>(Sender: TObject);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1543"><TD><CODE>procedure <B>MenuRemoveClick</B>(Sender: TObject);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1544"><TD><CODE>procedure <B>ModelUpdated</B>(Sender: TObject);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1545"><TD><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1546"><TD><CODE>procedure <B>RefreshView</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1547"><TD><CODE>procedure <B>TreeViewDragDrop</B>(Sender, Source: TObject; X, Y: Integer);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1548"><TD><CODE>procedure <B>TreeViewDragOver</B>(Sender, Source: TObject; X, Y: Integer; State: TDragState; var Accept: Boolean);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1549"><B>AfterShowProp</B>: K0AccessObjEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1550"><B>BeforeShowProp</B>: K0AccessObjEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1551"><B>CaptionKind</B>: K0ItemCaptionKind;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1552"><B>Model</B>: Ts0Collection;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1553"><B>ModelUpdating</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1554"><B>OnAddItem</B>: K0NewTreeNodeEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1555"><B>OnCanAddItem</B>: K0NewTreeNodeQueryEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1556"><B>OnCanRemoveItem</B>: K0RemoveTreeNodeQueryEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1557"><B>OnChangeItemChecked</B>: K0SetItemCheckedEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1558"><B>OnGetItemChecked</B>: K0GetItemCheckedEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1559"><B>OnGetSubItems</B>: K0GetSubItemsEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1560"><B>OnRefreshView</B>: TNotifyEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1561"><B>OnRemoveItem</B>: K0RemoveTreeNodeEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1562"><B>Options</B>: K0TreeViewCtrlOptions;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1563"><B>SelectedItem</B>: Ts0CollectionItem;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TreeViewController.htm#1564"><B>TreeView</B>: TTreeView;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1549"><CODE><B>AfterShowProp</B>: <A href="Qs0TreeViewController.htm#1511">K0AccessObjEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1550"><CODE><B>BeforeShowProp</B>: <A href="Qs0TreeViewController.htm#1511">K0AccessObjEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1551"><CODE><B>CaptionKind</B>: <A href="Qs0TreeViewController.htm#1515">K0ItemCaptionKind</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1552"><CODE><B>Model</B>: <A href="Ts0Collection.htm">Ts0Collection</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1553"><CODE><B>ModelUpdating</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1554"><CODE><B>OnAddItem</B>: <A href="Qs0TreeViewController.htm#1516">K0NewTreeNodeEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1555"><CODE><B>OnCanAddItem</B>: <A href="Qs0TreeViewController.htm#1517">K0NewTreeNodeQueryEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1556"><CODE><B>OnCanRemoveItem</B>: <A href="Qs0TreeViewController.htm#1519">K0RemoveTreeNodeQueryEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1557"><CODE><B>OnChangeItemChecked</B>: <A href="Qs0TreeViewController.htm#1520">K0SetItemCheckedEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1558"><CODE><B>OnGetItemChecked</B>: <A href="Qs0TreeViewController.htm#1513">K0GetItemCheckedEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1559"><CODE><B>OnGetSubItems</B>: <A href="Qs0TreeViewController.htm#1514">K0GetSubItemsEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1560"><CODE><B>OnRefreshView</B>: TNotifyEvent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1561"><CODE><B>OnRemoveItem</B>: <A href="Qs0TreeViewController.htm#1518">K0RemoveTreeNodeEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1562"><CODE><B>Options</B>: <A href="Qs0TreeViewController.htm#1522">K0TreeViewCtrlOptions</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1563"><CODE><B>SelectedItem</B>: <A href="Ts0CollectionItem.htm">Ts0CollectionItem</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1564"><CODE><B>TreeView</B>: TTreeView;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:38</EM>
+</BODY>
+</HTML>

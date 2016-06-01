@@ -1,0 +1,264 @@
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type"content="text/html; charset=shift_jis">
+<meta name="GENERATOR"content="Microsoft FrontPage 4.0">
+<meta name="ProgId"content="FrontPage.Editor.Document">
+<title>c0Edit</title>
+</head>
+
+<body>
+
+<a name="0001"><h1><span lang="EN-US">c0Edit</span></h1></a>
+<a name="0002"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">クラス図</span></h1></a>
+<p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shapetype id="_x0000_t75"
+coordsize="21600,21600"o:spt="75"o:preferrelative="t"path="m@4@5l@4@11@9@11@9@5xe"
+filled="f"stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f"gradientshapeok="t"o:connecttype="rect"/>
+ <o:lock v:ext="edit"aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025"type="#_x0000_t75"style='width:204.75pt;
+ height:171pt'>
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/01/clip_image001.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+<img src="image/c0edit1.gif"v:shapes="_x0000_i1025"width="273"height="228"></span></p> 
+<a name="0003"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">目的</span></h1></a> 
+
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>       
+</span></p>
+<a name="0004"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">詳細</span></h1></a><a name="0005"><h2>プロパティ</h2></a><a name="0006"><h3><code><span lang="EN-US"style="mso-ansi-font-size:
+10.5pt;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:
+Arial">Accessor</span></code></h3></a>
+<blockquo|e>
+  <pre><code><b><span lang="EN-US"style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt">published property </span></b><span lang="EN-US"style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt">Accessor: T0CheckBoxAccessor<o:p></span></code></pre>
+  <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">共通したインタフェースで値にアクセスするためのプロパティです。詳しくは、</span><span lang="EN-US">T0DataAccessor</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">クラスのドキュメントを参照してください。</span><span lang="EN-US">&nbsp;</span><code><span lang="EN-US"style="mso-ansi-font-size: 10.5pt">T0CheckBoxAccessor</span></code><span lang="EN-US"> 
+  </span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">クラスには、</span><span lang="EN-US">T0DataAccessor</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">クラスに対して以下の変更が加えられています。</span></p>
+  
+  <blockquote>
+    <a name="0007"><h4><span lang="EN-US">AsStringKind</span></h4></a>
+    <p class="MsoNormal"><span lang="EN-US">K0CheckBoxAsStringKind = (<span style="mso-spacerun: yes"><br>       
+    &nbsp; </span>k0cbaskBoolean,<br>
+    <span style="mso-spacerun: yes">&nbsp; </span>k0cbaskCheckState<br>
+    );</span><b><span lang="EN-US"><br>
+    published property</span></b><span lang="EN-US"> AsStringKind: 
+    K0CheckBoxAsStringKind <b>default</b> k0cbaskBoolean;</span></p>
+    <p class="MsoNormal"><span lang="EN-US">&nbsp;AsString</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティがどのような値を返すのかを示します。それぞれの要素を選択した場合には、以下の表で示す</span><span lang="EN-US">AsString</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の値を設定</span><span lang="EN-US">/</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">取得できます。</span><span lang="EN-US"><o:p>
+    </o:p>
+    </span></p>
+    <table border="1"cellspacing="0"cellpadding="0"style="border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0mm 4.95pt 0mm 4.95pt">
+      <tr>
+        <td width="141"valign="top"style="width:105.4pt;border:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">AsStringKind</span></p>
+        </td>
+        <td width="111"valign="top"style="width:83.6pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">Checked</span></p>
+        </td>
+        <td width="109"valign="top"style="width:82.1pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">State</span></p>
+        </td>
+        <td width="112"valign="top"style="width:84.25pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">AsString</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="141"rowspan="3"valign="top"style="width:105.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">k0cbaskBoolean</span></p>
+        </td>
+        <td width="111"valign="top"style="width:83.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">False</span></p>
+        </td>
+        <td width="109"valign="top"style="width:82.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">cbUnchecked</span></p>
+        </td>
+        <td width="112"valign="top"style="width:84.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">'FALSE'</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="111"valign="top"style="width:83.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">True</span></p>
+        </td>
+        <td width="109"valign="top"style="width:82.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">cbChecked</span></p>
+        </td>
+        <td width="112"valign="top"style="width:84.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">'TRUE'</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="111"valign="top"style="width:83.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">False</span></p>
+        </td>
+        <td width="109"valign="top"style="width:82.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">cbGrayed</span></p>
+        </td>
+        <td width="112"valign="top"style="width:84.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">'FALSE'</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="141"rowspan="3"valign="top"style="width:105.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">k0cbaskCheckState</span></p>
+        </td>
+        <td width="111"valign="top"style="width:83.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">False</span></p>
+        </td>
+        <td width="109"valign="top"style="width:82.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">cbUnchecked</span></p>
+        </td>
+        <td width="112"valign="top"style="width:84.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">'UNCHECKED'</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="111"valign="top"style="width:83.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">True</span></p>
+        </td>
+        <td width="109"valign="top"style="width:82.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">cbChecked</span></p>
+        </td>
+        <td width="112"valign="top"style="width:84.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">'CHECKED'</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="111"valign="top"style="width:83.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">False</span></p>
+        </td>
+        <td width="109"valign="top"style="width:82.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">cbGrayed</span></p>
+        </td>
+        <td width="112"valign="top"style="width:84.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+          <p class="MsoNormal"><span lang="EN-US">'GRAYED'</span></p>
+        </td>
+      </tr>
+    </table>
+  <span lang="EN-US">
+  <a name="0008"><h4>&nbsp;<o:p>
+</o:p>    
+</a></span><code><span lang="EN-US"style="mso-ansi-font-size:    
+10.5pt;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:
+Arial">AsInteger</span></code></h4>
+  <pre><code><b><span lang="EN-US"style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt">public property </span></b><span lang="EN-US"style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt">AsInteger: Integer<b><o:p></b></span></code></pre>
+  <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">チェックされているステータスを整数値として扱うことができます。<br>
+  各ステータスにどのような値を返すのかは、</span><code><span lang="EN-US"style="mso-ansi-font-size: 10.5pt">StateValues</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial">プロパティで指定できます。</span></code></p>
+</blockquote>
+<span lang="EN-US"><o:p>
+</o:p> 
+</span>
+<blockquote>
+  <a name="0009"><h4><code><span lang="EN-US"style="mso-ansi-font-size: 
+10.5pt;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:
+Arial">StateValues</span></code></h4></a>
+  <pre><code><span lang="EN-US"style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt; color: black">TCheckBoxState = (cbUnchecked, cbChecked, cbGrayed);
+</span><b><span lang="EN-US"style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt; color: black">public </span><span lang="EN-US"style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt">property </span></b><span lang="EN-US"style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt">StateValues[<b>const </b>AState: TCheckBoxState]: Integer<o:p>
+</o:p>
+</span></code></pre>
+  <p class="MsoNormal"><span lang="EN-US">AsInteger</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティで扱うステータス毎の整数値を設定</span><span lang="EN-US">/</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">取得できます。</span></p>
+  <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+</blockquote>
+<a name="0010"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">簡単な使い方</span></h1></a>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>     
+</span></p>
+<a name="0011"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">応用的な使い方</span></h1></a>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>     
+</span></p>
+<a name="0012"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">オブジェクト指向的使用法</span></h1></a>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>     
+</span></p>
+<a name="0013"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">Ｑ＆Ａ</span></h1></a>
+
+</body>
+
+</html>

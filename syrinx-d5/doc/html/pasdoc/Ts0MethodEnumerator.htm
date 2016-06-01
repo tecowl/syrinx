@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0TypInfoWrapper: Class Ts0MethodEnumerator</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="4477"><H1>Class Ts0MethodEnumerator</H1>
+</A><H2>Unit</H2>
+<A href="s0TypInfoWrapper.htm">s0TypInfoWrapper</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0MethodEnumerator = class</CODE></P><H2>Description</H2>
+$History: Ts0MethodEnumerator.htm $ * * ***************** Version 23 ***************** * User: Akima Date: 02/03/09 Time: 17:40 * Updated in $/D5/source/Common * * ***************** Version 22 ***************** * User: Akima Date: 02/02/28 Time: 23:25 * Updated in $/source/D5Integrated * 接頭辞を変更。xxSX～にした。 * * ***************** Version 21 ***************** * User: Akima Date: 02/02/06 Time: 4:43 * Updated in $/source/D5Integrated * GetPropNamesByClass、GetPropNamesByTypeNameメソッドを追加 * * ***************** Version 20 ***************** * User: Akima Date: 02/01/25 Time: 4:45 * Updated in $/source/D6VCLIntegrated * PropAsVariantプロパティを追加。 * * ***************** Version 19 ***************** * User: Akima Date: 02/01/10 Time: 16:54 * Updated in $/source/D5Integrated * * ***************** Version 18 ***************** * User: Akima Date: 02/01/10 Time: 3:18 * Updated in $/source/D5Integrated * Ts0TypeKindHelperクラスとK0WrappedTypeKind型の追加 * * ***************** Version 17 ***************** * User: Akima Date: 02/01/06 Time: 0:23 * Updated in $/source/D5Integrated * Ts0MethodEnumeratorクラスを追加。 * Ts0RTTIPublishedAccessorクラスにExecuteMethodメソッドを追加。 * * ***************** Version 16 ***************** * User: Akima Date: 01/12/04 Time: 1:46 * Updated in $/source/D5Integrated * * ***************** Version 15 ***************** * User: Akima Date: 01/11/26 Time: 3:41 * Updated in $/source/D5Integrated * EnabledAsStringメソッドを変更。TStrings、TStringListも文字列とし・Auml;扱え * るよね。 * で、TStringsの値をTextではなく、CommaTextでやり取りするように変更 * * ***************** Version 14 ***************** * User: Akima Date: 01/11/25 Time: 5:39 * Updated in $/source/D5Integrated * SetPropAsStringメソッドでTStringsの値も設定できるようにした。 * * ***************** Version 13 ***************** * User: Akima Date: 01/11/21 Time: 20:55 * Updated in $/source/D5Integrated * * ***************** Version 12 ***************** * User: Akima Date: 01/11/21 Time: 3:50 * Updated in $/source/D5Integrated * * ***************** Version 11 ***************** * User: Akima Date: 01/11/15 Time: 2:52 * Updated in $/source/D5Integrated * * ***************** Version 10 ***************** * User: Akima Date: 01/10/17 Time: 12:27 * Updated in $/source/D5Integrated * Ts0RTTIPublishedAccessor.ClearValuesメソッドを追加 * * ***************** Version 9 ***************** * User: Akima Date: 01/10/11 Time: 1:20 * Updated in $/source/D5Integrated * EnabledAsString、PropertyExists、PropTypeKindメソッドを追加 * PropAsStringプロパティも追加 * * ***************** Version 8 ***************** * User: Akima Date: 01/10/03 Time: 23:41 * Updated in $/source/D5Integrated * GetIdentifierを追加 * * ***************** Version 7 ***************** * User: Akima Date: 01/10/01 Time: 17:37 * Updated in $/source/D5Integrated * CompEnumTypeプロパティを追加 * * ***************** Version 6 ***************** * User: Akima Date: 01/09/27 Time: 9:18 * Updated in $/source/D5Integrated * DefaultValueを取得できるように変更 * * ***************** Version 5 ***************** * User: Akima Date: 01/09/23 Time: 1:12 * Updated in $/source/D5Integrated * GetNameListで要素を取得する方妨ARNING: @を変更。（以前の方妨ARNING: @ではダメ） * * ***************** Version 4 ***************** * User: Akima Date: 01/09/19 Time: 20:46 * Updated in $/source/D5Integrated * tkEnumerationのNameListを取得するた・szlig;の実装を行った * * ***************** Version 3 ***************** * User: Akima Date: 01/09/13 Time: 23:27 * Updated in $/source/D5Integrated * Ts0CollectionItem.Createの引数をTCollection型に・szlig;し・Auml;、overrideするよう * に変更した。だっ・Auml;だっ・Auml;、それだとIDEからoverrideし・Auml;いるコンストラクタ * を・Auml;び出し・Auml;もらえないんだもん。泣。 * * ***************** Version 2 ***************** * User: Akima Date: 01/09/12 Time: 18:35 * Updated in $/source/D5Integrated * Ts0RTTIPublishedBroker.GetTypeInfoでTypeInfoプロパティに値をセットする * ように変更 * * ***************** Version 1 ***************** * User: Akima Date: 01/09/11 Time: 0:29 * Created in $/source/D5Integrated * 新規作成 * u0SXRTTIPropからTypInfoユニットに深く・Ouml;係する部分を抽出した。<H2>Fields</H2>
+<p></p>
+<p>*****************  Version 1  *****************</p>
+<p>User: Akima        Date: 02/03/13   Time: 13:42</p>
+<p>Created in $/doc/html/pasdoc</p>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><A name="4478"><TD>FMethodNameList</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+</TABLE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0MethodEnumerator.htm#4479"><CODE>constructor <B>Create</B>(AClass: TClass);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0MethodEnumerator.htm#4480"><CODE>function <B>GetMethodCount</B>: Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0MethodEnumerator.htm#4481"><CODE>function <B>GetNameOfMethod</B>(Index: integer): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0MethodEnumerator.htm#4482"><CODE>function <B>IndexOf</B>(AMethodName: string): Integer;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4479"><TD><CODE>constructor <B>Create</B>(AClass: TClass);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4480"><TD><CODE>function <B>GetMethodCount</B>: Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4481"><TD><CODE>function <B>GetNameOfMethod</B>(Index: integer): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4482"><TD><CODE>function <B>IndexOf</B>(AMethodName: string): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0MethodEnumerator.htm#4483"><B>MethodCount</B>: integer;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0MethodEnumerator.htm#4484"><B>NameOfMethod</B>[index: Integer]: string;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4483"><CODE><B>MethodCount</B>: integer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4484"><CODE><B>NameOfMethod</B>[index: Integer]: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:44</EM>
+</BODY>
+</HTML>

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0CType: Class Ts0Ctype</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="2125"><H1>Class Ts0Ctype</H1>
+</A><H2>Unit</H2>
+<A href="s0CType.htm">s0CType</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0Ctype = class</CODE></P><H2>Description</H2>
+******************************************************************* * * Liblary: s0CType * OutLine: Cops Char Type Decision Function * Hierarchy: * Note: * $History: Ts0Ctype.htm $ * * ***************** Version 3 ***************** * User: Akima Date: 02/03/09 Time: 17:39 * Updated in $/D5/source/Common * * ***************** Version 2 ***************** * User: Akima Date: 02/02/28 Time: 23:25 * Updated in $/source/D5Integrated * 接頭辞を変更。xxSX～にした。 * * ***************** Version 4 ***************** * User: Satoh Date: 00/07/25 Time: 16:51 * Updated in $/COPS5/LIB0 * isSpecialKeyメソッドでは半角/全角キーのトグル・uuml;力も判断できるようにした * * ***************** Version 3 ***************** * User: Satoh Date: 00/07/25 Time: 15:47 * Updated in $/COPS5/LIB0 * Windowsの特殊キーを判断する・Ouml;数を追加した * * ***************** Version 2 ***************** * User: Mikami Date: 98/02/12 Time: 19:47 * Updated in $/COPS/LIB0 *******************************************************************<H2>Methods</H2>
+<p></p>
+<p>*****************  Version 1  *****************</p>
+<p>User: Akima        Date: 02/03/13   Time: 13:42</p>
+<p>Created in $/doc/html/pasdoc</p>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0Ctype.htm#2126"><CODE>class function <B>IsAllChar</B>(c: Char):ByteBool;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0Ctype.htm#2127"><CODE>class function <B>IsAlNum</B>(c: Char): ByteBool;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0Ctype.htm#2128"><CODE>class function <B>IsAlpha</B>(c: Char): ByteBool;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0Ctype.htm#2129"><CODE>class function <B>IsAscii</B>(c: Char): ByteBool;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0Ctype.htm#2130"><CODE>class function <B>IsCntrl</B>(c: Char): ByteBool;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0Ctype.htm#2131"><CODE>class function <B>IsDigit</B>(c: Char): ByteBool;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0Ctype.htm#2132"><CODE>class function <B>IsKana</B>(c: Char): ByteBool;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0Ctype.htm#2133"><CODE>class function <B>IsKanji</B>(c: Char): ByteBool;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0Ctype.htm#2134"><CODE>class function <B>IsKanji2</B>(c: Char): ByteBool;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0Ctype.htm#2135"><CODE>class function <B>IsSign</B>(c: Char) : ByteBool;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0Ctype.htm#2136"><CODE>class function <B>IsSpecialKey</B> (const key: word):boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2126"><TD><CODE>class function <B>IsAllChar</B>(c: Char):ByteBool;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>漢字の2バイト目</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2127"><TD><CODE>class function <B>IsAlNum</B>(c: Char): ByteBool;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2128"><TD><CODE>class function <B>IsAlpha</B>(c: Char): ByteBool;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>英数字</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2129"><TD><CODE>class function <B>IsAscii</B>(c: Char): ByteBool;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>英字</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2130"><TD><CODE>class function <B>IsCntrl</B>(c: Char): ByteBool;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>ASCII 文字</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2131"><TD><CODE>class function <B>IsDigit</B>(c: Char): ByteBool;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>制・auml;文字</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2132"><TD><CODE>class function <B>IsKana</B>(c: Char): ByteBool;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>function isxdigit(c: Char): ByteBool; { 16進文字</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2133"><TD><CODE>class function <B>IsKanji</B>(c: Char): ByteBool;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>半角カナ文字</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2134"><TD><CODE>class function <B>IsKanji2</B>(c: Char): ByteBool;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>漢字の1バイト目</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2135"><TD><CODE>class function <B>IsSign</B>(c: Char) : ByteBool;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>数字</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2136"><TD><CODE>class function <B>IsSpecialKey</B> (const key: word):boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>上記・Ouml;数のOR条件</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:39</EM>
+</BODY>
+</HTML>

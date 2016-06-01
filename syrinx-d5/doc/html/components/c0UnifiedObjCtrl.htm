@@ -1,0 +1,618 @@
+
+
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>c0UnifiedObjCtrl</title>
+</head>
+
+<body>
+
+<a name="0001"><h1 style="tab-stops:42.0pt;layout-grid-mode:both"><span lang="EN-US">c0UnifiedObjCtrl</span></h1></a>
+
+<a name="0002"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">クラス図</span></h1></a>
+
+<p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shapetype id="_x0000_t75"
+coordsize="21600,21600"o:spt="75"o:preferrelative="t"path="m@4@5l@4@11@9@11@9@5xe"
+filled="f"stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f"gradientshapeok="t"o:connecttype="rect"/>
+ <o:lock v:ext="edit"aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025"type="#_x0000_t75"style='width:373.5pt;
+ height:390.75pt'>
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image001.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+<img src="image/c0Unif6.gif" v:shapes="_x0000_i1025" width="498" height="521"><br>
+<br>
+</span><span style="font-family:&quot;ＭＳ 明朝&quot;;mso-ascii-font-family:Century;
+mso-hansi-font-family:Century">コンポーネントパレットにある</span><span lang="EN-US">Tc0UnifiedObjCtrl</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コンポーネントは、</span><span lang="EN-US">Tc0ObjCtrlBridge</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に</span><span lang="EN-US">Tc0CollectionGrid</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を使用できるように機能を追加したものです。</span></p>
+<a name="0003"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">目的</span></h1></a>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">任意のオブジェクトのプロパティをフォーム上のコントロールなどにマッピングするためのコンポーネントです。<br>
+プロパティが変更された場合にコントロールの表示をその値に変更したり、コントロールに対する操作によってプロパティの値を変更することができます。<br>
+ただし、マッピングされるプロパティは</span><span lang="EN-US">published</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">宣言されている必要があります。</span><span lang="EN-US">&nbsp;<o:p>
+</o:p>          
+</span></p>
+<a name="0004"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">簡単な使い方</span></h1></a>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">まず、簡単な例としてコンポーネントのプロパティをフォームに表示してみましょう。</span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 18.0pt"><span lang="EN-US" style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">１．<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+</span></span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">新規作成したフォームに</span><span lang="EN-US">Tc0UnifiedObjCtrl,TScrollBox,TEdit</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を貼り付けてください。</span><span lang="EN-US"><br>
+<!--[if gtevml1]><v:shape id="_x0000_i1026"type="#_x0000_t75"style='width:393.75pt;
+ height:243pt'>
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image003.png"
+o:title=""/>
+</v:shape><![endif]-->
+<img src="image/c0Unif7.jpg" v:shapes="_x0000_i1026" width="525" height="324"></span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">２</span><span lang="EN-US">.c0UnifiedObjCtrl1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の</span><span lang="EN-US">Builder</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティの</span><span lang="EN-US">CtrlParent</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティを</span><span lang="EN-US">ScrollBox1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を設定します。</span><span lang="EN-US"> c0UnifiedObjCtrl1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の</span><span lang="EN-US">TargetComponent</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティを</span><span lang="EN-US">Edit1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に設定します。</span></p>    
+<p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shape id="_x0000_i1027"
+type="#_x0000_t75"style='width:233.25pt;height:295.5pt'>
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image005.png"
+o:title=""/>
+</v:shape><![endif]-->
+<img src="image/c0Unif8.jpg" v:shapes="_x0000_i1027" width="311" height="394"></span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">４．フォーム上の</span><span lang="EN-US">c0UnifiedObjCtrl</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を右クリックし、</span><span lang="EN-US">[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コントロールの生成</span><span lang="EN-US">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を選択します。</span></p>
+<p class="MsoNormal" style="margin-left:2.0gd"><span lang="EN-US">[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コントロールの生成</span><span lang="EN-US">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">が表示されない場合は、コンポーネントエディタが正しくインストールされていない可能性があります。「インストールガイド」を参照し、インストールしてください。</span></p>
+<p class="MsoNormal"><span lang="EN-US">5.ScrollBox</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の上に、コンポーネントが生成されます。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shape id="_x0000_i1028"
+type="#_x0000_t75"style='width:393.75pt;height:243pt'>
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image007.png"
+o:title=""/>
+</v:shape><![endif]-->
+<img src="image/c0Unif9.jpg" v:shapes="_x0000_i1028" width="525" height="324"></span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">実行すると各種プロパティを変更することが確かめることができます。</span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">例えば、</span><span lang="EN-US">Visible</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">のチェックを</span><span lang="EN-US">False</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に設定すると、</span><span lang="EN-US">Edit1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">は非表示になり、</span><span lang="EN-US">Alignment</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">のコンボボックスで</span><span lang="EN-US">taRightJustify</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を選択すると</span><span lang="EN-US">Edit1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の文字列は右寄せになります。</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<!--[if gtevml1]><v:shape id="_x0000_i1029"
+type="#_x0000_t75"style='width:57pt;height:37.5pt'o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image009.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+ <a href="Sample/c0UnifiedObjCtrl/Project1.cfg">
+<img src="image/c0Unif10.gif" v:shapes="_x0000_i1029" width="76" height="50"></a><!--[if gtemso9]><xml>         
+ <o:OLEObject Type="Embed"ProgID="Package"ShapeID="_x0000_i1029"
+DrawAspect="Content"ObjectID="_1075558986">
+ </o:OLEObject>
+</xml><![endif]-->
+<!--[if gtevml1]><v:shape id="_x0000_i1030"type="#_x0000_t75" 
+style='width:57pt;height:37.5pt'o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image011.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+ <a href="Sample/c0UnifiedObjCtrl/Project1.dof">
+<img src="image/c0Unif11.gif" v:shapes="_x0000_i1030" width="76" height="50"></a><!--[if gtemso9]><xml>         
+ <o:OLEObject Type="Embed"ProgID="Package"ShapeID="_x0000_i1030"
+DrawAspect="Content"ObjectID="_1075558987">
+ </o:OLEObject>
+</xml><![endif]-->
+<!--[if gtevml1]><v:shape id="_x0000_i1031"type="#_x0000_t75" 
+style='width:57pt;height:37.5pt'o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image013.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+ <a href="Sample/c0UnifiedObjCtrl/Project1.res">
+<img src="image/c0Unif12.gif" v:shapes="_x0000_i1031" width="76" height="50"></a><!--[if gtemso9]><xml>         
+ <o:OLEObject Type="Embed"ProgID="Package"ShapeID="_x0000_i1031"
+DrawAspect="Content"ObjectID="_1075558988">
+ </o:OLEObject>
+</xml><![endif]-->
+<!--[if gtevml1]><v:shape id="_x0000_i1032"type="#_x0000_t75" 
+style='width:45.75pt;height:37.5pt'o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image015.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+ <a href="Sample/c0UnifiedObjCtrl/Unit1.dfm">
+<img src="image/c0Unif13.gif" v:shapes="_x0000_i1032" width="61" height="50"></a><!--[if gtemso9]><xml>         
+ <o:OLEObject Type="Embed"ProgID="Package"ShapeID="_x0000_i1032"
+DrawAspect="Content"ObjectID="_1075558989">
+ </o:OLEObject>
+</xml><![endif]-->
+<!--[if gtevml1]><v:shape id="_x0000_i1033"type="#_x0000_t75" 
+style='width:45pt;height:37.5pt'o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image017.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+ <a href="Sample/c0UnifiedObjCtrl/Unit1.pas">
+<img src="image/c0Unif14.gif" v:shapes="_x0000_i1033" width="60" height="50"></a><!--[if gtemso9]><xml>         
+ <o:OLEObject Type="Embed"ProgID="Package"ShapeID="_x0000_i1033"
+DrawAspect="Content"ObjectID="_1075558990">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ちなみに、設計時にプロパティを何も設定せず、コードで同じ設定を行うと以下のようになります。</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>          
+</span></p>
+<p class="MsoNormal"><b><span lang="EN-US">procedure</span></b><span lang="EN-US"> 
+TForm1.FormCreate(Sender: TObject);<br>
+</span><b><span lang="EN-US">begin<o:p>
+</o:p>
+<br>
+</span></b><span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span>c0UnifiedObjCtrl1.Builder.CtrlParent           
+:= ScrollBox1;<br>          
+<span style="mso-spacerun: yes">&nbsp; </span>c0UnifiedObjCtrl1.TargetComponent           
+:= c0Edit1;<br>          
+<span style="mso-spacerun: yes">&nbsp; </span>c0UnifiedObjCtrl1.BuildCtrls;<br>
+</span><b><span lang="EN-US">end</span></b><span lang="EN-US">;</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>          
+</span></p>
+<a name="0005"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">応用的な使い方</span></h1></a>
+<p class="MsoNormal"><span lang="EN-US">[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">簡単な使い方</span><span lang="EN-US">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ではすべてのプロパティを表示</span><span lang="EN-US">/</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">変更できるようになっていましたが、あるプロパティについては対象外としたい場合もあります。ここでは、そのような場合の操作方法を紹介しますが、その前に</span><span lang="EN-US">Tc0UnifiedObjCtrl</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">がどのように動作するのか概要を説明します。</span></p>
+<a name="0006"><h2><span lang="EN-US">Tc0UnifiedObjCtrl</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">の動作の概要</span>
+</h2></a>
+<p class="MsoNormal"><span lang="EN-US">TargetComponent</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">(Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">)</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">が設定されると、</span><span lang="EN-US">c0UnifiedObjCtrl</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の</span><span lang="EN-US">ProtoTypes</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティにはターゲットとして指定されたインスタンスの</span><span lang="EN-US">published</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">のプロパティを表示するための項目</span><span lang="EN-US">(</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">以後</span><span lang="EN-US">”ProtoType”)</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">が追加されます（ただし、</span><span lang="EN-US">ProtoTypes</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に項目が一つも追加されていない場合だけです。一つでも項目があるならば、</span><span lang="EN-US">TargetComponent</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティを設定しても項目は追加されません）。</span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">この時点では、コントロールは生成されていません。</span></p>
+<div align="center">
+  <table border="0" cellspacing="0" cellpadding="0" width="580" style="width:435.1pt;
+ border-collapse:collapse;mso-padding-alt:0mm 4.95pt 0mm 4.95pt">
+    <tr>
+      <td width="327" valign="top" style="width:244.9pt;padding:0mm 4.95pt 0mm 4.95pt">
+        <p class="MsoNormal"><span lang="EN-US">ProtoTypes</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティの</span><span lang="EN-US">[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">･･･</span><span lang="EN-US">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を開くと・・・</span></p>
+        <p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shape id="_x0000_i1034"
+type="#_x0000_t75"style='width:234.75pt;height:284.25pt'>
+   <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image019.png"
+o:title=""/>
+  </v:shape><![endif]-->
+        <img src="image/c0Unif15.jpg" v:shapes="_x0000_i1034" width="313" height="379"></span></p>
+      </td>
+      <td width="254" valign="top" style="width:190.2pt;padding:0mm 4.95pt 0mm 4.95pt">
+        <p class="MsoNormal"><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">がプロパティの分だけ追加されていることが分かります。</span></p>
+        <p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shape id="_x0000_i1035"
+type="#_x0000_t75"style='width:141.75pt;height:333pt'>
+   <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image021.png"
+o:title=""/>
+  </v:shape><![endif]-->
+        <img src="image/c0Unif16.jpg" v:shapes="_x0000_i1035" width="189" height="444"></span></p>
+      </td>
+    </tr>
+  </table>
+</div>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>          
+</span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コントロールは、この</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の設定に従って生成されます。対応する</span><span lang="EN-US">ProtoTypes</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">がなければコントロールは設定されません。</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">もし、</span><span lang="EN-US">TargetComponent</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">(Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">)</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を設定する前に、対象外とするプロパティが分かっているのならば、</span><span lang="EN-US">Tc0UnifiedObjCtrl</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の</span><span lang="EN-US">DisabledProps</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">にそのプロパティ名を追加してください。</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">簡単な使い方</span><span lang="EN-US">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">で、</span><span lang="EN-US">Name</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティと、</span><span lang="EN-US">Tag</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティの</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">が追加されていないのは、</span><span lang="EN-US">DisabledProps</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">にデフォルトで</span><span lang="EN-US">”Name”</span><span style="font-family:&quot;ＭＳ 明朝&quot;;mso-ascii-font-family:Century;mso-hansi-font-family:
+Century">、</span><span lang="EN-US">”Tag”</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">が追加されているからです。もし、これらのコントロールの表示を行いたいという場合には、</span><span lang="EN-US">DisabledProps</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">から削除してください。<br>
+ただし、</span><span lang="EN-US">”Name”</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">についてはお勧めできません。</span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">各</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">には、どのようなコントロールを生成するのかを決めるプロパティがあります。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shape id="_x0000_i1036"
+type="#_x0000_t75"style='width:238.5pt;height:295.5pt'>
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image023.png"
+o:title=""/>
+</v:shape><![endif]-->
+<img src="image/c0Unif17.jpg" v:shapes="_x0000_i1036" width="318" height="394"></span></p> 
+<p class="MsoNormal">　</p>
+<a name="0007"><h3><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の主なプロパティ</span></h3></a>
+<table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0mm 4.95pt 0mm 4.95pt">
+  <tr>
+    <td width="130" valign="top" style="width:97.85pt;border:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+      <p class="MsoNormal"><span lang="EN-US">Ctrl</span></p>
+    </td>
+    <td width="396" valign="top" style="width:297.0pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0mm 4.95pt 0mm 4.95pt">
+      <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">生成されたコントロールを示します。（上図では、まだ</span><span lang="EN-US">[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コントロールの生成</span><span lang="EN-US">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">が行われていないため、</span><span lang="EN-US">nil</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">のままになっています）<br>
+      自動生成する前にコントロールを指定したい、あるいは生成後にコントロールを変更したいという場合には、このプロパティによって変更してください。</span></td>
+  </tr>
+  <tr>
+    <td width="130" valign="top" style="width:97.85pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0mm 4.95pt 0mm 4.95pt">
+      <p class="MsoNormal"><span lang="EN-US">CtrlClassName</span></p>
+    </td>
+    <td width="396" valign="top" style="width:297.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+      <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コントロールを生成する場合に、どのクラスのコントロールを生成するのかを指定します。このプロパティは文字列ですので、生成する前に他のクラスにしたい場合には、このプロパティを変更してください。</span></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="130" valign="top" style="width:97.85pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0mm 4.95pt 0mm 4.95pt">
+      <p class="MsoNormal"><span lang="EN-US">CtrlParent</span></p>
+    </td>
+    <td width="396" valign="top" style="width:297.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+      <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コントロールを生成する時に、どのコントロールを親として生成するのかを指定します。<br>
+      通常は</span><span lang="EN-US">Builder</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の</span><span lang="EN-US">CtrlParent</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">で指定しますが、項目ごとに異なる場合には、こちらのプロパティを使用してください。</span></td>
+  </tr>
+  <tr>
+    <td width="130" valign="top" style="width:97.85pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0mm 4.95pt 0mm 4.95pt">
+      <p class="MsoNormal"><span lang="EN-US">AutoUpdateKinds</span></p>
+    </td>
+    <td width="396" valign="top" style="width:297.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+      <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コントロールのどのようなイベントで、値を</span><span lang="EN-US">Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に反映させるかを指定できます。</span></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="130" valign="top" style="width:97.85pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0mm 4.95pt 0mm 4.95pt">
+      <p class="MsoNormal"><span lang="EN-US">WithoutCtrl</span></p>
+    </td>
+    <td width="396" valign="top" style="width:297.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt">
+      <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コントロールを生成しないかどうかを指定します。デフォルトは</span><span lang="EN-US">False</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">で、</span><span lang="EN-US">False</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ならばコントロールを生成し、</span><span lang="EN-US">True</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ならば、生成しません。</span></p>
+    </td>
+  </tr>
+</table>
+<a name="0008"><h3><span lang="EN-US">&nbsp;<o:p></span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">表示したくない項目</span><span lang="EN-US">&nbsp;<o:p>
+</o:p>          
+</span></h3></a>
+<a name="0009"><h4><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">１、</span><span lang="EN-US">Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">(TargetComponent</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">)</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を設定する前</span></h4></a>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">この時点で、表示したくないプロパティの名前がわかっているのならば、</span><span lang="EN-US">Tc0UnifiedObjCtrl</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の</span><span lang="EN-US">DisabledProps</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">にそのプロパティ名を追加してください。<br>
+これにより、</span><span lang="EN-US">Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティに値が設定されても、指定した名前のプロパティから</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">が作られることはありません。</span></p>
+<a name="0010"><h4 style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 18.0pt"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century" lang="EN-US">２、</span><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; mso-ascii-font-family: Century; mso-hansi-font-family: Century" lang="EN-US">&nbsp;    
+</span><span lang="EN-US">TargetComponent</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティを設定し、</span><span lang="EN-US">[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コントロールの生成</span><span lang="EN-US">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を行う前</span></h4></a>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">この場合には、</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の</span><span lang="EN-US">WithoutCtrl</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を</span><span lang="EN-US">True</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に設定することでコントロールの生成を防ぐことができます。もし、</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">自身が不必要ならば、コレクションエディタ上でその</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を削除しても構いません。</span></p>
+<a name="0011"><h4><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">３、設計時に</span><span lang="EN-US">[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コントロールの生成</span><span lang="EN-US">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を行った後</span></h4></a>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">この場合、表示したくないコンポーネントをフォームから削除してください。通常のコントロールと同様、</span><span lang="EN-US">DEL</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">キーで削除できます。２と同様、</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">自身が不必要ならば、コレクションエディタ上でその</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を削除しても構いません。</span><span lang="EN-US">&nbsp;&nbsp;<o:p>
+</o:p>          
+</span></p>
+<a name="0012"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">オブジェクト指向的使用法</span></h1></a>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">応用的な使い方として、クラスを作成し、</span><span lang="EN-US">Tc0UnifiedObjCtrl</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を使用して作成したクラスのインスタンスをフォームに表示してみましょう。</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">１．クラスを宣言します。</span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">新しいアプリケーションのフォームの</span><span lang="EN-US">interface</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">部に以下のように入力してください。</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<span style="mso-spacerun: yes">&nbsp; 
+</span>TSampleObj = <b>class</b>(TPersistent)<br>          
+<span style="mso-spacerun: yes">&nbsp; </span><b>published<o:p>          
+</o:p>          
+<br>
+</b><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><b>property</b>           
+Value: Integer;<br>          
+<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><b>property</b> Text: <b>string</b>;<br>          
+<span style="mso-spacerun: yes">&nbsp; </span><b>end</b>;</span></p>          
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ここで、</span><span lang="EN-US">[Ctrl+Shift+C]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を押すと、自動的にメソッド、変数などが生成され、</span><span lang="EN-US">implementation</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">部にはメソッドの実装が追加されます。</span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 18.0pt"><span lang="EN-US" style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">３．<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+</span></span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">フォームの</span><span lang="EN-US">private</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に</span></p>
+<p class="MsoNormal" style="text-indent:18.0pt"><span lang="EN-US">FObj:           
+TSampleObj;</span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">という宣言を追加します。</span></p>
+<p class="MsoNormal" style="margin-left:18.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 18.0pt"><span lang="EN-US" style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">４．<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+</span></span><span lang="EN-US">c0UnifiedObjCtrl</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の動作を確認するために、以下のようにフォームにコンポーネントを貼り付けてください。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shape id="_x0000_i1037"
+type="#_x0000_t75"style='width:425.25pt;height:211.5pt'>
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image025.png"
+o:title=""/>
+</v:shape><![endif]-->
+<img src="image/c0Unif18.jpg" v:shapes="_x0000_i1037" width="567" height="282"></span></p> 
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">それぞれのボタンの</span><span lang="EN-US">OnClick</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">イベントのイベントハンドらとなるメソッドには、以下のコードを記述してください。</span></p>
+<table border="1" cellspacing="0" cellpadding="0" style="border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-padding-alt: 0mm 4.95pt 0mm 4.95pt; border-style: none; border-width: medium" width="736">
+  <tr>
+    <td width="163" valign="top" style="border: .5pt solid windowtext; padding-left: 4.95pt; padding-right: 4.95pt; padding-top: 0mm; padding-bottom: 0mm">
+      <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">インスタンスの生成</span></p>
+    </td>
+    <td width="542" valign="top" style="mso-border-left-alt: solid windowtext .5pt; border-left-style: none; border-left-width: medium; border-right: .5pt solid windowtext; border-top: .5pt solid windowtext; border-bottom: .5pt solid windowtext; padding-left: 4.95pt; padding-right: 4.95pt; padding-top: 0mm; padding-bottom: 0mm"><pre><code><b><font color="#000000">procedure </font></b><font color="#000000">TForm2.c0Button1Click(Sender: TObject);
+<b>begin
+  if </b>FObj = <b>nil then
+    </b>FObj := TSampleObj.Create(<b>nil</b>);
+<b>end</b>;</font></code></pre>
+</td>
+  </tr>
+  <tr>
+    <td width="163" valign="top" style="mso-border-top-alt: solid windowtext .5pt; border-left: .5pt solid windowtext; border-right: .5pt solid windowtext; border-top-style: none; border-top-width: medium; border-bottom: .5pt solid windowtext; padding-left: 4.95pt; padding-right: 4.95pt; padding-top: 0mm; padding-bottom: 0mm">
+      <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">インスタンスの破棄</span></p>
+    </td>
+    <td width="542" valign="top" style="mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; border-left-style: none; border-left-width: medium; border-right: .5pt solid windowtext; border-top-style: none; border-top-width: medium; border-bottom: .5pt solid windowtext; padding-left: 4.95pt; padding-right: 4.95pt; padding-top: 0mm; padding-bottom: 0mm"><pre>
+<code><font color="#000000"><b>procedure </b>TForm2.c0Button2Click(Sender: TObject);
+<b>begin
+  </b>FreeAndNil(FObj);
+<b>end</b>;</font></code></pre>
+</td>
+  </tr>
+  <tr>
+    <td width="163" valign="top" style="mso-border-top-alt: solid windowtext .5pt; border-left: .5pt solid windowtext; border-right: .5pt solid windowtext; border-top-style: none; border-top-width: medium; border-bottom: .5pt solid windowtext; padding-left: 4.95pt; padding-right: 4.95pt; padding-top: 0mm; padding-bottom: 0mm">
+      <p class="MsoNormal"><span lang="EN-US">c0UnifiedObjCtrl1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">への設定</span></p>
+    </td>
+    <td width="542" valign="top" style="mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; border-left-style: none; border-left-width: medium; border-right: .5pt solid windowtext; border-top-style: none; border-top-width: medium; border-bottom: .5pt solid windowtext; padding-left: 4.95pt; padding-right: 4.95pt; padding-top: 0mm; padding-bottom: 0mm"><pre><code><b><font color="#000000">procedure </font></b><font color="#000000">TForm2.c0Button3Click(Sender: TObject);
+<b>begin
+  </b>c0UnifiedObjCtrl1.Builder.CtrlParent := ScrollBox1;
+  c0UnifiedObjCtrl1.Target := FObj;
+  c0UnifiedObjCtrl1.BuildCtrls;
+<b>end</b>;</font></code></pre>
+</td>
+  </tr>
+  <tr>
+    <td width="163" valign="top" style="mso-border-top-alt: solid windowtext .5pt; border-left: .5pt solid windowtext; border-right: .5pt solid windowtext; border-top-style: none; border-top-width: medium; border-bottom: .5pt solid windowtext; padding-left: 4.95pt; padding-right: 4.95pt; padding-top: 0mm; padding-bottom: 0mm">
+      <p class="MsoNormal"><span lang="EN-US">c0UnifiedObjCtrl1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">への設定解除</span></p>
+    </td>
+    <td width="542" valign="top" style="mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; border-left-style: none; border-left-width: medium; border-right: .5pt solid windowtext; border-top-style: none; border-top-width: medium; border-bottom: .5pt solid windowtext; padding-left: 4.95pt; padding-right: 4.95pt; padding-top: 0mm; padding-bottom: 0mm"><pre><code><b><font color="#000000">procedure </font></b><font color="#000000">TForm2.c0Button4Click(Sender: TObject);
+<b>begin
+  </b>c0UnifiedObjCtrl1.ClearCtrls;
+  c0UnifiedObjCtrl1.ProtoTypes.Clear;
+  c0UnifiedObjCtrl1.Target := <b>nil</b>;
+<b>end</b>;</font></code></pre>
+</td>
+  </tr>
+  <tr>
+    <td width="163" valign="top" style="mso-border-top-alt: solid windowtext .5pt; border-left: .5pt solid windowtext; border-right: .5pt solid windowtext; border-top-style: none; border-top-width: medium; border-bottom: .5pt solid windowtext; padding-left: 4.95pt; padding-right: 4.95pt; padding-top: 0mm; padding-bottom: 0mm">
+      <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">インスタンスの内容を表示</span></p>
+    </td>
+    <td width="542" valign="top" style="mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; border-left-style: none; border-left-width: medium; border-right: .5pt solid windowtext; border-top-style: none; border-top-width: medium; border-bottom: .5pt solid windowtext; padding-left: 4.95pt; padding-right: 4.95pt; padding-top: 0mm; padding-bottom: 0mm"><pre><code><b><font color="#000000">procedure </font></b><font color="#000000" face="Arial">TForm2.c0Button5Click(Sender: TObject);
+<b>var
+  </b>ms1, ms2: TMemoryStream;
+<b>begin
+  </b>ms1 := TMemoryStream.Create;
+  <b>try
+    </b>ms1.WriteComponent(FObj);
+    ms2 := TMemoryStream.Create;
+    <b>try
+      </b>ms1.Position := <font color="#000080">0</font>;
+      ObjectBinaryToText(ms1, ms2);
+      ms2.Position := <font color="#000080">0</font>;
+      Memo1.Lines.LoadFromStream(ms2);
+    <b>finally
+      </b>FreeAndNil(ms2);
+    <b>end</b>;            
+  <b>finally
+    </b>FreeAndNil(ms1);
+  <b>end</b>;
+<b>end</b>;</font></code></pre>
+</td>
+  </tr>
+</table>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>          
+</span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">４．実行して以下のように操作してみてください。</span></p>
+<p class="MsoNormal"><span lang="EN-US">[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">インスタンスの生成</span><span lang="EN-US">]-[c0UnifiedObjCtrl1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">への設定</span><span lang="EN-US">]-[Text           
+</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の</span> <span style="font-family:&quot;ＭＳ 明朝&quot;;          
+mso-ascii-font-family:Century;mso-hansi-font-family:Century">エディットになんらかの文字列を入力する</span><span lang="EN-US">]-[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">インスタンスの内容を表示</span><span lang="EN-US">]<br>
+</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">すると、</span><span lang="EN-US">Memo1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">には</span><span lang="EN-US">TSampleObj</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">型の</span><span lang="EN-US">FObj</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">で参照されるインスタンスのデータが表示されます。エディットに入力した値が</span><span lang="EN-US">Memo1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に表示されるはずです。</span></p>
+<p class="MsoNormal"><span lang="EN-US">[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">インスタンスの破棄</span><span lang="EN-US">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を行った後、エディットに値を入力しようとすると、</span><span lang="EN-US">EAccessViolation</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">例外が発生します。実際のアプリケーションでは、このような現象は致命的と言えるので、</span><span lang="EN-US" style="color:red">[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century; color: red">インスタンスの破棄</span><span lang="EN-US" style="color:red">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century; color: red">を行ったら、</span><span lang="EN-US" style="color:red">[c0UnifiedObjCtrl1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century; color: red">への設定解除</span><span lang="EN-US" style="color:red">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century; color: red">で行っているように、</span><span lang="EN-US" style="color:red">Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century; color: red">プロパティに</span><b><span lang="EN-US" style="color:red">nil</span></b><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century; color: red">を設定してください。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shape id="_x0000_i1038"
+type="#_x0000_t75"style='width:57pt;height:37.5pt'o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image027.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+ <a href="Sample/c0UnifiedObjCtrl/Project2.dpr">
+<img src="image/c0Unif19.gif" v:shapes="_x0000_i1038" width="76" height="50"></a><!--[if gtemso9]><xml>
+ <o:OLEObject Type="Embed"ProgID="Package"ShapeID="_x0000_i1038"
+DrawAspect="Content"ObjectID="_1075558991">
+ </o:OLEObject>
+</xml><![endif]-->
+<!--[if gtevml1]><v:shape id="_x0000_i1039"type="#_x0000_t75" 
+style='width:57pt;height:37.5pt'o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image029.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+ <a href="Sample/c0UnifiedObjCtrl/Project2.dof">
+<img src="image/c0Unif20.gif" v:shapes="_x0000_i1039" width="76" height="50"></a><!--[if gtemso9]><xml>
+ <o:OLEObject Type="Embed"ProgID="Package"ShapeID="_x0000_i1039"
+DrawAspect="Content"ObjectID="_1075558992">
+ </o:OLEObject>
+</xml><![endif]-->
+<!--[if gtevml1]><v:shape id="_x0000_i1040"type="#_x0000_t75" 
+style='width:57pt;height:37.5pt'o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image031.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+ <a href="Sample/c0UnifiedObjCtrl/Project2.res">
+<img src="image/c0Unif21.gif" v:shapes="_x0000_i1040" width="76" height="50"></a><!--[if gtemso9]><xml>
+ <o:OLEObject Type="Embed"ProgID="Package"ShapeID="_x0000_i1040"
+DrawAspect="Content"ObjectID="_1075558993">
+ </o:OLEObject>
+</xml><![endif]-->
+<!--[if gtevml1]><v:shape id="_x0000_i1041"type="#_x0000_t75" 
+style='width:45.75pt;height:37.5pt'o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image033.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+ <a href="Sample/c0UnifiedObjCtrl/Unit2.dfm">
+<img src="image/c0Unif22.gif" v:shapes="_x0000_i1041" width="61" height="50"></a><!--[if gtemso9]><xml>
+ <o:OLEObject Type="Embed"ProgID="Package"ShapeID="_x0000_i1041"
+DrawAspect="Content"ObjectID="_1075558994">
+ </o:OLEObject>
+</xml><![endif]-->
+<!--[if gtevml1]><v:shape id="_x0000_i1042"type="#_x0000_t75" 
+style='width:45pt;height:37.5pt'o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/04/clip_image035.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+ <a href="Sample/c0UnifiedObjCtrl/Unit2.pas">
+<img src="image/c0Unif23.gif" v:shapes="_x0000_i1042" width="60" height="50"></a><!--[if gtemso9]><xml>
+ <o:OLEObject Type="Embed"ProgID="Package"ShapeID="_x0000_i1042"
+DrawAspect="Content"ObjectID="_1075558996">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ちゃんと</span><span lang="EN-US">TSampleObj.SetText</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">メソッドが呼び出されていることも確認してください。</span><span lang="EN-US">SetText</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">メソッドにブレークを設定することで確認できます。</span><span lang="EN-US"><o:p>
+</o:p>
+</span></p>
+<a name="0013"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">詳細</span><span lang="EN-US"><o:p>
+&nbsp;         
+</span></h1></a><a name="0014"><h2><span lang="EN-US"></span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">メソッド</span></h2></a>
+<a name="0015"><h3>
+<span lang="EN-US">BuildCtrls</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">、</span><code><span lang="EN-US" style="mso-ansi-font-size:10.5pt;
+mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:
+Arial">ClearCtrls</span></code><b><span lang="EN-US"></o:p>
+</span></b>
+</h3></a>
+<p><b><span lang="EN-US">public procedure </span></b><span lang="EN-US">BuildCtrls;<br>      
+</span><code><b><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">public </span><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;mso-fareast-font-family:       
+&quot;ＭＳ 明朝&quot;">procedure</span></b><span lang="EN-US" style="mso-ansi-font-size:
+10.5pt;font-family:Arial;mso-fareast-font-family:&quot;ＭＳ 明朝&quot;"> 
+ClearCtrls;<o:p>
+</o:p>
+<br>
+</span></code><span lang="EN-US">BuildCtrlsメソッドは、ProtoTypes</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の各</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に従って、コントロールを生成します。<br>
+</span><code><span lang="EN-US" style="mso-ansi-font-size:
+10.5pt;font-family:Arial;mso-fareast-font-family:&quot;ＭＳ 明朝&quot;"> 
+ClearCtrlsメソッドは、</span></code><span lang="EN-US">ProtoTypes</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の各</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の</span><span lang="EN-US">Ctrl</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティに設定されているコントロールをすべて破棄し、</span><span lang="EN-US">nil</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に設定します。</span></p>
+<a name="0016"><h3><code><span lang="EN-US" style="mso-ansi-font-size:
+10.5pt;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:
+Arial;color:black">LoadFromTarget</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">、</span><span lang="EN-US" style="mso-ansi-font-size:10.5pt;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black">SaveToTarget</span></code></h3></a>
+
+<p><code><b><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">public procedure </span></b><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black">LoadFromTarget;<o:p>      
+</o:p> 
+<br>
+</span><b><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">public procedure </span></b><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black">SaveToTarget;<o:p>      
+</o:p> 
+<br>
+</span><b></b><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black">LoadFromTargetメソッドは、Target</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">プロパティに設定されたインスタンスの各プロパティの値を対応するコントロールに設定します。</span><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black"><o:p>
+</o:p><br> 
+</span><b></b><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black">SaveToTargetメソッドは、Target</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">プロパティに設定されたインスタンスの各プロパティの値を、対応するコントロールから読み取って、設定します。</span><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black"><o:p>
+</o:p>
+</span></code></p>
+<p><code><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">AutoUpdate</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">プロパティが</span><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">False</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">に設定されている場合には、これらのメソッドを用いて、コントロールから</span><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">Target</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">、</span><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">Target</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">からコントロールへの値の反映を明示的に行ってください。</span></code></p>
+<a name="0017"><h2>プロパティ</h2></a><a name="0018"><h3><span lang="EN-US">Target</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">と</span><span lang="EN-US">TargetComponent</span></h3></a>
+<pre><code><b><span lang="EN-US" style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt; color: black">public property </span></b><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+color:black">Target: TObject;</span><b><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+color:black">
+published property </span></b><span lang="EN-US" style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt; color: black">TargetComponent: TComponent</span></code></pre>
+<p class="MsoNormal"><span lang="EN-US">Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティは、表示対象となるインスタンスを表します。このプロパティにコントロールにマッピングしたいインスタンスを設定することでマッピングが可能です。</span><span lang="EN-US"><br>
+TargetComponent</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティは、設定時に</span><span lang="EN-US">Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティにアクセスするためのもので、型が</span><span lang="EN-US">TComponent</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">型であることと、可視性が</span><span lang="EN-US">published</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">であることを除けば</span><span lang="EN-US">Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティと同じものであると言えます。<br>
+コードにおいて、どちらを使用するのかを迷った場合には、</span><span lang="EN-US">Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティを使用してください。<br>
+</span><span lang="EN-US">Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">(TargetComponent</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">)</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に有効なオブジェクトへの参照を設定すると、</span><span lang="EN-US">Prototypes</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">(</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">後述</span><span lang="EN-US">)</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に項目が１つも設定されていない場合、自動的に</span><span lang="EN-US">Prototypes</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティに項目が追加されます。</span><span lang="EN-US"><o:p>
+&nbsp;   
+</span></p>
+<a name="0019"><h3><code><span lang="EN-US" style="mso-ansi-font-size:
+10.5pt;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:
+Arial;color:black">AutoUpdate</span><span lang="EN-US" style="mso-ansi-font-size:10.5pt;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black"><o:p></o:p>
+</span></code></h3></a>
+
+<p><code><b><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">published property </span></b><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black">AutoUpdate:        
+Boolean</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black"><br>
+コントロールに、</span><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">ProtoType</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">の</span><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">AutoUpdateKinds</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">プロパティで示されたイベントが発生した場合に、自動的に</span><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">Target</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">のプロパティに値を反映するかどうかを示すプロパティです。</span><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black"><o:p>
+</span></code></p>
+<a name="0020"><h3><code><span lang="EN-US" style="mso-ansi-font-size:
+10.5pt;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:
+Arial;color:black">DisabledProps</span></code></h3></a>
+<p><code><b><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">published property </span></b><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black">DisabledProps:        
+TStrings</span></code><span lang="EN-US"><br>
+Tc0UnifiedObjCtrl</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">は、</span><span lang="EN-US">Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティあるいは</span><span lang="EN-US">TargetComponent</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティに有効な参照が設定されたときに、</span><span lang="EN-US">ProtoTypes</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に項目が一つもなければ、自動的に</span><span lang="EN-US">PotoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を生成し、</span><span lang="EN-US">ProtoTypes</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に追加しますが、その際、項目を追加しないプロパティ名を</span><code><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">DisabledProps</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">プロパティに設定します。</span><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black"><o:p>
+</o:p>
+</span></code></p>
+<p><code><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">このプロパティに、無効なプロパティ名が追加されていても問題ありません。デフォルトで、</span><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">”Name”</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">と</span><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">”Tag”</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">が設定されています。</span></code><span lang="EN-US">&nbsp;<o:p>
+</o:p>          
+</span></p>
+<a name="0021"><h3><code><span lang="EN-US" style="mso-ansi-font-size:
+10.5pt;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:
+Arial;color:black">ProtoSourceCompo</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">、</span><span lang="EN-US" style="mso-ansi-font-size:10.5pt;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black">ProtoSourcePropName</span></code></h3></a>
+
+<p><code><b><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">published property </span></b><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black">ProtoSourceCompo:        
+TComponent<br>
+</span><b><span lang="EN-US" style="mso-ansi-font-size:10.5pt;
+font-family:Arial;color:black">published property </span></b><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black">ProtoSourcePropName: 
+<b>string<o:p>
+</o:p>
+<br>
+</b></span></code><span lang="EN-US">Target</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ととして、あるコンポーネントのプロパティとして表されるインスタンスを設計時に指定したい場合に使用します。<br>
+</span><code><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">ProtoSourceCompo</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">は、インスタンスをプロパティとして保持するコンポーネント、</span><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">ProtoSourcePropName</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">はそのプロパティ名です。</span><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black"><o:p>
+</o:p>
+</span><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">&nbsp;<o:p>
+</o:p></span></code></p>    
+<a name="0022"><h3><code><span lang="EN-US" style="mso-ansi-font-size:
+10.5pt;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:
+Arial;color:black">Builder</span></code></h3></a>
+
+<p><code><b><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">published property </span></b><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black">Builder:        
+T0ObjCtrlBuilder<o:p>
+</o:p>
+</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black"><br>
+コントロールの生成を行うためのオブジェクトです。プロパティを変更することで生成を行う際の設定を変更することができます。</span><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black"><o:p>
+</o:p>
+</span><b><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">&nbsp;<o:p>
+</o:p></span></b></code></p>    
+<a name="0023"><h4><code><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black; font-weight: normal">主なプロパティ</span><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black;
+font-weight:normal"><o:p>
+</o:p>
+</span></code></h4></a>
+
+<p><code><b><span lang="EN-US" style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt; color: black">published </span><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial">property </span></b><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial">CtrlMargin: Integer</span><span style="font-size:10.5pt;mso-bidi-font-size:10.0pt;mso-ascii-font-family:Arial;    
+mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black">
+<br>
+生成するコントロールの</span><span lang="EN-US" style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt; color: black">Y</span><span style="font-size:10.5pt;mso-bidi-font-size:
+10.0pt;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:
+Arial;color:black">座標の間隔を指定できます。デフォルトは</span><span lang="EN-US" style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt; color: black">4</span><span style="font-size:10.5pt;mso-bidi-font-size:10.0pt;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black">です。</span><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+color:black"><o:p>
+<br>
+<br>
+<br>
+</o:p></span><b><span lang="EN-US" style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt; color: black">published </span><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial">property </span></b><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial">CtrlOwner:    
+TComponent<o:p></o:p>
+
+<br>
+
+</span><b><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+color:black">published </span><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial">property </span></b><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial">CtrlParent: 
+TWinControl<o:p></o:p>
+
+<br>
+
+</span><span style="font-size:10.5pt;mso-bidi-font-size:10.0pt;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black">生成するコントロールのオーナーコンポーネント</span><span lang="EN-US" style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt; color: black">(</span><span lang="EN-US" style="font-size:10.5pt;
+mso-bidi-font-size:10.0pt;font-family:Arial">CtrlOwner<span style="color:black">)</span></span><span style="font-size:10.5pt;mso-bidi-font-size:10.0pt;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black">と、親コントロール</span><span lang="EN-US" style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt; color: black">(</span><span lang="EN-US" style="font-size:10.5pt;
+mso-bidi-font-size:10.0pt;font-family:Arial">CtrlParent<span style="color:black">)</span></span><span style="font-size:10.5pt;mso-bidi-font-size:10.0pt;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black">を指定することができます。</span><span lang="EN-US" style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt">CtrlOwner</span><span style="font-size:10.5pt;mso-bidi-font-size:10.0pt;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black">はフォーム上の場合デフォルトでそのフォームになります。</span><span lang="EN-US" style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt">CtrlParent</span><span style="font-size:10.5pt;mso-bidi-font-size:10.0pt;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial;mso-bidi-font-family:Arial">はデフォルトで設定されませんので、手動で設定してください。</span><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+color:black"><o:p>
+<br>
+</o:p><br>
+</span><b><span lang="EN-US" style="font-size: 10.5pt; mso-bidi-font-size: 10.0pt; color: black">published </span><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial">property </span></b><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial">CtrlOfTypeClassName: <b>string</b><o:p>    
+<br>
+</o:p></span><b><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+color:black">published </span><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial">property </span></b><span lang="EN-US" style="font-size:10.5pt;mso-bidi-font-size:10.0pt;font-family:Arial">CtrlOfType: 
+T0CtrlOfType<br>
+
+</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">どのコントロールを生成するのかを決定するオブジェクトを表します。</span><span lang="EN-US" style="mso-ansi-font-size: 10.5pt">CtrlOfTypeClassName</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial">で</span><span lang="EN-US" style="mso-ansi-font-size: 10.5pt">CtrlOfType</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial">のクラスを変更することができますが、通常あまり変更しないことをお勧めします。</span><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black"></o:p>
+</span></code></p>
+<a name="0024"><h3><code><span lang="EN-US" style="mso-ansi-font-size:
+10.5pt;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:
+Arial;color:black">ProtoTypes</span><span style="mso-ansi-font-size: 10.5pt; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; color: black">プロパティ</span></code>
+</h3></a>
+<p><code><b><span lang="EN-US" style="mso-ansi-font-size: 10.5pt; color: black">published property </span></b><span lang="EN-US" style="mso-ansi-font-size:10.5pt;font-family:Arial;color:black">ProtoTypes:           
+T0ProtoTypeCtrls<o:p>
+</o:p>
+<br>
+</span></code><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コントロールを生成するための</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を複数保持します。<br>
+</span><span lang="EN-US">ProtoType</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の主なプロパティについては、</span><span lang="EN-US">[<span style="font-family:&quot;ＭＳ 明朝&quot;;mso-ascii-font-family:
+Century;mso-hansi-font-family:Century">応用的な使い方</span>| Tc0UnifiedObjCtrl<span style="font-family:         
+&quot;ＭＳ 明朝&quot;;mso-ascii-font-family:Century;mso-hansi-font-family:Century">の動作の概要</span>|    
+ProtoType<span style="font-family:&quot;ＭＳ 明朝&quot;;
+mso-ascii-font-family:Century;mso-hansi-font-family:Century">の主なプロパティ</span>]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を参照してください。</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>          
+</span></p>
+<a name="0025"><h2><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">Ｑ＆Ａ</span></h2></a>
+
+</body>
+
+</html>

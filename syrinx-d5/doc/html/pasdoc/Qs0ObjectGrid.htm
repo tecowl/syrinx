@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>Qs0ObjectGrid</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<H1>Unit Qs0ObjectGrid</H1>
+<H2>Description</H2>
+<P>
+----------------------------------------------------------------------------- Unit Name: s0ObjectGrid Author: akima Purpose: TestCase: tc_s0ObjectGrid $History: Qs0ObjectGrid.htm $ * * ***************** Version 1 ***************** * User: Akima Date: 02/03/08 Time: 10:02 * Created in $/D6/source/CLX * * ***************** Version 22 ***************** * User: Akima Date: 02/02/28 Time: 23:25 * Updated in $/source/D5Integrated * Ú“ª«‚ğ•ÏXBxxSX`‚É‚µ‚½B * * ***************** Version 20 ***************** * User: Akima Date: 02/02/14 Time: 21:53 * Updated in $/source/D5Integrated * ResetPropToGrid‚ğoverride‚µ‚&Auml;ACtrlDeco‚ÌˆÊ’u’²®‚ğs‚¤‚æ‚¤‚É‚µ‚½B * * ***************** Version 19 ***************** * User: Akima Date: 02/02/06 Time: 4:43 * Updated in $/source/D5Integrated * AdjustFromGridƒƒ\ƒbƒh‚ÅA‚¿‚á‚ñ‚Æ’ K‚ª‡‚¤‚æ‚¤‚É‚µ‚½B * * ***************** Version 18 ***************** * User: Akima Date: 02/02/06 Time: 1:07 * Updated in $/source/D5Integrated * Ts0ObjectGrid‚ğTs0CustomObjectGrid‚ÆTs0ObjectGrid‚É•ª‚¯‚½B * ƒAƒbƒvƒf[ƒgI—¹‚ÉEndUpdateTargetƒƒ\ƒbƒh‚ÅATarget‚ª•ÏX‚³‚ê‚&Auml;‚¢‚½‚ç * LoadFromTarget‚ğs‚¤‚æ‚¤‚É‚µ‚½B‚»‚Ì‚½‚&szlig;‚ÉFModifiedCount‚ğ’Ç‰ÁB * Ts0CustomObjectGrid.InitColumns‚ÅAƒ[ƒh’†‚ÍƒJƒ‰ƒ€‚ğƒNƒŠƒA‚µ‚È‚¢‚æ‚¤‚É * C³B * * ***************** Version 17 ***************** * User: Akima Date: 02/02/05 Time: 4:32 * Updated in $/source/D5Integrated * ControllerƒNƒ‰ƒX‚ğ’Ç‰Á‚µ‚&Auml;MVC‚ÌŒ`‚É‚µ‚½B * * ***************** Version 16 ***************** * User: Akima Date: 02/01/30 Time: 17:33 * Updated in $/source/D5Integrated * Ts0GridCmd_AddRow‚ğ’Ç‰Á * * ***************** Version 15 ***************** * User: Akima Date: 02/01/28 Time: 17:14 * Updated in $/source/D5Integrated * * ***************** Version 14 ***************** * User: Akima Date: 02/01/10 Time: 13:39 * Updated in $/source/D5Integrated * * ***************** Version 13 ***************** * User: Akima Date: 02/01/10 Time: 3:17 * Updated in $/source/D5Integrated * Ts0GridCtrlOfTypeƒNƒ‰ƒX‚ğ’Ç‰ÁB * * ***************** Version 12 ***************** * User: Akima Date: 02/01/06 Time: 0:22 * Updated in $/source/D5Integrated * SetCellsƒƒ\ƒbƒh‚É‚¨‚¢‚&Auml;UpdateViewCount‚É‚æ‚é&Auml;‹A–h~ * * ***************** Version 11 ***************** * User: Akima Date: 01/12/18 Time: 11:50 * Updated in $/source/D5Integrated * * ***************** Version 10 ***************** * User: Akima Date: 01/12/10 Time: 17:39 * Updated in $/source/D5Integrated * ‘åƒŠƒtƒWARNING: @ƒNƒ^ƒŠƒ“ƒOŒãAƒOƒŠƒbƒh‚ª‚â[‚Á‚ÆˆÀ’è‚µ‚&Uuml;‚µ‚½B * * ***************** Version 9 ***************** * User: Akima Date: 01/12/10 Time: 16:15 * Updated in $/source/D5Integrated * * ***************** Version 8 ***************** * User: Akima Date: 01/12/08 Time: 2:06 * Updated in $/source/D5Integrated * Ts0StringsAccessor‚ğì¬B * Ts0StringsAccessor‚ÍTs0EnumCollection‚ğg—p‚·‚éB * * ***************** Version 7 ***************** * User: Akima Date: 01/12/07 Time: 18:56 * Updated in $/source/D5Integrated * InplaceEditor‚ğíœ‚·‚é‚Æ‚¢‚¤ƒrƒbƒOƒŠƒtƒWARNING: @ƒNƒ^ƒŠƒ“ƒO¬Œ÷IIII * s0Grids‚ÉC³‘½” * * Ts0CustomStringGrid * <|--- Ts0CustomBindGrid * <|--- Ts0CustomBaseGrid * <|--- Ts0CustomDecoGrid * <|--- Ts0CustomCtrlGrid * <|--- Ts0CustomObjectGrid * ‚Æ‚È‚Á‚&Auml;‚¢‚½Œp³Š&Ouml;ŒW‚ğˆÈ‰º‚Ì‚æ‚¤‚É•ÏX * * Ts0CustomStringGrid * <|--- Ts0CustomDecoStringGrid (s0CellDecorator‚ÉV‹Kì¬) * <|--- Ts0CustomBindGrid * <|--- Ts0CustomCtrlGrid * <|--- Ts0CustomDecoGrid * <|--- Ts0CustomBaseGrid * <|--- Ts0CustomObjectGrid * * íXInplaceEditor‚ª×–‚‚¾‚È[‚Æv‚Á‚&Auml;‚¢‚½‚ªAƒXƒpƒCƒN‚Ì‚Â‚à‚è‚Å * íœ‚µ‚&Auml;‚İ‚½‚ç‘å¬Œ÷I‚à‚¤InplaceEditor‚ÆCtrlDeco‚ÌƒRƒ“ƒgƒ[ƒ‹‚ğ * ‹æ•Ê‚µ‚&Uuml;‚¹‚ñI‚í[‚¢Bˆ—‚ª‘¬‚­‚È‚Á‚½‚µA‘S‘Ì“I‚É‚·‚Á‚«‚è‚µ‚½‚Á‚·B * * ***************** Version 6 ***************** * User: Akima Date: 01/12/06 Time: 20:27 * Updated in $/source/D5Integrated * * ***************** Version 5 ***************** * User: Akima Date: 01/12/05 Time: 18:49 * Updated in $/source/D5Integrated * * ***************** Version 4 ***************** * User: Akima Date: 01/11/28 Time: 21:59 * Updated in $/source/D5Integrated * ”jŠ&uuml;’†‚É‚ÍÀs‚µ‚È‚¢‚æ‚¤‚ÉInitColumns‚É–‘OğŒ‚ğ‰Á‚¦‚½ * * ***************** Version 3 ***************** * User: Akima Date: 01/11/25 Time: 5:35 * Updated in $/source/D5Integrated * AutoUpdateTargetƒvƒƒpƒeƒB‚ğ’Ç‰ÁB * SetCells‚ªŒ&Auml;‚Ño‚³‚ê‚½‚Æ‚«‚ÉATarget‚ğ©“®“I‚É•ÏX‚·‚éB * ConfirmUpdateƒvƒƒpƒeƒB‚ğíœB -----------------------------------------------------------------------------</P>
+<p></p>
+<p>*****************  Version 1  *****************</p>
+<p>User: Akima        Date: 02/03/13   Time: 13:42</p>
+<p>Created in $/doc/html/pasdoc</p>
+<H2>Classes, interfaces and objects</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="Es0ObjectGridController.htm">Es0ObjectGridController</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="Ts0CustomObjectGrid.htm">Ts0CustomObjectGrid</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="Ts0GridCtrlOfType.htm">Ts0GridCtrlOfType</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="Ts0ObjectGridColumn.htm">Ts0ObjectGridColumn</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="Ts0ObjectGridColumns.htm">Ts0ObjectGridColumns</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="Ts0ObjectGridController.htm">Ts0ObjectGridController</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+<H2>Types</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><A name="1196"><TD>K0ObjectGridColumnLoadEvent</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="1197"><TD>K0ObjectGridColumnSaveEvent</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="1198"><TD>Ts0GridCtrlOfTypeClass</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+</TABLE><HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:37</EM>
+</BODY>
+</HTML>

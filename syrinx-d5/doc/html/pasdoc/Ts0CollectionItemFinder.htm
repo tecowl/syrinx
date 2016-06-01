@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0Collection: Class Ts0CollectionItemFinder</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="1865"><H1>Class Ts0CollectionItemFinder</H1>
+</A><H2>Unit</H2>
+<A href="s0Collection.htm">s0Collection</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0CollectionItemFinder = class(<CODE><A href="Ts0CollectionVisitor.htm">Ts0CollectionVisitor</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0CollectionVisitor.htm">Ts0CollectionVisitor</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CollectionItemFinder.htm#1866"><CODE>constructor <B>Create</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CollectionItemFinder.htm#1867"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CollectionItemFinder.htm#1868"><CODE>procedure <B>Execute</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CollectionItemFinder.htm#1869"><CODE>function <B>Match</B>(AItem: Ts0CollectionItem): Boolean; virtual; abstract;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CollectionItemFinder.htm#1870"><CODE>procedure <B>VisitCollection</B>(ACollection: Ts0Collection); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CollectionItemFinder.htm#1871"><CODE>procedure <B>VisitItem</B>(AItem: Ts0CollectionItem); override;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1866"><TD><CODE>constructor <B>Create</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1867"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1868"><TD><CODE>procedure <B>Execute</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1869"><TD><CODE>function <B>Match</B>(AItem: <A href="Ts0CollectionItem.htm">Ts0CollectionItem</A>): Boolean; virtual; abstract;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1870"><TD><CODE>procedure <B>VisitCollection</B>(ACollection: <A href="Ts0Collection.htm">Ts0Collection</A>); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1871"><TD><CODE>procedure <B>VisitItem</B>(AItem: <A href="Ts0CollectionItem.htm">Ts0CollectionItem</A>); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CollectionItemFinder.htm#1872"><B>AnswerOnlyOne</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CollectionItemFinder.htm#1873"><B>ResultList</B>: Ts0CollectionItemList;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CollectionItemFinder.htm#1874"><B>Target</B>: Ts0Collection;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CollectionItemFinder.htm#1875"><B>TimingOfSubFind</B>: K0FindSubItemKind;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1872"><CODE><B>AnswerOnlyOne</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1873"><CODE><B>ResultList</B>: <A href="Ts0CollectionItemList.htm">Ts0CollectionItemList</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1874"><CODE><B>Target</B>: <A href="Ts0Collection.htm">Ts0Collection</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1875"><CODE><B>TimingOfSubFind</B>: <A href="s0Collection.htm#1793">K0FindSubItemKind</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:39</EM>
+</BODY>
+</HTML>

@@ -1,0 +1,66 @@
+package s0p_Additional50;
+
+{$R *.RES}
+{$R 's0FileFinder.dcr'}
+{$R 's0IniPropStocker.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '<syrinx 01> Additional Components'}
+{$IMPLICITBUILD OFF}
+
+requires
+  Vcl50,
+  Vclx50,
+  s0p_Core50;
+
+contains
+  s0AppInstance in 's0AppInstance.pas',
+  s0Executive in 's0Executive.pas',
+  s0FileCollections in 's0FileCollections.pas',
+  s0FileFinder in 's0FileFinder.pas',
+  s0IniPropStocker in 's0IniPropStocker.pas',
+  s0ObjectsPropFilter in 's0ObjectsPropFilter.pas',
+  s0TextComparer in 's0TextComparer.pas',
+  s0TreeFilterMaker in 's0TreeFilterMaker.pas',
+  s0ObjPropStocker in 's0ObjPropStocker.pas',
+  s0RegAdditional in 's0RegAdditional.pas',
+  s0TagBookMarker in 's0TagBookMarker.pas',
+  s0TaggedPage in 's0TaggedPage.pas',
+  s0TagReader in 's0TagReader.pas',
+  s0TagWriter in 's0TagWriter.pas',
+  s0TagParser in 's0TagParser.pas',
+  s0TagPolicy in 's0TagPolicy.pas',
+  s0DelphiParser in 's0DelphiParser.pas',
+  s0Activative in 's0Activative.pas',
+  s0DirMonitor in 's0DirMonitor.pas',
+  s0Win32APIHelper in 's0Win32APIHelper.pas',
+  s0ComparedToHTML in 's0ComparedToHTML.pas',
+  s0BoundsLayout in 's0BoundsLayout.pas',
+  s0ObjXMLReader in 's0ObjXMLReader.pas',
+  s0ObjXMLWriter in 's0ObjXMLWriter.pas',
+  s0ObjXMLPage in 's0ObjXMLPage.pas',
+  s0PropertyOrganizer in 's0PropertyOrganizer.pas',
+  s0PropertyAccessor in 's0PropertyAccessor.pas',
+  s0Graphics in 's0Graphics.pas',
+  s0Printers in 's0Printers.pas';
+
+end.

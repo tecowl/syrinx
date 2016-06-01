@@ -1,0 +1,62 @@
+package s0p_VBasicCtrl50;
+
+{$R *.RES}
+{$R 's0DateEdit.dcr'}
+{$R 's0DigitEdit.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '<syrinx VCL 02> Basic controls'}
+{$IMPLICITBUILD OFF}
+
+requires
+  Vcl50,
+  Vclx50,
+  s0p_Core50,
+  s0p_Additional50,
+  s0p_VCore50,
+  s0p_VCtrl50;
+
+contains
+  s0StaticText in 's0StaticText.pas',
+  s0Button in 's0Button.pas',
+  s0Buttons in 's0Buttons.pas',
+  s0CheckBox in 's0CheckBox.pas',
+  s0CheckListBox in 's0CheckListBox.pas',
+  s0ComboBox in 's0ComboBox.pas',
+  s0DateEdit in 's0DateEdit.pas',
+  s0DigitEdit in 's0DigitEdit.pas',
+  s0Edit in 's0Edit.pas',
+  s0GroupBox in 's0GroupBox.pas',
+  s0Label in 's0Label.pas',
+  s0ListBox in 's0ListBox.pas',
+  s0Memo in 's0Memo.pas',
+  s0MenuBar in 's0MenuBar.pas',
+  s0Panel in 's0Panel.pas',
+  s0RadioButton in 's0RadioButton.pas',
+  s0RadioGroup in 's0RadioGroup.pas',
+  s0ScrollBar in 's0ScrollBar.pas',
+  s0Splitter in 's0Splitter.pas',
+  s0Bevel in 's0Bevel.pas',
+  s0CtrlOfType_StdCtrls in 's0CtrlOfType_StdCtrls.pas',
+  s0RegBasicCtrl in 's0RegBasicCtrl.pas';
+
+end.

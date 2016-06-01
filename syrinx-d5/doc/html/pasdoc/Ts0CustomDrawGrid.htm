@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>Qs0Grids: Class Ts0CustomDrawGrid</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="631"><H1>Class Ts0CustomDrawGrid</H1>
+</A><H2>Unit</H2>
+<A href="Qs0Grids.htm">Qs0Grids</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0CustomDrawGrid = class(<CODE><A href="Ts0CustomGrid.htm">Ts0CustomGrid</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0CustomGrid.htm">Ts0CustomGrid</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDrawGrid.htm#632"><CODE>function <B>CellRect</B>(ACol, ARow: Longint): TRect;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDrawGrid.htm#633"><CODE>procedure <B>ColumnMoved</B>(FromIndex, ToIndex: Longint); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDrawGrid.htm#634"><CODE>procedure <B>DrawCell</B>(ACol, ARow: Longint; ARect: TRect; AState: TGridDrawState); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDrawGrid.htm#635"><CODE>function <B>GetEditMask</B>(ACol, ARow: Longint): WideString; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDrawGrid.htm#636"><CODE>function <B>GetEditText</B>(ACol, ARow: Longint): WideString; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDrawGrid.htm#637"><CODE>procedure <B>MouseToCell</B>(X, Y: Integer; var ACol, ARow: Longint);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDrawGrid.htm#638"><CODE>procedure <B>RowMoved</B>(FromIndex, ToIndex: Longint); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDrawGrid.htm#639"><CODE>function <B>SelectCell</B>(ACol, ARow: Longint): Boolean; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDrawGrid.htm#640"><CODE>procedure <B>SetEditText</B>(ACol, ARow: Longint; const Value: WideString); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDrawGrid.htm#641"><CODE>procedure <B>TopLeftChanged</B>; override;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="632"><TD><CODE>function <B>CellRect</B>(ACol, ARow: Longint): TRect;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="633"><TD><CODE>procedure <B>ColumnMoved</B>(FromIndex, ToIndex: Longint); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="634"><TD><CODE>procedure <B>DrawCell</B>(ACol, ARow: Longint; ARect: TRect; AState: <A href="Qs0Grids.htm#609">TGridDrawState</A>); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="635"><TD><CODE>function <B>GetEditMask</B>(ACol, ARow: Longint): WideString; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="636"><TD><CODE>function <B>GetEditText</B>(ACol, ARow: Longint): WideString; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="637"><TD><CODE>procedure <B>MouseToCell</B>(X, Y: Integer; var ACol, ARow: Longint);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="638"><TD><CODE>procedure <B>RowMoved</B>(FromIndex, ToIndex: Longint); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="639"><TD><CODE>function <B>SelectCell</B>(ACol, ARow: Longint): Boolean; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="640"><TD><CODE>procedure <B>SetEditText</B>(ACol, ARow: Longint; const Value: WideString); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="641"><TD><CODE>procedure <B>TopLeftChanged</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomDrawGrid.htm#642"><B>OnColumnMoved</B>: TMovedEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomDrawGrid.htm#643"><B>OnDrawCell</B>: TDrawCellEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomDrawGrid.htm#644"><B>OnGetEditMask</B>: TGetEditEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomDrawGrid.htm#645"><B>OnGetEditText</B>: TGetEditEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomDrawGrid.htm#646"><B>OnRowMoved</B>: TMovedEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomDrawGrid.htm#647"><B>OnSelectCell</B>: TSelectCellEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomDrawGrid.htm#648"><B>OnSetEditText</B>: TSetEditEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomDrawGrid.htm#649"><B>OnTopLeftChanged</B>: TNotifyEvent;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="642"><CODE><B>OnColumnMoved</B>: <A href="Qs0Grids.htm#616">TMovedEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="643"><CODE><B>OnDrawCell</B>: <A href="Qs0Grids.htm#603">TDrawCellEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="644"><CODE><B>OnGetEditMask</B>: <A href="Qs0Grids.htm#604">TGetEditEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="645"><CODE><B>OnGetEditText</B>: <A href="Qs0Grids.htm#604">TGetEditEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="646"><CODE><B>OnRowMoved</B>: <A href="Qs0Grids.htm#616">TMovedEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="647"><CODE><B>OnSelectCell</B>: <A href="Qs0Grids.htm#617">TSelectCellEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="648"><CODE><B>OnSetEditText</B>: <A href="Qs0Grids.htm#618">TSetEditEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="649"><CODE><B>OnTopLeftChanged</B>: TNotifyEvent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:37</EM>
+</BODY>
+</HTML>

@@ -1,0 +1,39 @@
+package s0p_VDrawer50;
+
+{$R *.RES}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '<syrinx VCL 07> Drawer'}
+{$IMPLICITBUILD OFF}
+
+requires
+  Vcl50,
+  s0p_Core50,
+  s0p_VCore50,
+  s0p_VCtrl50;
+
+contains
+  s0ControlDrawer in 's0ControlDrawer.pas',
+  s0ControlImage in 's0ControlImage.pas',
+  s0RegDrawer in 's0RegDrawer.pas';
+
+end.

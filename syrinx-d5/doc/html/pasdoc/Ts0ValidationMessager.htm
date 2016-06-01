@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0ValidationMsg: Class Ts0ValidationMessager</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="4630"><H1>Class Ts0ValidationMessager</H1>
+</A><H2>Unit</H2>
+<A href="s0ValidationMsg.htm">s0ValidationMsg</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0ValidationMessager = class(TComponent)</CODE></P><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ValidationMessager.htm#4631"><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ValidationMessager.htm#4632"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ValidationMessager.htm#4633"><CODE>function <B>AddMsg</B>(AMsg: Ts0ValidationMsg): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ValidationMessager.htm#4634"><CODE>procedure <B>ClearMsg</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ValidationMessager.htm#4635"><CODE>procedure <B>DeleteMsg</B>(AIndex: Integer);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ValidationMessager.htm#4636"><CODE>function <B>NewMsg</B>(AMsg: string; AKind: K0ValidationResult = k0vrInfomation): Ts0ValidationMsg;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ValidationMessager.htm#4637"><CODE>function <B>RemoveMsg</B>(AMsg: Ts0ValidationMsg): Integer;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4631"><TD><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4632"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4633"><TD><CODE>function <B>AddMsg</B>(AMsg: <A href="Ts0ValidationMsg.htm">Ts0ValidationMsg</A>): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4634"><TD><CODE>procedure <B>ClearMsg</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4635"><TD><CODE>procedure <B>DeleteMsg</B>(AIndex: Integer);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4636"><TD><CODE>function <B>NewMsg</B>(AMsg: string; AKind: <A href="s0ValidationMsg.htm#4624">K0ValidationResult</A> = k0vrInfomation): <A href="Ts0ValidationMsg.htm">Ts0ValidationMsg</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4637"><TD><CODE>function <B>RemoveMsg</B>(AMsg: <A href="Ts0ValidationMsg.htm">Ts0ValidationMsg</A>): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0ValidationMessager.htm#4638"><B>ItemCount</B>: Integer;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0ValidationMessager.htm#4639"><B>Items</B>[const Index: Integer]: Ts0ValidationMsg;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0ValidationMessager.htm#4640"><B>MsgList</B>: TObjectList;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ValidationMessager.htm#4641"><B>OnAddMsg</B>: K0ValidationMsgEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ValidationMessager.htm#4642"><B>OnClear</B>: TNotifyEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ValidationMessager.htm#4643"><B>OnRemoveMsg</B>: K0ValidationMsgEvent;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4638"><CODE><B>ItemCount</B>: Integer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4639"><CODE><B>Items</B>[const Index: Integer]: <A href="Ts0ValidationMsg.htm">Ts0ValidationMsg</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4640"><CODE><B>MsgList</B>: TObjectList;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4641"><CODE><B>OnAddMsg</B>: <A href="s0ValidationMsg.htm#4623">K0ValidationMsgEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4642"><CODE><B>OnClear</B>: TNotifyEvent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4643"><CODE><B>OnRemoveMsg</B>: <A href="s0ValidationMsg.htm#4623">K0ValidationMsgEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:44</EM>
+</BODY>
+</HTML>

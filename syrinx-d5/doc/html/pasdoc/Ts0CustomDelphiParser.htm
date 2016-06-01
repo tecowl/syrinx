@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0DelphiParser: Class Ts0CustomDelphiParser</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="2386"><H1>Class Ts0CustomDelphiParser</H1>
+</A><H2>Unit</H2>
+<A href="s0DelphiParser.htm">s0DelphiParser</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0CustomDelphiParser = class(TObject)</CODE></P><H2>Fields</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><A name="2387"><TD>FBufEnd</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="2388"><TD>FBuffer</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="2389"><TD>FBufferSize</TD>
+<TD>procedure HexToBinary(Stream: TStream); function SourcePos: Longint; function TokenComponentIdent: String;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="2390"><TD>FBufPtr</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="2391"><TD>FFloatType</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="2392"><TD>FOrigin</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="2393"><TD>FSaveChar</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="2394"><TD>FSourceEnd</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="2395"><TD>FSourceLine</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="2396"><TD>FSourcePtr</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="2397"><TD>FStringPtr</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="2398"><TD>FTokenPtr</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="2399"><TD>FWideStr</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+</TABLE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDelphiParser.htm#2400"><CODE>constructor <B>Create</B>(Stream: TStream); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDelphiParser.htm#2401"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDelphiParser.htm#2402"><CODE>function <B>NextToken</B>: Char; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDelphiParser.htm#2403"><CODE>procedure <B>ReadBuffer</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDelphiParser.htm#2404"><CODE>procedure <B>SkipBlanks</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDelphiParser.htm#2405"><CODE>function <B>TokenFloat</B>: Extended;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDelphiParser.htm#2406"><CODE>function <B>TokenInt</B>: Longint;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDelphiParser.htm#2407"><CODE>function <B>TokenString</B>: string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDelphiParser.htm#2408"><CODE>function <B>TokenSymbolIs</B>(const S: string): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDelphiParser.htm#2409"><CODE>function <B>TokenWideString</B>: WideString;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2400"><TD><CODE>constructor <B>Create</B>(Stream: TStream); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2401"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2402"><TD><CODE>function <B>NextToken</B>: Char; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2403"><TD><CODE>procedure <B>ReadBuffer</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2404"><TD><CODE>procedure <B>SkipBlanks</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2405"><TD><CODE>function <B>TokenFloat</B>: Extended;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2406"><TD><CODE>function <B>TokenInt</B>: Longint;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2407"><TD><CODE>function <B>TokenString</B>: string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2408"><TD><CODE>function <B>TokenSymbolIs</B>(const S: string): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2409"><TD><CODE>function <B>TokenWideString</B>: WideString;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomDelphiParser.htm#2410"><B>FloatType</B>: Char;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomDelphiParser.htm#2411"><B>Source</B>: TStream;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomDelphiParser.htm#2412"><B>SourceLine</B>: Integer;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomDelphiParser.htm#2413"><B>Token</B>: Char;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2410"><CODE><B>FloatType</B>: Char;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2411"><CODE><B>Source</B>: TStream;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2412"><CODE><B>SourceLine</B>: Integer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2413"><CODE><B>Token</B>: Char;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:40</EM>
+</BODY>
+</HTML>

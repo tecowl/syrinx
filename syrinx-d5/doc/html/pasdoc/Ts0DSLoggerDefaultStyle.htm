@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0DSLogger: Class Ts0DSLoggerDefaultStyle</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="2534"><H1>Class Ts0DSLoggerDefaultStyle</H1>
+</A><H2>Unit</H2>
+<A href="s0DSLogger.htm">s0DSLogger</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0DSLoggerDefaultStyle = class(<CODE><A href="Ts0DSLoggerStyle.htm">Ts0DSLoggerStyle</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0DSLoggerStyle.htm">Ts0DSLoggerStyle</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DSLoggerDefaultStyle.htm#2535"><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DSLoggerDefaultStyle.htm#2536"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DSLoggerDefaultStyle.htm#2537"><CODE>class function <B>GetStyleName</B>: string; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DSLoggerDefaultStyle.htm#2538"><CODE>procedure <B>WriteALog</B>(Dest: TStream; ALog: Ts0LogObj); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DSLoggerDefaultStyle.htm#2539"><CODE>procedure <B>WriteFooter</B>(Dest: TStrings);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DSLoggerDefaultStyle.htm#2540"><CODE>procedure <B>WriteHeader</B>(Dest: TStrings);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DSLoggerDefaultStyle.htm#2541"><CODE>procedure <B>WriteProperties</B>(Dest: TStrings; ADataSet: TDataSet);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DSLoggerDefaultStyle.htm#2542"><CODE>procedure <B>WriteRecordCount</B>(Dest: TStrings; ACount: Integer);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DSLoggerDefaultStyle.htm#2543"><CODE>procedure <B>WriteTime</B>(Dest: TStrings; ALog: Ts0LogObj);</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2535"><TD><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2536"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2537"><TD><CODE>class function <B>GetStyleName</B>: string; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2538"><TD><CODE>procedure <B>WriteALog</B>(Dest: TStream; ALog: <A href="Ts0LogObj.htm">Ts0LogObj</A>); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2539"><TD><CODE>procedure <B>WriteFooter</B>(Dest: TStrings);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2540"><TD><CODE>procedure <B>WriteHeader</B>(Dest: TStrings);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2541"><TD><CODE>procedure <B>WriteProperties</B>(Dest: TStrings; ADataSet: TDataSet);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2542"><TD><CODE>procedure <B>WriteRecordCount</B>(Dest: TStrings; ACount: Integer);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2543"><TD><CODE>procedure <B>WriteTime</B>(Dest: TStrings; ALog: <A href="Ts0LogObj.htm">Ts0LogObj</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0DSLoggerDefaultStyle.htm#2544"><B>LogFooter</B>: TStrings;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0DSLoggerDefaultStyle.htm#2545"><B>LoggingProperties</B>: TStrings;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0DSLoggerDefaultStyle.htm#2546"><B>LogHeader</B>: TStrings;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0DSLoggerDefaultStyle.htm#2547"><B>Options</B>: K0LoggerDefaultStyleOptionSet;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2544"><CODE><B>LogFooter</B>: TStrings;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2545"><CODE><B>LoggingProperties</B>: TStrings;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2546"><CODE><B>LogHeader</B>: TStrings;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2547"><CODE><B>Options</B>: <A href="s0DSLogger.htm#2494">K0LoggerDefaultStyleOptionSet</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:40</EM>
+</BODY>
+</HTML>

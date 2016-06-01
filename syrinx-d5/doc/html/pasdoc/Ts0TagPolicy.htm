@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0TagPolicy: Class Ts0TagPolicy</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="4286"><H1>Class Ts0TagPolicy</H1>
+</A><H2>Unit</H2>
+<A href="s0TagPolicy.htm">s0TagPolicy</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0TagPolicy = class(TPersistent)</CODE></P><H2>Fields</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><A name="4287"><TD>FDelimInTag</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="4288"><TD>FNullElementFooter</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="4289"><TD>FParamDelim</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="4290"><TD>FPolicyName</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="4291"><TD>FTagBegin</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="4292"><TD>FTagEnd</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="4293"><TD>FTagFooters</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="4294"><TD>FTagHeaders</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="4295"><TD>FTerminateHeader</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+</TABLE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicy.htm#4296"><CODE>constructor <B>Create</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicy.htm#4297"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TagPolicy.htm#4298"><CODE>procedure <B>DoInitNullElementTagNames</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0TagPolicy.htm#4299"><CODE>procedure <B>InitNullElementTagNames</B>(ATagNames: TStrings); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicy.htm#4300"><CODE>function <B>IsDelimInTag</B>(AChar: Char): Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicy.htm#4301"><CODE>function <B>IsNullElementFooter</B>(AChar: Char): Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicy.htm#4302"><CODE>function <B>IsOneOfFooters</B>(AChar: Char): Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicy.htm#4303"><CODE>function <B>IsOneOfHeaders</B>(AChar: Char): Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicy.htm#4304"><CODE>function <B>IsOneOfNullElement</B>(ATagName: string): Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicy.htm#4305"><CODE>function <B>IsParamDelim</B>(AChar: Char): Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicy.htm#4306"><CODE>function <B>IsTagBegin</B>(AChar: Char): Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicy.htm#4307"><CODE>function <B>IsTagEnd</B>(AChar: Char): Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicy.htm#4308"><CODE>function <B>IsTerminateHeader</B>(AChar: Char): Boolean; virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4296"><TD><CODE>constructor <B>Create</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4297"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4298"><TD><CODE>procedure <B>DoInitNullElementTagNames</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4299"><TD><CODE>procedure <B>InitNullElementTagNames</B>(ATagNames: TStrings); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4300"><TD><CODE>function <B>IsDelimInTag</B>(AChar: Char): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4301"><TD><CODE>function <B>IsNullElementFooter</B>(AChar: Char): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4302"><TD><CODE>function <B>IsOneOfFooters</B>(AChar: Char): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4303"><TD><CODE>function <B>IsOneOfHeaders</B>(AChar: Char): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4304"><TD><CODE>function <B>IsOneOfNullElement</B>(ATagName: string): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4305"><TD><CODE>function <B>IsParamDelim</B>(AChar: Char): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4306"><TD><CODE>function <B>IsTagBegin</B>(AChar: Char): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4307"><TD><CODE>function <B>IsTagEnd</B>(AChar: Char): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4308"><TD><CODE>function <B>IsTerminateHeader</B>(AChar: Char): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TagPolicy.htm#4309"><B>DelimInTag</B>: Char;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TagPolicy.htm#4310"><B>DelimsInTag</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TagPolicy.htm#4311"><B>NullElementFooter</B>: Char;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TagPolicy.htm#4312"><B>NullElementTagNames</B>: TStrings;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TagPolicy.htm#4313"><B>ParamDelim</B>: Char;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TagPolicy.htm#4314"><B>ParamDelims</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TagPolicy.htm#4315"><B>PolicyName</B>: K0TagPolicyName;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TagPolicy.htm#4316"><B>TagBegin</B>: Char;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TagPolicy.htm#4317"><B>TagEnd</B>: Char;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TagPolicy.htm#4318"><B>TagFooters</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TagPolicy.htm#4319"><B>TagHeaders</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0TagPolicy.htm#4320"><B>TerminateHeader</B>: Char;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4309"><CODE><B>DelimInTag</B>: Char;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4310"><CODE><B>DelimsInTag</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4311"><CODE><B>NullElementFooter</B>: Char;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4312"><CODE><B>NullElementTagNames</B>: TStrings;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4313"><CODE><B>ParamDelim</B>: Char;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4314"><CODE><B>ParamDelims</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4315"><CODE><B>PolicyName</B>: <A href="s0TagPolicy.htm#4276">K0TagPolicyName</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4316"><CODE><B>TagBegin</B>: Char;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4317"><CODE><B>TagEnd</B>: Char;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4318"><CODE><B>TagFooters</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4319"><CODE><B>TagHeaders</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4320"><CODE><B>TerminateHeader</B>: Char;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:43</EM>
+</BODY>
+</HTML>

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0FileCollections: Class Ts0FileColFiles</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="3005"><H1>Class Ts0FileColFiles</H1>
+</A><H2>Unit</H2>
+<A href="s0FileCollections.htm">s0FileCollections</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0FileColFiles = class(<CODE><A href="Ts0FileColItems.htm">Ts0FileColItems</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0FileColItems.htm">Ts0FileColItems</A></CODE>&nbsp;&gt; <CODE><A href="Ts0Collection.htm">Ts0Collection</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0FileColFiles.htm#3006"><CODE>function <B>AddFile</B>(AFileName: string): Ts0FileColFile;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0FileColFiles.htm#3007"><CODE>function <B>AddFileWithDir</B>(ADir: Ts0FileColDir; AFileName: string): Ts0FileColFile;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0FileColFiles.htm#3008"><CODE>function <B>FindFile</B>(AFileName: string): Ts0FileColFile;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0FileColFiles.htm#3009"><CODE>function <B>FindFileOfDir</B>(ADir: Ts0FileColDir; AFileName: string): Ts0FileColFile;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0FileColFiles.htm#3010"><CODE>function <B>IndexOfName</B>(AFileName: string): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0FileColFiles.htm#3011"><CODE>procedure <B>NotifyItemRemove</B>(AItemOwner: Ts0FileColItems; AItem: Ts0FileColItem); override;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3006"><TD><CODE>function <B>AddFile</B>(AFileName: string): <A href="Ts0FileColFile.htm">Ts0FileColFile</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3007"><TD><CODE>function <B>AddFileWithDir</B>(ADir: <A href="Ts0FileColDir.htm">Ts0FileColDir</A>; AFileName: string): <A href="Ts0FileColFile.htm">Ts0FileColFile</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3008"><TD><CODE>function <B>FindFile</B>(AFileName: string): <A href="Ts0FileColFile.htm">Ts0FileColFile</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3009"><TD><CODE>function <B>FindFileOfDir</B>(ADir: <A href="Ts0FileColDir.htm">Ts0FileColDir</A>; AFileName: string): <A href="Ts0FileColFile.htm">Ts0FileColFile</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3010"><TD><CODE>function <B>IndexOfName</B>(AFileName: string): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3011"><TD><CODE>procedure <B>NotifyItemRemove</B>(AItemOwner: <A href="Ts0FileColItems.htm">Ts0FileColItems</A>; AItem: <A href="Ts0FileColItem.htm">Ts0FileColItem</A>); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0FileColFiles.htm#3012"><B>Files</B>[const Index: Integer]: Ts0FileColFile;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3012"><CODE><B>Files</B>[const Index: Integer]: <A href="Ts0FileColFile.htm">Ts0FileColFile</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:41</EM>
+</BODY>
+</HTML>

@@ -1,0 +1,3 @@
+Tc0CtrlGrid=TDRc0CtrlGrid
+Tc0CollectionGrid=TDRc0CollectionGrid
+Tc0BindGrid=TDRc0BindGrid

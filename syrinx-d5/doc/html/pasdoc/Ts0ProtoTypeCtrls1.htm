@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0ObjCtrlBuilder: Class Ts0ProtoTypeCtrls</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="3609"><H1>Class Ts0ProtoTypeCtrls</H1>
+</A><H2>Unit</H2>
+<A href="s0ObjCtrlBuilder.htm">s0ObjCtrlBuilder</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0ProtoTypeCtrls = class(<CODE><A href="Ts0PropertyProtoTypes.htm">Ts0PropertyProtoTypes</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0PropertyProtoTypes.htm">Ts0PropertyProtoTypes</A></CODE>&nbsp;&gt; <CODE><A href="Ts0Collection.htm">Ts0Collection</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ProtoTypeCtrls1.htm#3610"><CODE>constructor <B>Create</B>(AOwner: TPersistent; AItemClass: Ts0CollectionItemClass); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ProtoTypeCtrls1.htm#3611"><CODE>procedure <B>Assign</B>(Source: TPersistent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ProtoTypeCtrls1.htm#3612"><CODE>function <B>FindPropCtrls</B>(const APropName: string): Ts0ProtoTypeCtrl;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ProtoTypeCtrls1.htm#3613"><CODE>function <B>GetCtrlOfType</B>: Ts0CtrlOfType; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ProtoTypeCtrls1.htm#3614"><CODE>function <B>GetOriginal</B>: Ts0PropertyProtoTypes; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ProtoTypeCtrls1.htm#3615"><CODE>function <B>IndexOfProp</B>(APropName: string): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ProtoTypeCtrls1.htm#3616"><CODE>procedure <B>NotifyOriginalUpdate</B>(AItem: Ts0PropertyProtoType); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ProtoTypeCtrls1.htm#3617"><CODE>procedure <B>SetOriginal</B>(const Value: Ts0PropertyProtoTypes); override;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3610"><TD><CODE>constructor <B>Create</B>(AOwner: TPersistent; AItemClass: <A href="s0Collection.htm#1796">Ts0CollectionItemClass</A>); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3611"><TD><CODE>procedure <B>Assign</B>(Source: TPersistent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3612"><TD><CODE>function <B>FindPropCtrls</B>(const APropName: string): <A href="Ts0ProtoTypeCtrl1.htm">Ts0ProtoTypeCtrl</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3613"><TD><CODE>function <B>GetCtrlOfType</B>: <A href="Ts0CtrlOfType.htm">Ts0CtrlOfType</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3614"><TD><CODE>function <B>GetOriginal</B>: <A href="Ts0PropertyProtoTypes.htm">Ts0PropertyProtoTypes</A>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3615"><TD><CODE>function <B>IndexOfProp</B>(APropName: string): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3616"><TD><CODE>procedure <B>NotifyOriginalUpdate</B>(AItem: <A href="Ts0PropertyProtoType.htm">Ts0PropertyProtoType</A>); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3617"><TD><CODE>procedure <B>SetOriginal</B>(const Value: <A href="Ts0PropertyProtoTypes.htm">Ts0PropertyProtoTypes</A>); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0ProtoTypeCtrls1.htm#3618"><B>PropCtrls</B>[const Index: Integer]: Ts0ProtoTypeCtrl;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3618"><CODE><B>PropCtrls</B>[const Index: Integer]: <A href="Ts0ProtoTypeCtrl1.htm">Ts0ProtoTypeCtrl</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:42</EM>
+</BODY>
+</HTML>

@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>Qs0CtrlOfType: Class Ts0CtrlOfType</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="423"><H1>Class Ts0CtrlOfType</H1>
+</A><H2>Unit</H2>
+<A href="Qs0CtrlOfType.htm">Qs0CtrlOfType</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0CtrlOfType = class(<CODE><A href="Ts0CLXPersistent.htm">Ts0CLXPersistent</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0CLXPersistent.htm">Ts0CLXPersistent</A></CODE>&nbsp;&gt; <CODE><A href="Ts0Persistent.htm">Ts0Persistent</A></CODE><H2>Fields</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><A name="424"><TD>FAllowAddItem</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+</TABLE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#425"><CODE>constructor <B>Create</B>(AOwner: TPersistent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#426"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#427"><CODE>function <B>CanAddItem</B>: Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CtrlOfType.htm#428"><CODE>function <B>DataTypeKindToCtrlClassName</B>(ADataTypeKind: K0WrappedTypeKind): string; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CtrlOfType.htm#429"><CODE>procedure <B>DoInitItems</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#430"><CODE>function <B>GetCtrlClassName</B>(ATypeName: string; ADataTypeKind: K0WrappedTypeKind): string; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#431"><CODE>function <B>GetCtrlClassNameByProto</B>(AProto: Ts0PropertyProtoType): string; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#432"><CODE>class function <B>GetDefaultClass</B>: Ts0CtrlOfTypeClass;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#433"><CODE>class procedure <B>GetRegisteredCOTs</B>(Dest: TClassList);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#434"><CODE>procedure <B>InitCtrl</B>(AProp: Ts0RTTIProp; AControl: TControl);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#435"><CODE>procedure <B>InitCtrlByProto</B>(AProto: Ts0PropertyProtoType; AControl: TControl);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#436"><CODE>procedure <B>InitItems</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CtrlOfType.htm#437"><CODE>function <B>NewItems</B>: Ts0CtrlOfTypeItems; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#438"><CODE>class procedure <B>RegisterCOT</B>(ACOT: Ts0CtrlOfTypeClass);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#439"><CODE>class procedure <B>SetDefaultClass</B>(AClass: Ts0CtrlOfTypeClass);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CtrlOfType.htm#440"><CODE>class procedure <B>UnRegisterCOT</B>(ACOT: Ts0CtrlOfTypeClass);</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="425"><TD><CODE>constructor <B>Create</B>(AOwner: TPersistent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="426"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="427"><TD><CODE>function <B>CanAddItem</B>: Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="428"><TD><CODE>function <B>DataTypeKindToCtrlClassName</B>(ADataTypeKind: <A href="s0TypInfoWrapper.htm#4475">K0WrappedTypeKind</A>): string; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="429"><TD><CODE>procedure <B>DoInitItems</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="430"><TD><CODE>function <B>GetCtrlClassName</B>(ATypeName: string; ADataTypeKind: <A href="s0TypInfoWrapper.htm#4475">K0WrappedTypeKind</A>): string; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="431"><TD><CODE>function <B>GetCtrlClassNameByProto</B>(AProto: <A href="Ts0PropertyProtoType.htm">Ts0PropertyProtoType</A>): string; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="432"><TD><CODE>class function <B>GetDefaultClass</B>: <A href="Qs0CtrlOfType.htm#418">Ts0CtrlOfTypeClass</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="433"><TD><CODE>class procedure <B>GetRegisteredCOTs</B>(Dest: TClassList);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="434"><TD><CODE>procedure <B>InitCtrl</B>(AProp: <A href="Ts0RTTIProp.htm">Ts0RTTIProp</A>; AControl: TControl);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="435"><TD><CODE>procedure <B>InitCtrlByProto</B>(AProto: <A href="Ts0PropertyProtoType.htm">Ts0PropertyProtoType</A>; AControl: TControl);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="436"><TD><CODE>procedure <B>InitItems</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="437"><TD><CODE>function <B>NewItems</B>: <A href="Ts0CtrlOfTypeItems.htm">Ts0CtrlOfTypeItems</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="438"><TD><CODE>class procedure <B>RegisterCOT</B>(ACOT: <A href="Qs0CtrlOfType.htm#418">Ts0CtrlOfTypeClass</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="439"><TD><CODE>class procedure <B>SetDefaultClass</B>(AClass: <A href="Qs0CtrlOfType.htm#418">Ts0CtrlOfTypeClass</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="440"><TD><CODE>class procedure <B>UnRegisterCOT</B>(ACOT: <A href="Qs0CtrlOfType.htm#418">Ts0CtrlOfTypeClass</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CtrlOfType.htm#441"><B>AllowAddItem</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0CtrlOfType.htm#442"><B>CtrlClassNameOfEnum</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0CtrlOfType.htm#443"><B>CtrlClassNameOfSet</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CtrlOfType.htm#444"><B>Items</B>: Ts0CtrlOfTypeItems;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="441"><CODE><B>AllowAddItem</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="442"><CODE><B>CtrlClassNameOfEnum</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="443"><CODE><B>CtrlClassNameOfSet</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="444"><CODE><B>Items</B>: <A href="Ts0CtrlOfTypeItems.htm">Ts0CtrlOfTypeItems</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:36</EM>
+</BODY>
+</HTML>

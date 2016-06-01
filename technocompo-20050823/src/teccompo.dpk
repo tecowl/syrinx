@@ -1,0 +1,115 @@
+package teccompo;
+
+{$R *.RES}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '[Techno App Component]'}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl50,
+  s0p_VBasicCtrl50,
+  s0p_VGrid50,
+  Vclx50,
+  s0p_VCtrl50,
+  Vcldb50,
+  JvDBD5R,
+  s0p_Additional50,
+  s0p_Core50,
+  TeeDB50,
+  Tee50,
+  TechnoD5,
+  s0p_DB50;
+
+contains
+  tec1Label in 'units\tec1Label.pas',
+  tec1Edit in 'units\tec1Edit.pas',
+  tec1Memo in 'units\tec1Memo.pas',
+  tec1Button in 'units\tec1Button.pas',
+  tec1CheckBox in 'units\tec1CheckBox.pas',
+  tec1ListBox in 'units\tec1ListBox.pas',
+  tec1ComboBox in 'units\tec1ComboBox.pas',
+  tec1GroupBox in 'units\tec1GroupBox.pas',
+  tec1RadioGroup in 'units\tec1RadioGroup.pas',
+  tec1Panel in 'units\tec1Panel.pas',
+  tec1StringGrid in 'units\tec1StringGrid.pas',
+  tec1CheckListBox in 'units\tec1CheckListBox.pas',
+  tec1Splitter in 'units\tec1Splitter.pas',
+  tec1StaticText in 'units\tec1StaticText.pas',
+  tec1RadioButton in 'units\tec1RadioButton.pas',
+  tec1DateEdit in 'units\tec1DateEdit.pas',
+  tec1DigitEdit in 'units\tec1DigitEdit.pas',
+  tec1DBGrid in 'units\tec1DBGrid.pas',
+  tec1IniPropStocker in 'units\tec1IniPropStocker.pas',
+  tec1FormEventPublisher in 'units\tec1FormEventPublisher.pas',
+  f1TecCommonForm in 'forms\f1TecCommonForm.pas' {f1tecCommon},
+  tec1Menu in 'units\tec1Menu.pas',
+  tec1PopupMenu in 'units\tec1PopupMenu.pas',
+  tec1ScrollBar in 'units\tec1ScrollBar.pas',
+  tec1Animate in 'units\tec1Animate.pas',
+  tec1Bevel in 'units\tec1Bevel.pas',
+  tec1BitBtn in 'units\tec1BitBtn.pas',
+  tec1ControlBar in 'units\tec1ControlBar.pas',
+  tec1CoolBar in 'units\tec1CoolBar.pas',
+  tec1DateTimePicker in 'units\tec1DateTimePicker.pas',
+  tec1DBChart in 'units\tec1DBChart.pas',
+  tec1DBCheckBox in 'units\tec1DBCheckBox.pas',
+  tec1DBComboBox in 'units\tec1DBComboBox.pas',
+  tec1DBCtrlGrid in 'units\tec1DBCtrlGrid.pas',
+  tec1DBEdit in 'units\tec1DBEdit.pas',
+  tec1DBImage in 'units\tec1DBImage.pas',
+  tec1DBListBox in 'units\tec1DBListBox.pas',
+  tec1DBLookupComboBox in 'units\tec1DBLookupComboBox.pas',
+  tec1DBLookupListBox in 'units\tec1DBLookupListBox.pas',
+  tec1DBMemo in 'units\tec1DBMemo.pas',
+  tec1DBNavigator in 'units\tec1DBNavigator.pas',
+  tec1DBRadioGroup in 'units\tec1DBRadioGroup.pas',
+  tec1DBRichEdit in 'units\tec1DBRichEdit.pas',
+  tec1DBText in 'units\tec1DBText.pas',
+  tec1DrawGrid in 'units\tec1DrawGrid.pas',
+  tec1HeaderControl in 'units\tec1HeaderControl.pas',
+  tec1HotKey in 'units\tec1HotKey.pas',
+  tec1Image in 'units\tec1Image.pas',
+  tec1ListView in 'units\tec1ListView.pas',
+  tec1MaskEdit in 'units\tec1MaskEdit.pas',
+  tec1MonthCalendar in 'units\tec1MonthCalendar.pas',
+  tec1PageScroller in 'units\tec1PageScroller.pas',
+  tec1ProgressBar in 'units\tec1ProgressBar.pas',
+  tec1RichEdit in 'units\tec1RichEdit.pas',
+  tec1ScrollBox in 'units\tec1ScrollBox.pas',
+  tec1Shape in 'units\tec1Shape.pas',
+  tec1SpeedButton in 'units\tec1SpeedButton.pas',
+  tec1StatusBar in 'units\tec1StatusBar.pas',
+  tec1TabControl in 'units\tec1TabControl.pas',
+  tec1ToolBar in 'units\tec1ToolBar.pas',
+  tec1TrackBar in 'units\tec1TrackBar.pas',
+  tec1TreeView in 'units\tec1TreeView.pas',
+  tec1UpDown in 'units\tec1UpDown.pas',
+  tec1TecDBSelCombo in 'units\tec1TecDBSelCombo.pas',
+  tec1Tec4SelCombo in 'units\tec1Tec4SelCombo.pas',
+  tec1xNum in 'units\tec1xNum.pas',
+  tec1TecNum in 'units\tec1TecNum.pas',
+  tec1xDate in 'units\tec1xDate.pas',
+  tec1xTime in 'units\tec1xTime.pas',
+  tec1FocusColor in 'units\tec1FocusColor.pas';
+
+end.

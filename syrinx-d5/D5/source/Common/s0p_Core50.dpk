@@ -1,0 +1,79 @@
+package s0p_Core50;
+
+{$R *.RES}
+{$R 's0User.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '<syrinx 00> Core Classes'}
+{$IMPLICITBUILD OFF}
+
+requires
+  Vcl50,
+  Vclx50;
+
+contains
+  s0ValidationMsg in 's0ValidationMsg.pas',
+  s0ComponentHelper in 's0ComponentHelper.pas',
+  s0ComponentVisitor in 's0ComponentVisitor.pas',
+  s0CType in 's0CType.pas',
+  s0DataAccessor in 's0DataAccessor.pas',
+  s0DateHelper in 's0DateHelper.pas',
+  s0DateTime in 's0DateTime.pas',
+  s0Exception in 's0Exception.pas',
+  s0ExStringList in 's0ExStringList.pas',
+  s0File in 's0File.pas',
+  s0FileBuffer in 's0FileBuffer.pas',
+  s0FileStream in 's0FileStream.pas',
+  s0Iterator in 's0Iterator.pas',
+  s0IteratorMatrix in 's0IteratorMatrix.pas',
+  s0MaskHelper in 's0MaskHelper.pas',
+  s0Matrix in 's0Matrix.pas',
+  s0ObjCSVReader in 's0ObjCSVReader.pas',
+  s0ObjCSVWriter in 's0ObjCSVWriter.pas',
+  s0ObjectHelper in 's0ObjectHelper.pas',
+  s0ObjIndexMap in 's0ObjIndexMap.pas',
+  s0Observer in 's0Observer.pas',
+  s0Persistent in 's0Persistent.pas',
+  s0SingletonKeeper in 's0SingletonKeeper.pas',
+  s0StreamHelper in 's0StreamHelper.pas',
+  s0StringHelper in 's0StringHelper.pas',
+  s0StringReplacer in 's0StringReplacer.pas',
+  s0StringsHelper in 's0StringsHelper.pas',
+  s0StringValidater in 's0StringValidater.pas',
+  s0TypeConvertor in 's0TypeConvertor.pas',
+  s0TypInfoWrapper in 's0TypInfoWrapper.pas',
+  s0Collection in 's0Collection.pas',
+  s0EnumCollection in 's0EnumCollection.pas',
+  s0PropertyProtoType in 's0PropertyProtoType.pas',
+  s0CommonTypes in 's0CommonTypes.pas',
+  s0FileHelper in 's0FileHelper.pas',
+  s0FileNameHelper in 's0FileNameHelper.pas',
+  s0ComponentEventWrapper in 's0ComponentEventWrapper.pas',
+  s0RegCore in 's0RegCore.pas',
+  s0StringsObjFiler in 's0StringsObjFiler.pas',
+  s0Logger in 's0Logger.pas',
+  s0Application in 's0Application.pas',
+  s0User in 's0User.pas',
+  s0Bounds in 's0Bounds.pas',
+  s0Classes in 's0Classes.pas';
+
+end.

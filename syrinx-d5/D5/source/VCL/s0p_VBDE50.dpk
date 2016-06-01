@@ -1,0 +1,46 @@
+package s0p_VBDE50;
+
+{$R *.RES}
+{$R 's0UniqueID.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '<syrinx VCL 04> BDE Components'}
+{$IMPLICITBUILD OFF}
+
+requires
+  Vcl50,
+  Vcldb50,
+  Vclbde50,
+  s0p_Core50,
+  s0p_DB50,
+  s0p_VCore50;
+
+contains
+  s0DBHelper in 's0DBHelper.pas',
+  s0StoredProc in 's0StoredProc.pas',
+  s0Query in 's0Query.pas',
+  s0Database in 's0Database.pas',
+  s0Table in 's0Table.pas',
+  s0UniqueID in 's0UniqueID.pas',
+  s0RegBDE in 's0RegBDE.pas';
+
+end.

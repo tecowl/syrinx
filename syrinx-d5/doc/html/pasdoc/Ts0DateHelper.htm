@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0DateHelper: Class Ts0DateHelper</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="2210"><H1>Class Ts0DateHelper</H1>
+</A><H2>Unit</H2>
+<A href="s0DateHelper.htm">s0DateHelper</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0DateHelper = class</CODE></P><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2211"><CODE>class function <B>CheckStr8Format</B>(AStr: string): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2212"><CODE>class function <B>DateToKanjiStr</B>(ADate: TDateTime): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2213"><CODE>class function <B>DateToStr8</B>(ADate: TDateTime): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2214"><CODE>class function <B>DayCountOfMonth</B>(const yy, mm: Word): Word;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2215"><CODE>class function <B>GetBeginDate</B>(aEra: K0JapaneseEra): TDateTime;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2216"><CODE>class function <B>GetJapaneseEra</B>(ADate: TDateTime): K0JapaneseEra;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2217"><CODE>class function <B>GetJPEraFromKanji</B>(AKanjiStr: string): K0JapaneseEra;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2218"><CODE>class function <B>GetJPEraKanji</B>(AJPEra: K0JapaneseEra): String;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2219"><CODE>class function <B>GetLastYaer</B>(aEra: K0JapaneseEra): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2220"><CODE>class function <B>IncDay</B>(ADate: TDateTime; ANumberOfDay: Integer): TDateTime;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2221"><CODE>class function <B>IncMonth</B>(ADate: TDateTime; ANumberOfMonth: Integer): TDateTime;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2222"><CODE>class function <B>IncYear</B>(ADate: TDateTime; ANumberOfYear: Integer): TDateTime;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2223"><CODE>class function <B>KanjiStrToDate</B>(AStr: string): TDateTime;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2224"><CODE>class function <B>Str8ToDate</B>(Date8: string): TDateTime;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2225"><CODE>class function <B>Str8ToDateDef</B>(Date8: string; ADef: TDateTime): TDateTime;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2226"><CODE>class function <B>ToChristianEra</B>(AEra: K0JapaneseEra; jy, m, d: Word): TDateTime;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DateHelper.htm#2227"><CODE>class procedure <B>ToJapaneseEra</B>(ADate: TDateTime; var AEra: K0JapaneseEra; var jy, m, d: Word);</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2211"><TD><CODE>class function <B>CheckStr8Format</B>(AStr: string): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2212"><TD><CODE>class function <B>DateToKanjiStr</B>(ADate: TDateTime): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2213"><TD><CODE>class function <B>DateToStr8</B>(ADate: TDateTime): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2214"><TD><CODE>class function <B>DayCountOfMonth</B>(const yy, mm: Word): Word;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2215"><TD><CODE>class function <B>GetBeginDate</B>(aEra: <A href="s0DateHelper.htm#2205">K0JapaneseEra</A>): TDateTime;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2216"><TD><CODE>class function <B>GetJapaneseEra</B>(ADate: TDateTime): <A href="s0DateHelper.htm#2205">K0JapaneseEra</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2217"><TD><CODE>class function <B>GetJPEraFromKanji</B>(AKanjiStr: string): <A href="s0DateHelper.htm#2205">K0JapaneseEra</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2218"><TD><CODE>class function <B>GetJPEraKanji</B>(AJPEra: <A href="s0DateHelper.htm#2205">K0JapaneseEra</A>): String;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2219"><TD><CODE>class function <B>GetLastYaer</B>(aEra: <A href="s0DateHelper.htm#2205">K0JapaneseEra</A>): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2220"><TD><CODE>class function <B>IncDay</B>(ADate: TDateTime; ANumberOfDay: Integer): TDateTime;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2221"><TD><CODE>class function <B>IncMonth</B>(ADate: TDateTime; ANumberOfMonth: Integer): TDateTime;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2222"><TD><CODE>class function <B>IncYear</B>(ADate: TDateTime; ANumberOfYear: Integer): TDateTime;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2223"><TD><CODE>class function <B>KanjiStrToDate</B>(AStr: string): TDateTime;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2224"><TD><CODE>class function <B>Str8ToDate</B>(Date8: string): TDateTime;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2225"><TD><CODE>class function <B>Str8ToDateDef</B>(Date8: string; ADef: TDateTime): TDateTime;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2226"><TD><CODE>class function <B>ToChristianEra</B>(AEra: <A href="s0DateHelper.htm#2205">K0JapaneseEra</A>; jy, m, d: Word): TDateTime;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2227"><TD><CODE>class procedure <B>ToJapaneseEra</B>(ADate: TDateTime; var AEra: <A href="s0DateHelper.htm#2205">K0JapaneseEra</A>; var jy, m, d: Word);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:39</EM>
+</BODY>
+</HTML>

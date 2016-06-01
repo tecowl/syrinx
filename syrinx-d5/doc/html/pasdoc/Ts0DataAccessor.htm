@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0DataAccessor: Class Ts0DataAccessor</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="2143"><H1>Class Ts0DataAccessor</H1>
+</A><H2>Unit</H2>
+<A href="s0DataAccessor.htm">s0DataAccessor</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0DataAccessor = class(TPersistent)</CODE></P><H2>Description</H2>
+$History: Ts0DataAccessor.htm $ * * ***************** Version 12 ***************** * User: Akima Date: 02/03/09 Time: 17:39 * Updated in $/D5/source/Common * * ***************** Version 11 ***************** * User: Akima Date: 02/02/28 Time: 23:25 * Updated in $/source/D5Integrated * 接頭辞を変更。xxSX～にした。 * * ***************** Version 10 ***************** * User: Akima Date: 02/01/10 Time: 3:20 * Updated in $/source/D5Integrated * Ts0StringsAccessor.GetAsIntegerの不具合修正 * * ***************** Version 9 ***************** * User: Akima Date: 01/12/11 Time: 21:41 * Updated in $/source/D5Integrated * * ***************** Version 8 ***************** * User: Akima Date: 01/12/10 Time: 16:15 * Updated in $/source/D5Integrated * Ts0StringsAccessor.GetAsString、Ts0StringsAccessor.SetAsStringを修正 * * ***************** Version 7 ***************** * User: Akima Date: 01/12/08 Time: 2:06 * Updated in $/source/D5Integrated * Ts0StringsAccessorを作成。 * Ts0StringsAccessorはTs0EnumCollectionを使用する。 * * ***************** Version 6 ***************** * User: Akima Date: 01/11/21 Time: 3:50 * Updated in $/source/D5Integrated * * ***************** Version 5 ***************** * User: Akima Date: 01/09/30 Time: 1:45 * Updated in $/source/D5Integrated * AsIntegerKindを廃止。 * これが必要なコントロールのAccessorはそのクラス用に独自にプロパティを * 作成することにした。だっ・Auml;普通のコントロールでは使わないんだもん。 * * ***************** Version 4 ***************** * User: Akima Date: 01/08/16 Time: 17:31 * Updated in $/source/D5/p0core * AsBoolean,AsDateTime,AsFloatプロパティを追加 * Ts0NullDataAccessor（Null Objectパターン）を追加 * * ***************** Version 3 ***************** * User: Akima Date: 01/08/08 Time: 15:30 * Updated in $/source/p0common * HeaderDelimiterプロパティを追加。 * 派生クラスで使えるメソッドを追加。 * * ***************** Version 2 ***************** * User: Akima Date: 01/08/07 Time: 22:31 * Updated in $/source/p0common * 例外クラスの名前を変更 * * ***************** Version 1 ***************** * User: Akima Date: 01/08/07 Time: 21:55 * Created in $/source/p0common * 新規作成<H2>Methods</H2>
+<p></p>
+<p>*****************  Version 1  *****************</p>
+<p>User: Akima        Date: 02/03/13   Time: 13:42</p>
+<p>Created in $/doc/html/pasdoc</p>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0DataAccessor.htm#2144"><CODE>constructor <B>Create</B>(AOwner: TComponent); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2145"><CODE>function <B>GetAsBoolean</B>: Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2146"><CODE>function <B>GetAsDateTime</B>: TDateTime; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2147"><CODE>function <B>GetAsFloat</B>: Double; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2148"><CODE>function <B>GetAsInteger</B>: Integer; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2149"><CODE>function <B>GetAsString</B>: String; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2150"><CODE>function <B>GetHeader</B>: string; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2151"><CODE>function <B>GetHeaderOfText</B>(AText: string): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2152"><CODE>function <B>IndexOfHeader</B>(AList: TStrings; AHeader: String): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2153"><CODE>function <B>IndexOfHeaderAsInt</B>(AList: TStrings; AHeader: Integer): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2154"><CODE>procedure <B>SetAsBoolean</B>(const Value: Boolean); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2155"><CODE>procedure <B>SetAsDateTime</B>(const Value: TDateTime); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2156"><CODE>procedure <B>SetAsFloat</B>(const Value: Double); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2157"><CODE>procedure <B>SetAsInteger</B>(const Value: Integer); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2158"><CODE>procedure <B>SetAsString</B>(const Value: String); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0DataAccessor.htm#2159"><CODE>procedure <B>SetHeader</B>(const Value: string); virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2144"><TD><CODE>constructor <B>Create</B>(AOwner: TComponent); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2145"><TD><CODE>function <B>GetAsBoolean</B>: Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2146"><TD><CODE>function <B>GetAsDateTime</B>: TDateTime; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2147"><TD><CODE>function <B>GetAsFloat</B>: Double; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2148"><TD><CODE>function <B>GetAsInteger</B>: Integer; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2149"><TD><CODE>function <B>GetAsString</B>: String; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2150"><TD><CODE>function <B>GetHeader</B>: string; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2151"><TD><CODE>function <B>GetHeaderOfText</B>(AText: string): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2152"><TD><CODE>function <B>IndexOfHeader</B>(AList: TStrings; AHeader: String): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2153"><TD><CODE>function <B>IndexOfHeaderAsInt</B>(AList: TStrings; AHeader: Integer): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2154"><TD><CODE>procedure <B>SetAsBoolean</B>(const Value: Boolean); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2155"><TD><CODE>procedure <B>SetAsDateTime</B>(const Value: TDateTime); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2156"><TD><CODE>procedure <B>SetAsFloat</B>(const Value: Double); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2157"><TD><CODE>procedure <B>SetAsInteger</B>(const Value: Integer); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2158"><TD><CODE>procedure <B>SetAsString</B>(const Value: String); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2159"><TD><CODE>procedure <B>SetHeader</B>(const Value: string); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0DataAccessor.htm#2160"><B>AsBoolean</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0DataAccessor.htm#2161"><B>AsDateTime</B>: TDateTime;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0DataAccessor.htm#2162"><B>AsFloat</B>: Double;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0DataAccessor.htm#2163"><B>AsInteger</B>: Integer;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0DataAccessor.htm#2164"><B>AsString</B>: String;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0DataAccessor.htm#2165"><B>Header</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0DataAccessor.htm#2166"><B>HeaderDelimiter</B>: Char;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0DataAccessor.htm#2167"><B>Owner</B>: TComponent;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2160"><CODE><B>AsBoolean</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2161"><CODE><B>AsDateTime</B>: TDateTime;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2162"><CODE><B>AsFloat</B>: Double;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2163"><CODE><B>AsInteger</B>: Integer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2164"><CODE><B>AsString</B>: String;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2165"><CODE><B>Header</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2166"><CODE><B>HeaderDelimiter</B>: Char;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2167"><CODE><B>Owner</B>: TComponent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:39</EM>
+</BODY>
+</HTML>

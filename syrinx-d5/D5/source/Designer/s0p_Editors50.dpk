@@ -1,0 +1,78 @@
+package s0p_Editors50;
+
+{$R *.RES}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '<syrinx component & property editors>'}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl50,
+  Vclx50,
+  Vcldb50,
+  s0p_Core50,
+  s0p_Additional50,
+  s0p_Entity50,
+  s0p_DB50,
+  s0p_EntityDB50,
+  s0p_VCtrl50,
+  s0p_VBasicCtrl50,
+  s0p_VGrid50,
+  s0p_VDrawer50,
+  s0p_VUnified50;
+
+contains
+  s0ce_Component in 's0ce_Component.pas',
+  s0ce_Control in 's0ce_Control.pas',
+  s0ce_DBEntityManager in 's0ce_DBEntityManager.pas',
+  s0ce_DSLogger in 's0ce_DSLogger.pas',
+  s0ce_Grids in 's0ce_Grids.pas',
+  s0ce_ModeController in 's0ce_ModeController.pas',
+  s0ce_ObjCtrlBridge in 's0ce_ObjCtrlBridge.pas',
+  s0ce_ObjPropStocker in 's0ce_ObjPropStocker.pas',
+  s0ce_SingleInput in 's0ce_SingleInput.pas',
+  s0DesignIntf in 's0DesignIntf.pas',
+  s0pe_CanvasDrawerName in 's0pe_CanvasDrawerName.pas',
+  s0pe_ColorIdentifier in 's0pe_ColorIdentifier.pas',
+  s0pe_EscapeSequenceString in 's0pe_EscapeSequenceString.pas',
+  s0pe_Strings in 's0pe_Strings.pas',
+  s0RegCEAdditional in 's0RegCEAdditional.pas',
+  s0RegCEComCtrl in 's0RegCEComCtrl.pas',
+  s0RegCECore in 's0RegCECore.pas',
+  s0RegCECtrl in 's0RegCECtrl.pas',
+  s0RegCEDB in 's0RegCEDB.pas',
+  s0RegCEDBCtrl in 's0RegCEDBCtrl.pas',
+  s0RegCEDBGrid in 's0RegCEDBGrid.pas',
+  s0RegCEEntity in 's0RegCEEntity.pas',
+  s0RegCEEntityCtrl in 's0RegCEEntityCtrl.pas',
+  s0RegCEExtend in 's0RegCEExtend.pas',
+  s0RegCEGrid in 's0RegCEGrid.pas',
+  s0ce_BaseGrid in 's0ce_BaseGrid.pas',
+  s0ce_fGridCommandList in 's0ce_fGridCommandList.pas' {s0ce_frmGridCommandList},
+  s0ce_fGrid_Abstract in 's0ce_fGrid_Abstract.pas' {s0ce_frmGrid_Abstract},
+  s0ce_fCompoPropFilter in 's0ce_fCompoPropFilter.pas' {s0ce_frmCompoPropFilter},
+  s0ce_fModeController in 's0ce_fModeController.pas' {s0ce_frmModeController},
+  s0ce_fCustomStringGrid in 's0ce_fCustomStringGrid.pas' {s0ce_frmCustomStringGrid},
+  s0pe_fStrings in 's0pe_fStrings.pas' {s0pe_frmStrings},
+  s0WrappedCE in 's0WrappedCE.pas';
+
+end.

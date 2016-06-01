@@ -1,0 +1,101 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = s0p_Core50.bpl s0p_Additional50.bpl s0p_Entity50.bpl s0p_DB50.bpl \
+  s0p_EntityDB50.bpl s0p_DataSnap50.bpl s0p_VCore50.bpl s0p_VCtrl50.bpl \
+  s0p_VBasicCtrl50.bpl s0p_VGrid50.bpl s0p_VBDE50.bpl s0p_VDBCtrl50.bpl \
+  s0p_VEntityCtrls50.bpl s0p_VDrawer50.bpl s0p_VUnified50.bpl s0p_VExtCtrl.bpl \
+  SyrinxSample.exe s0p_Editors50.bpl s0p_Core50Test.exe teccompo.bpl Project1.exe \
+  Project2.exe MacAddressSample.exe JvParameterListDemo.exe DEC_Samp.exe \
+  DCPdelphi5.bpl
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+s0p_Core50.bpl: Common\s0p_Core50.dpk
+  $(DCC)
+
+s0p_Additional50.bpl: Common\s0p_Additional50.dpk
+  $(DCC)
+
+s0p_Entity50.bpl: Common\s0p_Entity50.dpk
+  $(DCC)
+
+s0p_DB50.bpl: Common\s0p_DB50.dpk
+  $(DCC)
+
+s0p_DataSnap50.bpl: Common\s0p_DataSnap50.dpk
+  $(DCC)
+
+s0p_EntityDB50.bpl: Common\s0p_EntityDB50.dpk
+  $(DCC)
+
+s0p_VCore50.bpl: VCL\s0p_VCore50.dpk
+  $(DCC)
+
+s0p_VCtrl50.bpl: VCL\s0p_VCtrl50.dpk
+  $(DCC)
+
+s0p_VBasicCtrl50.bpl: VCL\s0p_VBasicCtrl50.dpk
+  $(DCC)
+
+s0p_VGrid50.bpl: VCL\s0p_VGrid50.dpk
+  $(DCC)
+
+s0p_VBDE50.bpl: VCL\s0p_VBDE50.dpk
+  $(DCC)
+
+s0p_VDBCtrl50.bpl: VCL\s0p_VDBCtrl50.dpk
+  $(DCC)
+
+s0p_VEntityCtrls50.bpl: VCL\s0p_VEntityCtrls50.dpk
+  $(DCC)
+
+s0p_VDrawer50.bpl: VCL\s0p_VDrawer50.dpk
+  $(DCC)
+
+s0p_VUnified50.bpl: VCL\s0p_VUnified50.dpk
+  $(DCC)
+
+s0p_VExtCtrl.bpl: VCL\s0p_VExtCtrl.dpk
+  $(DCC)
+
+SyrinxSample.exe: ..\demo\SyrinxSample.dpr
+  $(DCC)
+
+s0p_Editors50.bpl: Designer\s0p_Editors50.dpk
+  $(DCC)
+
+s0p_Core50Test.exe: test\s0p_Core50Test.dpr
+  $(DCC)
+
+teccompo.bpl: ..\..\..\..\..\..\job\techno\technocompo\src\teccompo.dpk
+  $(DCC)
+
+Project1.exe: ..\..\..\..\..\..\job\techno\technocompo\src\demo\Project1.dpr
+  $(DCC)
+
+Project2.exe: ..\..\..\..\..\..\job\techno\technocompo\src\demo\Project2.dpr
+  $(DCC)
+
+MacAddressSample.exe: ..\demo\MacAddressSample.dpr
+  $(DCC)
+
+JvParameterListDemo.exe: ..\..\..\..\..\delphi-jedi\JVCL300CompleteJCL195-Build1848\jvcl\examples\JvParameterList\JvParameterListDemo.dpr
+  $(DCC)
+
+DEC_Samp.exe: ..\..\..\..\..\..\dev.zip\delphi\encrypt\Dec\Source\DEC_API\DEC_Samp.dpr
+  $(DCC)
+
+DCPdelphi5.bpl: ..\..\..\..\..\..\dev.zip\delphi\encrypt\dcpcrypt2\DCPdelphi5.dpk
+  $(DCC)
+
+

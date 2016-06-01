@@ -1,0 +1,54 @@
+package s0p_VEntityCtrls50;
+
+{$R *.RES}
+{$R 's0EntityDetailImpl.dcr'}
+{$R 's0EntityFormManager.dcr'}
+{$R 's0EntityListImpl.dcr'}
+{$R 's0NaviSelEdit.dcr'}
+{$R 's0NaviSelector.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '<syrinx VCL 06> Entity Controls'}
+{$IMPLICITBUILD OFF}
+
+requires
+  Vcl50,
+  Vclx50,
+  Vcldb50,
+  s0p_Core50,
+  s0p_Entity50,
+  s0p_EntityDB50,
+  s0p_VCore50,
+  s0p_VCtrl50,
+  s0p_VBasicCtrl50;
+
+contains
+  s0EntityDetailImpl in 's0EntityDetailImpl.pas',
+  s0EntityFormManager in 's0EntityFormManager.pas',
+  s0EntityListImpl in 's0EntityListImpl.pas',
+  s0NaviSelEdit in 's0NaviSelEdit.pas',
+  s0RegEntityCtrl in 's0RegEntityCtrl.pas',
+  s0NaviSelector in 's0NaviSelector.pas',
+  s0CtrlOfType_EtyCtrls in 's0CtrlOfType_EtyCtrls.pas',
+  s0EntityDispImpl in 's0EntityDispImpl.pas';
+
+end.

@@ -1,0 +1,23 @@
+s0f1EntityList: プロジェクトから削除
+s0SelCharEdit: usesから削除
+EntityManager.Display: 無視
+s0UnifiedObjCtrl.Builder.CtrlOfType.CtrlClassNameOfEnum: 無視
+s0UnifiedObjCtrl.Builder.CtrlOfType.CtrlClassNameOfSet: 無視
+s0UnifiedObjCtrl.Builder.CtrlOfType.Items: 無視
+Ts0EntityPropProto.CtrlClassName: 無視
+
+未定義の識別子s0GUIUserManager: usesにs0UserImplを追加
+
+
+
+Ycn\Source\YcnBackup
+  TTecLog not found
+
+YKK\Source\CMember\f8CMemberCsv.dfm
+「Tc0Queryが見つからない」・・・・・フォームがテキスト形式で保存されていないから。
+YKK\Source\NewCMemberMakef8NewCMemberMake.dfm
+「Tc0BitBtnが見つからない」・・・・・フォームがテキスト形式で保存されていないから。
+
+
+Ycn\Source\Test01\Test01.dpr
+「ファイルが見つかりません: 'u8EnumDefs.pas'」

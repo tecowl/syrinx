@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0PropertyProtoType: Class Ts0PropertyProtoTypes</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="4046"><H1>Class Ts0PropertyProtoTypes</H1>
+</A><H2>Unit</H2>
+<A href="s0PropertyProtoType.htm">s0PropertyProtoType</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0PropertyProtoTypes = class(<CODE><A href="Ts0Collection.htm">Ts0Collection</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0Collection.htm">Ts0Collection</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0PropertyProtoTypes.htm#4047"><CODE>constructor <B>Create</B>(AOwner: TPersistent; AItemClass: Ts0CollectionItemClass); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0PropertyProtoTypes.htm#4048"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0PropertyProtoTypes.htm#4049"><CODE>function <B>AddProto</B>(APropName, AType, AJPName: string; ASize: Integer): Ts0PropertyProtoType;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0PropertyProtoTypes.htm#4050"><CODE>function <B>FindByName</B>(APropName: string): Ts0PropertyProtoType;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoTypes.htm#4051"><CODE>function <B>GetOriginal</B>: Ts0PropertyProtoTypes; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoTypes.htm#4052"><CODE>class function <B>GetRegistered</B>(const Index: Integer): Ts0PropertyProtoTypes;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoTypes.htm#4053"><CODE>class function <B>GetRegisteredCount</B>: Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoTypes.htm#4054"><CODE>procedure <B>NotifyOriginalUpdate</B>(AItem: Ts0PropertyProtoType); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoTypes.htm#4055"><CODE>class procedure <B>RegisterToGlobalList</B>(AProtoTypes: Ts0PropertyProtoTypes);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoTypes.htm#4056"><CODE>procedure <B>SetOriginal</B>(const Value: Ts0PropertyProtoTypes); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoTypes.htm#4057"><CODE>class procedure <B>UnRegisterToGlobalList</B>(AProtoTypes: Ts0PropertyProtoTypes);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoTypes.htm#4058"><CODE>procedure <B>Update</B>(Item: TCollectionItem); override;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4047"><TD><CODE>constructor <B>Create</B>(AOwner: TPersistent; AItemClass: <A href="s0Collection.htm#1796">Ts0CollectionItemClass</A>); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4048"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4049"><TD><CODE>function <B>AddProto</B>(APropName, AType, AJPName: string; ASize: Integer): <A href="Ts0PropertyProtoType.htm">Ts0PropertyProtoType</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4050"><TD><CODE>function <B>FindByName</B>(APropName: string): <A href="Ts0PropertyProtoType.htm">Ts0PropertyProtoType</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4051"><TD><CODE>function <B>GetOriginal</B>: <A href="Ts0PropertyProtoTypes.htm">Ts0PropertyProtoTypes</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4052"><TD><CODE>class function <B>GetRegistered</B>(const Index: Integer): <A href="Ts0PropertyProtoTypes.htm">Ts0PropertyProtoTypes</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4053"><TD><CODE>class function <B>GetRegisteredCount</B>: Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4054"><TD><CODE>procedure <B>NotifyOriginalUpdate</B>(AItem: <A href="Ts0PropertyProtoType.htm">Ts0PropertyProtoType</A>); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4055"><TD><CODE>class procedure <B>RegisterToGlobalList</B>(AProtoTypes: <A href="Ts0PropertyProtoTypes.htm">Ts0PropertyProtoTypes</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4056"><TD><CODE>procedure <B>SetOriginal</B>(const Value: <A href="Ts0PropertyProtoTypes.htm">Ts0PropertyProtoTypes</A>); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4057"><TD><CODE>class procedure <B>UnRegisterToGlobalList</B>(AProtoTypes: <A href="Ts0PropertyProtoTypes.htm">Ts0PropertyProtoTypes</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4058"><TD><CODE>procedure <B>Update</B>(Item: TCollectionItem); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0PropertyProtoTypes.htm#4059"><B>Items</B>[const Index: Integer]: Ts0PropertyProtoType;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0PropertyProtoTypes.htm#4060"><B>Original</B>: Ts0PropertyProtoTypes;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4059"><CODE><B>Items</B>[const Index: Integer]: <A href="Ts0PropertyProtoType.htm">Ts0PropertyProtoType</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4060"><CODE><B>Original</B>: <A href="Ts0PropertyProtoTypes.htm">Ts0PropertyProtoTypes</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:43</EM>
+</BODY>
+</HTML>

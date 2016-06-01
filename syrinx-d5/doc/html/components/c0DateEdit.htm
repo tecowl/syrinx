@@ -1,0 +1,248 @@
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type"content="text/html; charset=shift_jis">
+<meta name="GENERATOR"content="Microsoft FrontPage 4.0">
+<meta name="ProgId"content="FrontPage.Editor.Document">
+<title>c0DateEdit</title>
+</head>
+
+<body>
+
+<a name="0001"><h1><span lang="EN-US">c0</span><span style="FONT-FAMILY: 'ＭＳ ゴシック'; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">DateEdit</span></h1></a>
+
+<a name="0002"><h1><span style="FONT-FAMILY: 'ＭＳ ゴシック'; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">継承関係</span></h1></a>
+
+<a name="0003"><h1><span style="FONT-FAMILY: 'ＭＳ ゴシック'; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial"><img border="0"src="image/c0Date1.gif"width="633"height="361"></span></h1></a>
+<a name="0004"><h1><span style="FONT-FAMILY: 'ＭＳ ゴシック'; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">目的</span></h1></a>
+
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<O:P>
+ </O:P> 
+</span></p>
+
+<a name="0005"><h1><span style="FONT-FAMILY: 'ＭＳ ゴシック'; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">詳細</span></h1></a>
+
+<a name="0006"><h2>プロパティ</h2></a>
+<a name="0007"><h3><code><span lang="EN-US"style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-ansi-font-size: 10.5pt; mso-bidi-font-family: Arial">Accessor</span></code></h3></a>
+
+<p><code><b>published property </b>Accessor: T0DateEditAccessor;<b><br>
+</b></code><span style="FONT-FAMILY: 'ＭＳ 明朝'; mso-ascii-font-family: Century; mso-hansi-font-family: Century">共通したインタフェースで値にアクセスするためのプロパティです。詳しくは、</span><span lang="EN-US">T0DataAccessor</span><span style="FONT-FAMILY: 'ＭＳ 明朝'; mso-ascii-font-family: Century; mso-hansi-font-family: Century">クラスのドキュメントを参照してください。</span><span lang="EN-US"><O:P>
+&nbsp;</span></p> 
+<p><code>T0DateEditAccessorクラスには、T0DataAccessorに対して以下のプロパティが追加されています。</code></p>
+<p><code><b>published property </b>Year&nbsp;&nbsp; : Word; <font color="#0000FF">//年</font><br> 
+<b>published property </b>Month&nbsp; : Word; <font color="#0000FF">//月</font><br> 
+<b>published property </b>Day&nbsp;&nbsp;&nbsp; : Word; <font color="#0000FF">//日</font><br> 
+<b>published property </b>Hour&nbsp;&nbsp; : Word; <font color="#0000FF">//時</font><br> 
+<b>published property </b>Minute : Word; <font color="#0000FF">//分</font><br> 
+<b>published property </b>Second : Word; <font color="#0000FF">//秒</font><br> 
+<b>published property </b>MiliSec: Word; <font color="#0000FF">//ミリ秒</font></code></p> 
+<p><code>年/月/日/時/分/秒/ミリ秒のそれぞれの値にアクセスできます。<br>
+</code></p>
+<a name="0008"><h3><code><span lang="EN-US"style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-ansi-font-size: 10.5pt; mso-bidi-font-family: Arial">InputStyle</span></code></h3></a>
+
+<p><code><b>published property </b>InputStyle: T0CustomDateEditInputStyle;<b><br>
+</b></code><span style="FONT-FAMILY: 'ＭＳ 明朝'; mso-ascii-font-family: Century; mso-hansi-font-family: Century">共通したインタフェースで、文字の入力方法などについて設定するためのプロパティです。詳しくは</span><span lang="EN-US">T0InputStyle</span><span style="FONT-FAMILY: 'ＭＳ 明朝'; mso-ascii-font-family: Century; mso-hansi-font-family: Century">クラスのドキュメントを参照してください。</span></p>
+<a name="0009"><h4><span lang="EN-US">InputStyle</span><span style="FONT-FAMILY: ＭＳ ゴシック; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">関連</span></h4></a>
+
+<p><code><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">published</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt"> 
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">property 
+</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">Alignment: 
+TAlignment <O:P>
+<br>
+</O:P>
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">published</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt"> 
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">property 
+</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">CharCase: 
+TEditCharCase <b>default </b>ecNormal;<O:P>
+<br>
+</O:P>
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">published</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt"> 
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">property 
+</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">Font: 
+TFont <b>read </b>GetFont <b>write </b>SetFont;<O:P>
+<br>
+</O:P>
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">published</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt"> 
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">property 
+</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">ImeMode: 
+TImeMode <b>default </b>imDontCare;<O:P>
+<br>
+</O:P>
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">published</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt"> 
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">property 
+</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">ImeName: 
+TImeName<O:P>
+<br>
+</O:P>
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">published</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt"> 
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">property 
+</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">MaxLength: 
+Integer <O:P>
+<br>
+</O:P>
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">published</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt"> 
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">property 
+</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">Modified: 
+Boolean <O:P>
+<br>
+</O:P>
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">published</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt"> 
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">property 
+ReadOnly</span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">: 
+Boolean <O:P>
+<br>
+</O:P>
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">published 
+property </span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">AutoTab: 
+Boolean <O:P>
+<br>
+</O:P>
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">published 
+property </span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">AutoWidth: 
+Boolean <b>default </b>True;<O:P>
+<br>
+</O:P>
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">published 
+property </span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">Title: 
+<b>string</b>;<O:P>
+<br>
+</O:P>
+</span><b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">published 
+property </span></b><span lang="EN-US"style="FONT-SIZE: 10.5pt; FONT-FAMILY: Arial; mso-bidi-font-size: 10.0pt">TitleDisplay: 
+Tc0Label <O:P>
+</span></code></p>
+<pre><span style="FONT-FAMILY: 'ＭＳ 明朝'; mso-ascii-font-family: Century; mso-hansi-font-family: Century">これらのプロパティについては、</span><span lang="EN-US">T0InputStyle</span><span style="FONT-FAMILY: 'ＭＳ 明朝'; mso-ascii-font-family: Century; mso-hansi-font-family: Century">クラスのドキュメントを参照してください。</span></pre>
+<a name="0010"><h3>ActivePartKind</h3></a>
+<p><code><font color="#000000">  K0DateEditItemType = (k0ddtYear, k0ddtMonth, k0ddtDay, k0tdtHour, k0tdtMinute, k0tdtSecond, k0tdtMiliSec);<br> 
+<b>public</b> </font><b>property </b>ActivePartKind: K0DateEditItemType;<br> 
+実行時に年/月/日/時/分/秒/ミリ秒のいづれにフォーカスがあるのかを表します。フォーカスがない場合は、最後の動作を行ったものを表します。</code></p>
+<a name="0011"><h3>AsDateTime</h3></a>
+<p><code><font color="#000000"><b>public</b> </font><b>property </b>AsDateTime:  
+TDateTime;<br>
+実行時に入力されている日付をTDateTime型として表します。</code></p>
+<a name="0012"><h3>Modified</h3></a>
+<p><code><font color="#000000"><b>public</b> </font><b>property </b>Modified:  
+Boolean;<b><br>
+</b>実行時に値が変更されているかどうかを表します。</code></p>
+<a name="0013"><h3>AutoAdjustSize</h3></a>
+<p><code><b>published property </b>AutoAdjustSize: Boolean <b>default </b>True ;<b><br> 
+</b>コントロールの大きさを自動的に決めるかどうかを指定できます。デフォルトはTrueで、Trueならば自動的にサイズが決められます。</code></p>
+<a name="0014"><h3>AutoTab</h3></a>
+<p><code><b>published property </b>AutoTab: Boolean <b>default </b>True;<b><br> 
+</b>入力できる最後の桁を入力し終わったときに、次のコントロールにフォーカスを移動するかどうかを指定できます。デフォルトはTrueです。</code></p>
+<a name="0015"><h3>EraType</h3></a>
+<p><code>  K0EraKind = (k0ekChristian, k0ekJapanese);<br>  
+<b>published property </b>EraType: K0EraKind <b>default </b>k0ekChristian;<b><br> 
+</b>日付の表示を西暦か和暦のどちらで表示するのかを指定します。</code>k0ekChristianが西暦、k0ekJapaneseが和暦です。デフォルトはk0ekChristianです。</p>
+<a name="0016"><h3>JapaneseEra</h3></a>
+<p><code>  K0JapaneseEra = (k0jeMeiji, k0jeTaisho, k0jeShowa, k0jeHeisei);<br> 
+<b>published property </b>JapaneseEra: K0JapaneseEra;<b><br>
+</b>入力されている日付が（西暦ならば和暦に換算して)明治/大正/昭和/平成のどの年号なのかを表します。</code></p>
+<table border="1"width="18%">
+  <tr>
+    <td width="51%"><code>k0jeMeiji</code></td>
+    <td width="49%"><code>明治</code></td>
+  </tr>
+  <tr>
+    <td width="51%"><code>k0jeTaisho</code></td>
+    <td width="49%"><code>大正</code></td>
+  </tr>
+  <tr>
+    <td width="51%"><code>k0jeShowa</code></td>
+    <td width="49%"><code>昭和</code></td>
+  </tr>
+  <tr>
+    <td width="51%"><code>k0jeHeisei</code></td>
+    <td width="49%"><code>平成</code></td>
+  </tr>
+</table>
+<a name="0017"><h3>EditYear、EditMonth、EditDay、EditHour、EditMinute、EditSecond、EditMiliSec</h3></a>
+<p><code><b>published property </b>EditYear&nbsp;&nbsp; : T0DateiEditItemEdit;<b><br>
+published property </b>EditMonth&nbsp; : T0DateiEditItemEdit;<b><br>
+published property </b>EditDay&nbsp;&nbsp;&nbsp; : T0DateiEditItemEdit;<b><br>
+published property </b>EditHour&nbsp;&nbsp; : T0DateiEditItemEdit;<b><br>
+published property </b>EditMinute : T0DateiEditItemEdit;<b><br>
+published property </b>EditSecond : T0DateiEditItemEdit;<b><br>
+published property </b>EditMiliSec: T0DateiEditItemEdit;</code></p>
+<p><code>年/月/日/時/分/秒/ミリ秒のそれぞれの入力フィールドのプロパティにアクセスするためのプロパティです。</code></p>
+<a name="0018"><h4><code>T0DateiEditItemEditのプロパティ</code></h4></a>
+<p><code><font color="#000000"><b>published</b></font><font color="#000000"> </font><b>property 
+</b>Align: TAlign <b>default </b>alNone;<br>
+</code><code><font color="#000000"><b>published</b></font><font color="#000000"> 
+</font><b>property </b>Anchors: TAnchors <b>default </b>[akLeft, akTop];<br>
+</code><code><font color="#000000"><b>published</b></font><font color="#000000"> 
+</font><b>property </b>Color: TColor <b>default </b>clWindow;<br>
+</code><code><font color="#000000"><b>published</b></font><font color="#000000"> 
+</font><b>property </b>Enabled: Boolean <b>read </b>GetEnabled <b>write </b>SetEnabled 
+<b>default </b>True;<br>
+</code><code><font color="#000000"><b>published</b></font><font color="#000000"> 
+</font><b>property </b>Font: TFont;<br>
+</code><code><font color="#000000"><b>published</b></font><font color="#000000"> 
+</font><b>property </b>Left&nbsp; : Integer;<br>
+</code><code><font color="#000000"><b>published</b></font><font color="#000000"> 
+</font><b>property </b>ParentFont: Boolean <b>default </b>False;<br>
+</code><code><font color="#000000"><b>published</b></font><font color="#000000"> 
+</font><b>property ReadOnly</b>: Boolean <b>default </b>False;<br>
+</code><code><font color="#000000"><b>published</b></font><font color="#000000"> 
+</font><b>property </b>TabOrder: Integer;<br>
+</code><code><font color="#000000"><b>published</b></font><font color="#000000"> 
+</font><b>property </b>TabStop: Boolean<b> default </b>True;<br>
+</code><code><font color="#000000"><b>published</b></font><font color="#000000"> 
+</font><b>property </b>Visible: Boolean <b>default </b>True;<br>
+</code><code><font color="#000000"><b>published</b></font><font color="#000000"> 
+</font><b>property </b>Width : Integer;</code></p>
+<p><code>これらのプロパティについては、TControl、TWinControlのプロパティを参照してください。</code><code><br>
+</code></p>
+<a name="0019"><h2>メソッド</h2></a>
+<a name="0020"><h3><code><b></b>GetEraChar、GetJEraByChar</code></h3></a>
+<p><code>  K0JapaneseEra = (k0jeMeiji, k0jeTaisho, k0jeShowa, k0jeHeisei);<br> 
+<font color="#000000"><b>public</b> </font><b>class function </b>GetEraChar(JEra: 
+K0JapaneseEra): Char;<br>
+<font color="#000000"><b>public</b> </font><b>class function </b>GetJEraByChar(AChar: 
+Char): K0JapaneseEra;</code></p>
+<p><code><b></b>GetEraCharメソッドは、K0JapaneseEra型の引数JEraに体操する文字を取得するためのメソッドです。<br>
+GetJEraByCharメソッドは、GetEraCharメソッドの逆で文字から該当するK0JapaneseEra型を得るためのメソッドです。</code><span lang="EN-US"></O:P>
+</span></p>
+
+<a name="0021"><h2><span style="FONT-FAMILY: 'ＭＳ ゴシック'; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">簡単な使い方</span></h2></a>
+
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<O:P>
+ </O:P>
+</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<O:P>
+ </O:P>
+</span></p>
+
+<a name="0022"><h2><span style="FONT-FAMILY: 'ＭＳ ゴシック'; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">応用的な使い方</span></h2></a>
+
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<O:P>
+ </O:P>
+</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<O:P>
+ </O:P>
+</span></p>
+
+<a name="0023"><h2><span style="FONT-FAMILY: 'ＭＳ ゴシック'; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">オブジェクト指向的使用法</span></h2></a>
+
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<O:P>
+ </O:P>
+</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<O:P>
+ </O:P>
+</span></p>
+
+<a name="0024"><h2><span style="FONT-FAMILY: 'ＭＳ ゴシック'; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">Ｑ＆Ａ</span></h2></a>
+
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<O:P>
+ </O:P>
+</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<O:P>
+ </O:P>
+</span></p>
+<p>　</p>
+
+</body>
+
+</html>

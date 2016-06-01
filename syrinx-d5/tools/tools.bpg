@@ -1,0 +1,26 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = s0ts_syrinxD6.exe EntityBuilder3.exe TagTree.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+s0ts_syrinxD6.exe: ..\UnitTest\s0ts_syrinxD6.dpr
+  $(DCC)
+
+EntityBuilder3.exe: EntityBuilder3\EntityBuilder3.dpr
+  $(DCC)
+
+TagTree.exe: TagTree\TagTree.dpr
+  $(DCC)
+
+

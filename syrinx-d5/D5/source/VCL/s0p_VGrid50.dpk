@@ -1,0 +1,65 @@
+package s0p_VGrid50;
+
+{$R *.RES}
+{$R 's0BindGrid.dcr'}
+{$R 's0CollectionGrid.dcr'}
+{$R 's0CtrlGrid.dcr'}
+{$R 's0DecoGrid.dcr'}
+{$R 's0GridCellCheck.dcr'}
+{$R 's0BaseGrid.dcr'}
+{$R 's0GridRadioGroup.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '<syrinx VCL 03> Grid and InplaceControls'}
+{$IMPLICITBUILD OFF}
+
+requires
+  Vcl50,
+  Vclx50,
+  s0p_Core50,
+  s0p_VCore50,
+  s0p_VCtrl50,
+  s0p_VBasicCtrl50;
+
+contains
+  s0ObjListGrid in 's0ObjListGrid.pas',
+  s0BaseGridCommand in 's0BaseGridCommand.pas',
+  s0BindGrid in 's0BindGrid.pas',
+  s0CellDecorator in 's0CellDecorator.pas',
+  s0CollectionGrid in 's0CollectionGrid.pas',
+  s0CtrlGrid in 's0CtrlGrid.pas',
+  s0DecoGrid in 's0DecoGrid.pas',
+  s0GridCellCheck in 's0GridCellCheck.pas',
+  s0GridCellControl in 's0GridCellControl.pas',
+  s0GridCellImage in 's0GridCellImage.pas',
+  s0Grids in 's0Grids.pas',
+  s0ObjectGrid in 's0ObjectGrid.pas',
+  s0BaseGrid in 's0BaseGrid.pas',
+  s0GridCtrlOfType_Default in 's0GridCtrlOfType_Default.pas',
+  s0GridFocusController in 's0GridFocusController.pas',
+  s0RegGrid in 's0RegGrid.pas',
+  s0GridRadioGroup in 's0GridRadioGroup.pas',
+  s0GridCellBarGraph in 's0GridCellBarGraph.pas',
+  s0CalendarGrid in 's0CalendarGrid.pas';
+
+end.
+

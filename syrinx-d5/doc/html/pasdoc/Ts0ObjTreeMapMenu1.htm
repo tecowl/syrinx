@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0ObjTreeMapper: Class Ts0ObjTreeMapMenu</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="3925"><H1>Class Ts0ObjTreeMapMenu</H1>
+</A><H2>Unit</H2>
+<A href="s0ObjTreeMapper.htm">s0ObjTreeMapper</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0ObjTreeMapMenu = class(<CODE><A href="Ts0VCLComponent.htm">Ts0VCLComponent</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0VCLComponent.htm">Ts0VCLComponent</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjTreeMapMenu1.htm#3926"><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjTreeMapMenu1.htm#3927"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjTreeMapMenu1.htm#3928"><CODE>function <B>CreateMenuItem</B>(ACaption: string; AObj: TObject; AKind: K0MapMenuItemKind): TMenuItem;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjTreeMapMenu1.htm#3929"><CODE>procedure <B>DoPrepareItems</B>(AObj: TObject; var AKinds: K0MapMenuItemKinds);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjTreeMapMenu1.htm#3930"><CODE>function <B>GetMapItemKinds</B>(AObj: TObject): K0MapMenuItemKinds;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjTreeMapMenu1.htm#3931"><CODE>procedure <B>MenuItemClick</B>(Sender: TObject);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjTreeMapMenu1.htm#3932"><CODE>function <B>NewPopup</B>: TPopupMenu; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjTreeMapMenu1.htm#3933"><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjTreeMapMenu1.htm#3934"><CODE>procedure <B>PrepareItems</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3926"><TD><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3927"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3928"><TD><CODE>function <B>CreateMenuItem</B>(ACaption: string; AObj: TObject; AKind: <A href="s0ObjTreeMapper.htm#3913">K0MapMenuItemKind</A>): TMenuItem;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3929"><TD><CODE>procedure <B>DoPrepareItems</B>(AObj: TObject; var AKinds: <A href="s0ObjTreeMapper.htm#3914">K0MapMenuItemKinds</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3930"><TD><CODE>function <B>GetMapItemKinds</B>(AObj: TObject): <A href="s0ObjTreeMapper.htm#3914">K0MapMenuItemKinds</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3931"><TD><CODE>procedure <B>MenuItemClick</B>(Sender: TObject);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3932"><TD><CODE>function <B>NewPopup</B>: TPopupMenu; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3933"><TD><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3934"><TD><CODE>procedure <B>PrepareItems</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjTreeMapMenu1.htm#3935"><B>OnMenuItemClick</B>: K0MenuItemClickEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjTreeMapMenu1.htm#3936"><B>OnNeedRefresh</B>: TNotifyEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjTreeMapMenu1.htm#3937"><B>OnPrepareItems</B>: K0MapMenuItemQueryEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0ObjTreeMapMenu1.htm#3938"><B>Popup</B>: TPopupMenu;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0ObjTreeMapMenu1.htm#3939"><B>Selected</B>: TObject;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjTreeMapMenu1.htm#3940"><B>TreeView</B>: TTreeView;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3935"><CODE><B>OnMenuItemClick</B>: <A href="s0ObjTreeMapper.htm#3916">K0MenuItemClickEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3936"><CODE><B>OnNeedRefresh</B>: TNotifyEvent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3937"><CODE><B>OnPrepareItems</B>: <A href="s0ObjTreeMapper.htm#3915">K0MapMenuItemQueryEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3938"><CODE><B>Popup</B>: TPopupMenu;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3939"><CODE><B>Selected</B>: TObject;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3940"><CODE><B>TreeView</B>: TTreeView;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:43</EM>
+</BODY>
+</HTML>

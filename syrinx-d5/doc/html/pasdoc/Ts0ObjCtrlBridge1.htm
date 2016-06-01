@@ -1,0 +1,292 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0ObjCtrlBuilder: Class Ts0ObjCtrlBridge</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="3509"><H1>Class Ts0ObjCtrlBridge</H1>
+</A><H2>Unit</H2>
+<A href="s0ObjCtrlBuilder.htm">s0ObjCtrlBuilder</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0ObjCtrlBridge = class(<CODE><A href="Ts0VCLComponent.htm">Ts0VCLComponent</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0VCLComponent.htm">Ts0VCLComponent</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3510"><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3511"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3512"><CODE>procedure <B>BeginUpdate</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3513"><CODE>procedure <B>BuildCtrls</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3514"><CODE>procedure <B>ClearCtrls</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3515"><CODE>procedure <B>DoLoadObjFromCtrl</B>(AObj: TObject; ACtrl: TControl);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3516"><CODE>procedure <B>DoSaveObjToCtrl</B>(AObj: TObject; ACtrl: TControl);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3517"><CODE>procedure <B>EndUpdate</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3518"><CODE>procedure <B>Loaded</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3519"><CODE>procedure <B>LoadFromTarget</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3520"><CODE>procedure <B>MakeDefualtProtoTypes</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3521"><CODE>function <B>NewBuilder</B>: Ts0ObjCtrlBuilder; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3522"><CODE>function <B>NewProtoTypes</B>: Ts0ProtoTypeCtrls; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3523"><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3524"><CODE>procedure <B>SaveToTarget</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjCtrlBridge1.htm#3525"><CODE>procedure <B>SetTarget</B>(const Value: TObject); virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3510"><TD><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3511"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3512"><TD><CODE>procedure <B>BeginUpdate</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3513"><TD><CODE>procedure <B>BuildCtrls</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3514"><TD><CODE>procedure <B>ClearCtrls</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3515"><TD><CODE>procedure <B>DoLoadObjFromCtrl</B>(AObj: TObject; ACtrl: TControl);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3516"><TD><CODE>procedure <B>DoSaveObjToCtrl</B>(AObj: TObject; ACtrl: TControl);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3517"><TD><CODE>procedure <B>EndUpdate</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3518"><TD><CODE>procedure <B>Loaded</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3519"><TD><CODE>procedure <B>LoadFromTarget</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3520"><TD><CODE>procedure <B>MakeDefualtProtoTypes</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3521"><TD><CODE>function <B>NewBuilder</B>: <A href="Ts0ObjCtrlBuilder1.htm">Ts0ObjCtrlBuilder</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3522"><TD><CODE>function <B>NewProtoTypes</B>: <A href="Ts0ProtoTypeCtrls1.htm">Ts0ProtoTypeCtrls</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3523"><TD><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3524"><TD><CODE>procedure <B>SaveToTarget</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="3525"><TD><CODE>procedure <B>SetTarget</B>(const Value: TObject); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3526"><B>AutoUpdate</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3527"><B>Builder</B>: Ts0ObjCtrlBuilder;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3528"><B>DisabledProps</B>: TStrings;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3529"><B>OnCreateCtrl</B>: K0ECBCreateCtrlEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3530"><B>OnFindCtrlClass</B>: K0ECBFindCtrlClassEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3531"><B>OnInitCtrl</B>: K0ECBCreateCtrlEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3532"><B>OnLoadObjFromCtrl</B>: K0ObjAccessEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3533"><B>OnSaveObjToCtrl</B>: K0ObjAccessEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3534"><B>OnStandInCtrls</B>: TNotifyEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3535"><B>ProtoSource</B>: Ts0PropertyProtoTypes;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3536"><B>ProtoSourceCompo</B>: TComponent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3537"><B>ProtoSourcePropName</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3538"><B>ProtoTypes</B>: Ts0ProtoTypeCtrls;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3539"><B>Target</B>: TObject;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3540"><B>TargetComponent</B>: TComponent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0ObjCtrlBridge1.htm#3541"><B>Wrapper</B>: Ts0RTTIPublishedAccessor;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3526"><CODE><B>AutoUpdate</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3527"><CODE><B>Builder</B>: <A href="Ts0ObjCtrlBuilder1.htm">Ts0ObjCtrlBuilder</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3528"><CODE><B>DisabledProps</B>: TStrings;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3529"><CODE><B>OnCreateCtrl</B>: <A href="s0ObjCtrlBuilder.htm#3494">K0ECBCreateCtrlEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Builder Event</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3530"><CODE><B>OnFindCtrlClass</B>: <A href="s0ObjCtrlBuilder.htm#3495">K0ECBFindCtrlClassEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3531"><CODE><B>OnInitCtrl</B>: <A href="s0ObjCtrlBuilder.htm#3494">K0ECBCreateCtrlEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3532"><CODE><B>OnLoadObjFromCtrl</B>: <A href="s0ObjCtrlBuilder.htm#3496">K0ObjAccessEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3533"><CODE><B>OnSaveObjToCtrl</B>: <A href="s0ObjCtrlBuilder.htm#3496">K0ObjAccessEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3534"><CODE><B>OnStandInCtrls</B>: TNotifyEvent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3535"><CODE><B>ProtoSource</B>: <A href="Ts0PropertyProtoTypes.htm">Ts0PropertyProtoTypes</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3536"><CODE><B>ProtoSourceCompo</B>: TComponent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3537"><CODE><B>ProtoSourcePropName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3538"><CODE><B>ProtoTypes</B>: <A href="Ts0ProtoTypeCtrls1.htm">Ts0ProtoTypeCtrls</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3539"><CODE><B>Target</B>: TObject;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3540"><CODE><B>TargetComponent</B>: TComponent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="3541"><CODE><B>Wrapper</B>: <A href="Ts0RTTIPublishedAccessor.htm">Ts0RTTIPublishedAccessor</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:42</EM>
+</BODY>
+</HTML>

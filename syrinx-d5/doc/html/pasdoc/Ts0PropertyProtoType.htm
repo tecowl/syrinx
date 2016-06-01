@@ -1,0 +1,321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0PropertyProtoType: Class Ts0PropertyProtoType</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="4009"><H1>Class Ts0PropertyProtoType</H1>
+</A><H2>Unit</H2>
+<A href="s0PropertyProtoType.htm">s0PropertyProtoType</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0PropertyProtoType = class(<CODE><A href="Ts0CollectionItem.htm">Ts0CollectionItem</A></CODE>)</CODE></P><H2>Description</H2>
+$History: Ts0PropertyProtoType.htm $ * * ***************** Version 26 ***************** * User: Akima Date: 02/03/13 Time: 3:07 * Updated in $/D5/source/Common * 古いバージョンに対応できるように、ImeModeを読み込・szlig;るようにした。 * * ***************** Version 25 ***************** * User: Akima Date: 02/03/09 Time: 17:40 * Updated in $/D5/source/Common * * ***************** Version 24 ***************** * User: Akima Date: 02/03/04 Time: 21:53 * Updated in $/source/D6VCLIntegrated * CLX対応し・Auml;・Uuml;す・・・・ * * ***************** Version 23 ***************** * User: Akima Date: 02/02/28 Time: 23:25 * Updated in $/source/D5Integrated * 接頭辞を変更。xxSX～にした。 * * ***************** Version 22 ***************** * User: Akima Date: 02/02/13 Time: 21:08 * Updated in $/source/D5Integrated * * ***************** Version 21 ***************** * User: Akima Date: 02/02/08 Time: 8:23 * Updated in $/source/D6VCLIntegrated * UpperCaseを使用し・Auml;文字列の・auml;較を行っ・Auml;いた部分をSameTextを使用するよう * に修正 * * ***************** Version 20 ***************** * User: Akima Date: 02/01/10 Time: 3:19 * Updated in $/source/D5Integrated * FIsPersistent、FIsEnum、FIsSetを削除。 * IsPersistent、IsEnum、IsSetはFDataTypeKindから設定、取得することにした * 。 * * ***************** Version 19 ***************** * User: Akima Date: 02/01/02 Time: 21:44 * Updated in $/source/D5Integrated * * ***************** Version 18 ***************** * User: Akima Date: 01/12/15 Time: 2:05 * Updated in $/source/D5Integrated * * ***************** Version 17 ***************** * User: Akima Date: 01/12/13 Time: 16:37 * Updated in $/source/D5Integrated * 要らないメソッドを削除 * * ***************** Version 16 ***************** * User: Akima Date: 01/12/10 Time: 16:14 * Updated in $/source/D5Integrated * EnumNameプロパティを追加。 * * ***************** Version 15 ***************** * User: Akima Date: 01/11/28 Time: 2:01 * Updated in $/source/D5Integrated * プロトタイプ間に、オリジナルとそのコピー(?)という・Ouml;係を作った。 * オリジナルが変更されると、それをOriginalとし・Auml;参照し・Auml;いるプロトタイプ * に * 変更通知が届く。 * * ***************** Version 14 ***************** * User: Akima Date: 01/11/23 Time: 1:55 * Updated in $/source/D5Integrated * SetPropertyNameメソッドをprotectedに * * ***************** Version 13 ***************** * User: Akima Date: 01/11/02 Time: 14:20 * Updated in $/source/D5Integrated * GetDefaultCtrlを静的メソッドに変更。代わりにInitCtrlClassNameをvirtual * に。 * AcceptCharTypesのデフォルト値を設定。 * * ***************** Version 12 ***************** * User: Akima Date: 01/10/11 Time: 17:26 * Updated in $/source/D5Integrated * GetNamePathを変更。 * 以前の・Uuml;・Uuml;だと、このクラスのインスタンスのイベントにハンドラを・Ouml;連付け * ようとすると、 * 「名前が設定され・Auml;いないコンポーネントにはデフォルトメソッドは・Ouml;連付け * られ・Uuml;せん。」 * というようなエラーが表示され・Auml;し・Uuml;っ・Auml;いたっす。なぞ * * ***************** Version 11 ***************** * User: Akima Date: 01/10/11 Time: 1:21 * Updated in $/source/D5Integrated * * ***************** Version 10 ***************** * User: Akima Date: 01/10/09 Time: 9:07 * Updated in $/source/D5Integrated * * ***************** Version 9 ***************** * User: Akima Date: 01/10/05 Time: 14:18 * Updated in $/source/D5Integrated * * ***************** Version 8 ***************** * User: Akima Date: 01/10/05 Time: 13:04 * Updated in $/source/D5Integrated * * ***************** Version 7 ***************** * User: Akima Date: 01/10/04 Time: 12:22 * Updated in $/source/D5Integrated * GetDisplayNameメソッドを実装。 * Assignメソッドの不備を修正 * * ***************** Version 6 ***************** * User: Akima Date: 01/10/03 Time: 23:42 * Updated in $/source/D5Integrated * AcceptCharTypes、ImeMode、WithoutCtrlプロパティを追加 * * ***************** Version 5 ***************** * User: Akima Date: 01/10/01 Time: 17:38 * Updated in $/source/D5Integrated * * ***************** Version 4 ***************** * User: Akima Date: 01/10/01 Time: 9:15 * Updated in $/source/D5Integrated * IsPersistent、IsEnum、IsSet、Enummemberプロパティをs0EntityPropProtoか * ら移動 * * ***************** Version 3 ***************** * User: Akima Date: 01/09/21 Time: 17:00 * Updated in $/source/D5Integrated * Entityに・Ouml;わりそうな部分をTs0EntityPropProtoに移した。 * これでこのユニットはEntityとかかわりが無いようになった。 * * ***************** Version 2 ***************** * User: Akima Date: 01/09/19 Time: 20:46 * Updated in $/source/D5Integrated * GetIdentifierメソッドをoverrideした * * ***************** Version 1 ***************** * User: Akima Date: 01/09/14 Time: 9:01 * Created in $/source/D5Integrated * 新規追加 * （EntityBuilder.dprで使用し・Auml;いた8レベルユニットだが0レベルに移行）<H2>Hierarchy</H2>
+<p></p>
+<p>*****************  Version 1  *****************</p>
+<p>User: Akima        Date: 02/03/13   Time: 13:43</p>
+<p>Created in $/doc/html/pasdoc</p>
+<CODE><A href="Ts0CollectionItem.htm">Ts0CollectionItem</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4010"><CODE>constructor <B>Create</B>(ACollection: TCollection); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4011"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4012"><CODE>procedure <B>Assign</B>(Source: TPersistent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4013"><CODE>function <B>GetDisplayName</B>: string; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4014"><CODE>function <B>GetEnumMember</B>: TStrings; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4015"><CODE>function <B>GetIdentifier</B>: string; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4016"><CODE>function <B>GetRTTIPRop</B>: Ts0RTTIProp; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4017"><CODE>function <B>GetWapper</B>: Ts0RTTIPublishedAccessor; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4018"><CODE>procedure <B>SetAcceptCharTypes</B>(const Value: K1InpCharSet); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4019"><CODE>procedure <B>SetEnumMember</B>(const Value: TStrings); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4020"><CODE>procedure <B>SetEnumName</B>(const Value: string); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4021"><CODE>procedure <B>SetImeModeSX</B>(const Value: K0ImeMode); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4022"><CODE>procedure <B>SetIsEnum</B>(const Value: Boolean); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4023"><CODE>procedure <B>SetIsPersistent</B>(const Value: Boolean); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4024"><CODE>procedure <B>SetIsSet</B>(const Value: Boolean); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4025"><CODE>procedure <B>SetJPName</B>(const Value: string); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4026"><CODE>procedure <B>SetPropertyName</B>(const Value: string); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4027"><CODE>procedure <B>SetSize</B>(const Value: Integer); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4028"><CODE>procedure <B>SetTypeName</B>(const Value: string); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0PropertyProtoType.htm#4029"><CODE>procedure <B>SetWithoutCtrl</B>(const Value: Boolean); virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4010"><TD><CODE>constructor <B>Create</B>(ACollection: TCollection); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4011"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4012"><TD><CODE>procedure <B>Assign</B>(Source: TPersistent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4013"><TD><CODE>function <B>GetDisplayName</B>: string; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4014"><TD><CODE>function <B>GetEnumMember</B>: TStrings; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4015"><TD><CODE>function <B>GetIdentifier</B>: string; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4016"><TD><CODE>function <B>GetRTTIPRop</B>: <A href="Ts0RTTIProp.htm">Ts0RTTIProp</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4017"><TD><CODE>function <B>GetWapper</B>: <A href="Ts0RTTIPublishedAccessor.htm">Ts0RTTIPublishedAccessor</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4018"><TD><CODE>procedure <B>SetAcceptCharTypes</B>(const Value: K1InpCharSet); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4019"><TD><CODE>procedure <B>SetEnumMember</B>(const Value: TStrings); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4020"><TD><CODE>procedure <B>SetEnumName</B>(const Value: string); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4021"><TD><CODE>procedure <B>SetImeModeSX</B>(const Value: K0ImeMode); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4022"><TD><CODE>procedure <B>SetIsEnum</B>(const Value: Boolean); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4023"><TD><CODE>procedure <B>SetIsPersistent</B>(const Value: Boolean); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4024"><TD><CODE>procedure <B>SetIsSet</B>(const Value: Boolean); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4025"><TD><CODE>procedure <B>SetJPName</B>(const Value: string); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4026"><TD><CODE>procedure <B>SetPropertyName</B>(const Value: string); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4027"><TD><CODE>procedure <B>SetSize</B>(const Value: Integer); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4028"><TD><CODE>procedure <B>SetTypeName</B>(const Value: string); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4029"><TD><CODE>procedure <B>SetWithoutCtrl</B>(const Value: Boolean); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4030"><B>AcceptCharTypes</B>: K1InpCharSet;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4031"><B>DataTypeKind</B>: K0WrappedTypeKind;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4032"><B>EnumMember</B>: TStrings;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4033"><B>EnumName</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4034"><B>ImeModeSX</B>: K0ImeMode;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4035"><B>IsEnum</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4036"><B>IsPersistent</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4037"><B>IsSet</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4038"><B>JPName</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4039"><B>OriginalItem</B>: Ts0PropertyProtoType;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4040"><B>PropertyName</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4041"><B>RTTIProp</B>: Ts0RTTIProp;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4042"><B>Size</B>: Integer;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4043"><B>TypeName</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0PropertyProtoType.htm#4044"><B>WithoutCtrl</B>: Boolean;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4030"><CODE><B>AcceptCharTypes</B>: K1InpCharSet;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4031"><CODE><B>DataTypeKind</B>: <A href="s0TypInfoWrapper.htm#4475">K0WrappedTypeKind</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4032"><CODE><B>EnumMember</B>: TStrings;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4033"><CODE><B>EnumName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4034"><CODE><B>ImeModeSX</B>: K0ImeMode;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4035"><CODE><B>IsEnum</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4036"><CODE><B>IsPersistent</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4037"><CODE><B>IsSet</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4038"><CODE><B>JPName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4039"><CODE><B>OriginalItem</B>: <A href="Ts0PropertyProtoType.htm">Ts0PropertyProtoType</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4040"><CODE><B>PropertyName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4041"><CODE><B>RTTIProp</B>: <A href="Ts0RTTIProp.htm">Ts0RTTIProp</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4042"><CODE><B>Size</B>: Integer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4043"><CODE><B>TypeName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="4044"><CODE><B>WithoutCtrl</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:43</EM>
+</BODY>
+</HTML>

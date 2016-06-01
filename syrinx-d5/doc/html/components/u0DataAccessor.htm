@@ -1,0 +1,189 @@
+
+
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type"content="text/html; charset=shift_jis">
+<meta name="GENERATOR"content="Microsoft FrontPage 4.0">
+<meta name="ProgId"content="FrontPage.Editor.Document">
+<title>u0DataAccessor</title>
+</head>
+
+<body>
+
+<a name="0001"><h1><span lang="EN-US">u0DataAccessor</span></h1></a>
+
+<a name="0002"><h2><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">クラス図</span></h2></a>
+<p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shapetype id="_x0000_t75"
+coordsize="21600,21600"o:spt="75"o:preferrelative="t"path="m@4@5l@4@11@9@11@9@5xe"
+filled="f"stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f"gradientshapeok="t"o:connecttype="rect"/>
+ <o:lock v:ext="edit"aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025"type="#_x0000_t75"style='width:425.25pt;
+ height:358.5pt'>
+ <v:imagedata src="file:///C:/DOCUME~1/akima/LOCALS~1/Temp/msoclip1/01/clip_image001.wmz"
+o:title=""/>
+</v:shape><![endif]-->
+<img border="0"src="image/u0Data2.gif"width="431"height="441"></span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>   
+</span></p>
+<a name="0003"><h1><span lang="EN-US">T0DataAccessor<o:p>
+</o:p>   
+</span></h1></a>
+<p><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コントロールなどの入力されているデータを同じインタフェースで操作するためのクラスです。<br>
+使用する側が、コントロールの型をできるだけ気にしないで値の取得</span><span lang="EN-US">/</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">設定することができます。
+<br>
+このクラスを使用している具体的な例として、Tc0Edit、Tc0CheckBoxなどが挙げられます。</span></p>
+<a name="0004"><h2><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">主なプロパティ</span></h2></a>
+<table border="1"width="100%">
+  <tr>
+    <td width="13%">
+<code><font face="Arial">AsBoolean</font></code>
+    </td>
+    <td width="35%"><code><b><font color="#000000"><font face="Arial">public</font></font></b><font face="Arial"><font color="#000000"> </font><b>property 
+</b>AsBoolean: Boolean;</font></code></td> 
+    <td width="52%">データに論理値でアクセスするためのプロパティです。</td>
+  </tr>
+  <tr>
+    <td width="13%"><code><b></b><font face="Arial">AsDateTime</font></code></td>
+    <td width="35%"><code><b><font color="#000000"><font face="Arial">public </font></font><font face="Arial">property 
+      </font></b><font face="Arial">: TDateTime</font></code></td> 
+    <td width="52%">データにTDateTime型でアクセスするためのプロパティです。</td>
+  </tr>
+  <tr>
+    <td width="13%"><code><font face="Arial">AsFloat</font></code></td>
+    <td width="35%"><code><b><font color="#000000"><font face="Arial">
+public </font> </font><font face="Arial">property </font></b><font face="Arial">AsFloat: Double</font></code></td> 
+    <td width="52%">データにDouble型でアクセスするためのプロパティです。</td>
+  </tr>
+  <tr>
+    <td width="13%"><code><font face="Arial">AsInteger</font></code></td>
+    <td width="35%"><code><b><font color="#000000"><font face="Arial">
+public </font> </font><font face="Arial">property </font></b><font face="Arial">AsInteger: Integer ;</font></code></td> 
+    <td width="52%">データにInteger型でアクセスするためのプロパティです。</td>
+  </tr>
+  <tr>
+    <td width="13%"><code><font face="Arial">AsString</font></code></td>
+    <td width="35%"><code><font face="Arial"><b><font color="#000000">
+public </font>property </b>AsString: <b>String&nbsp;</b></font></code></td>   
+    <td width="52%">データに文字列としてアクセスするためのプロパティです。</td>
+  </tr>
+</table>
+
+
+<p>
+具体的にコントロールがどのような値を返すのかは、各コントロールのドキュメントを参照してください。</p>
+<a name="0005"><h3><code>Header</code></h3></a>
+<p><code>public property Header: string ;<br>   
+データを文字列として扱った場合に、HeaderDelimiterプロパティで指定される文字で区切られた先頭の部分にアクセスするプロパティです。</code></p>
+<a name="0006"><h3><code>Owner</code></h3></a>
+<p><code>public property Owner: TComponent;<br>  
+Accsessorを保持するコンポーネントへの参照です。<br>
+</code></p>
+<a name="0007"><h3><code>HeaderDelimiter</code></h3></a>
+<p><code>published property HeaderDelimiter: Char default ':';<br>   
+Headerプロパティによって文字を区切ってアクセスする場合に、どの文字で区切るかを指定するためのプロパティです。<br>
+</code></p>
+
+
+<a name="0008"><h1><code><font color="#000000">T0StringsAccessor</font></code></h1></a>
+<p>T0DataAccessorから派生したTStringsをデータとして持ちうるコントロール用のAccessorです。
+<span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century"><br>
+このクラスを使用している具体的な例として、Tc0ComboBox、Tc0RadioGroup、Tc0Memo、Tc0ListBoxなどが挙げられます。</span></p>
+<a name="0009"><h2><code><font color="#000000">ItemIndex</font></code></h2></a>
+<p><code><font color="#000000">
+<b><font face="Arial">public</font></b></font><font face="Arial"><b><font color="#000000">  
+property </font></b><font color="#000000">ItemIndex: Integer;<br> 
+</font></font></code>コントロールがどの項目をさしているのかを示す整数値です。</p><a name="0010"><h2><code><b></b><font color="#000000">Source</font></code></h2></a><p><code><b><font color="#000000"face="Arial">public 
+property </font></b><font color="#000000">Source: TStrings;<br>
+</font></code>コントロールがプロパティとして保持する<font face="Arial">TStrings</font>型のインスタンスへの参照です<code><font color="#000000"></font></code>。</p><a name="0011"><h2><code><b></b><font color="#000000">LoadEnum</font></code></h2></a><p><code><b><font color="#000000"face="Arial">public 
+procedure </font></b><font color="#000000">LoadEnum;<br>
+<br>
+</font></code><font face="Arial">EnumName</font>プロパティで示す<font face="Arial">Tc0EnumCollection</font>から項目を読み込みます。<br>
+具体的には、<font face="Arial">EnumName</font>で示される<font face="Arial">Tc0EnumCollection</font>コンポーネントが保持する項目から、<font face="Arial">Text</font>プロパティ、<font face="Arial">ItemID</font>プロパティをすべて読んで、<font face="Arial">Source</font>プロパティに対して<font face="Arial">AddObject</font>メソッドを呼び出すことで文字と<font face="Arial">ID</font>を対応付けます。<br>
+また、このメソッドでは自動的に<font face="Arial">AsIntegerKind</font>プロパティを<font face="Arial">k0saikFromObjects</font>に設定します。</p><a name="0012"><h2><code><b></b><font color="#000000">AsIntegerKind</font></code></h2></a><p><code></code><font face="Arial">K0StringsAsIntegerKind = (k0saikFromItemIndex, k0saikFromString,  k0saikFromStringHeader, k0saikFromObjects);<br>  
+</font><code><b><font color="#000000"face="Arial">published property </font></b><font color="#000000">AsIntegerKind:  
+K0StringsAsIntegerKind <b>default </b>k0saikFromItemIndex;<br> 
+</font></code><font face="Arial"><br>
+AsInteger</font>プロパティがどのような値を扱うのかを指定するプロパティです。各要素の意味は以下の通りです。</p>
+<table border="1"width="92%">
+  <tr>
+    <td width="24%"><font face="Arial">k0saikFromItemIndex</font></td>
+    <td width="76%"><font face="Arial">ItemIndex</font>を<font face="Arial">AsInteger</font>の値として扱います。</td>
+  </tr>
+  <tr>
+    <td width="24%"><font face="Arial">k0saikFromString</font></td>
+    <td width="76%"><font face="Arial">AsString</font>プロパティを整数値に変換して<font face="Arial">AsInteger</font>の値として扱います。</td>
+  </tr>
+  <tr>
+    <td width="24%"><font face="Arial">k0saikFromStringHeader</font></td>
+    <td width="76%"><font face="Arial"><code>Header</code></font>プロパティ（   
+      <font face="Arial"> 
+      =A</font>ｓ<font face="Arial">String</font>プロパティを<code><font face="Arial">HeaderDelimiter</font>プロパティで区切って得られる先頭の部分<font face="Arial">)</font></code>を整数値に変換して<font face="Arial">AsInteger</font>の値として扱います。</td>
+  </tr>
+  <tr>
+    <td width="24%"><font face="Arial">k0saikFromObjects</font></td>
+    <td width="76%">選択されている文字に関連付けられた<font face="Arial">Objects</font>プロパティの参照を、<font face="Arial">Integer</font>にキャストして<font face="Arial">AsInteger</font>の値として扱います。</td>
+  </tr>
+</table>
+<a name="0013"><h2><code><b></b><font color="#000000">AsStringKind</font></code></h2></a><p><font face="Arial">  K0StringsAsStringKind = (k0saskIndexString, k0saskText, k0saskCommaText);<br>  
+</font><code><b><font color="#000000"face="Arial">published property </font></b><font color="#000000">AsStringKind: 
+K0StringsAsStringKind <b>default </b>k0saskIndexString;</font></code></p>
+<p><font face="Arial">AsString</font>プロパティがどのような値を扱うのかを指定するプロパティです。各要素の意味は以下の通りです。</p>
+<table border="1"width="92%">
+  <tr>
+    <td width="21%"><font face="Arial">k0saskIndexString</font></td>
+    <td width="79%"><font face="Arial">Source</font>プロパティが保持する文字列のうち、<font face="Arial">ItemIndex</font>プロパティで指定される文字列を<font face="Arial">AsString</font>の値として扱います。</td>
+  </tr>
+  <tr>
+    <td width="21%"><font face="Arial">k0saskText</font></td>
+    <td width="79%"><font face="Arial">Source</font>プロパティの<font face="Arial">Text</font>プロパティの値を<font face="Arial">AsString</font>の値として扱います。</td>
+  </tr>
+  <tr>
+    <td width="21%"><font face="Arial">k0saskCommaText</font></td>
+    <td width="79%"><font face="Arial">Source</font>プロパティの<font face="Arial">CommaText</font>プロパティの値を<font face="Arial">AsString</font>の値として扱います。</td>
+  </tr>
+</table>
+<a name="0014"><h2><code><font color="#000000">EnumName</font></code></h2></a><p><code><b><font face="Arial"><font color="#000000">
+published property </font></font></b><font face="Arial"><font color="#000000">EnumName: <b>string</b>;</font><font color="#000000"><br> 
+<br>
+LoadEnum</font></font><font color="#000000">メソッドで、文字列と<font face="Arial">ID</font>のセットを読み込むための、<font face="Arial">Tc0EnumCollection</font>コンポーネントを識別する文字列を設定できます。<br>
+設定する文字列は、対象となる<font face="Arial">Tc0EnumCollection</font>コンポーネントの<font face="Arial">EnumName</font>プロパティで示される文字列です。</font></code></p>
+<p>　</p>
+<a name="0015"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">簡単な使い方</span></h1></a>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>  
+</span></p>
+<a name="0016"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">応用的な使い方</span></h1></a>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>  
+</span></p>
+<a name="0017"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">オブジェクト指向的使用法</span></h1></a>
+<p class="MsoNormal"><span lang="EN-US"><o:p>
+</o:p> 
+</span></p>
+<a name="0018"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">Ｑ＆Ａ</span></h1></a><span lang="EN-US"><o:p>
+</o:p> 
+</span>
+
+</body>
+
+</html>

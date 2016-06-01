@@ -1,0 +1,72 @@
+package s0p_VCtrl50;
+
+{$R *.RES}
+{$R 's0ObjCtrlBuilder.dcr'}
+{$R 's0FormEventPublisher.dcr'}
+{$R 's0FormRelation.dcr'}
+{$R 's0CtrlDragger.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '<syrinx VCL 01> Abstract Controls'}
+{$IMPLICITBUILD OFF}
+
+requires
+  Vcl50,
+  s0p_Core50,
+  s0p_Additional50,
+  s0p_VCore50;
+
+contains
+  s0ObjCtrlBuilder in 's0ObjCtrlBuilder.pas',
+  s0CtrlColumn in 's0CtrlColumn.pas',
+  s0CtrlDistiller in 's0CtrlDistiller.pas',
+  s0CtrlEventSnatcher in 's0CtrlEventSnatcher.pas',
+  s0CtrlOfType in 's0CtrlOfType.pas',
+  s0InputStyle in 's0InputStyle.pas',
+  s0ControlHelper in 's0ControlHelper.pas',
+  s0ControlList in 's0ControlList.pas',
+  s0ControlProxy in 's0ControlProxy.pas',
+  s0ControlVisitor in 's0ControlVisitor.pas',
+  s0CheckDrawer in 's0CheckDrawer.pas',
+  s0FormEventPublisher in 's0FormEventPublisher.pas',
+  s0FormRelation in 's0FormRelation.pas',
+  s0RegCtrl in 's0RegCtrl.pas',
+  s0CustomComplexCtrl in 's0CustomComplexCtrl.pas',
+  s0TreeViewController in 's0TreeViewController.pas',
+  s0CheckBoxHelper in 's0CheckBoxHelper.pas',
+  s0TabOrderController in 's0TabOrderController.pas',
+  s0VCLComCtrlsDistiller in 's0VCLComCtrlsDistiller.pas',
+  s0VCLExtCtrlsDistiller in 's0VCLExtCtrlsDistiller.pas',
+  s0VCLStdCtrlsDistiller in 's0VCLStdCtrlsDistiller.pas',
+  s0fObjEditor in 's0fObjEditor.pas' {frm0SXObjEditor},
+  s0GUIRobot in 's0GUIRobot.pas',
+  s0CtrlDragger in 's0CtrlDragger.pas',
+  s0ModeController in 's0ModeController.pas',
+  s0SingleInput in 's0SingleInput.pas',
+  s0ControlLock in 's0ControlLock.pas',
+  s0CtrlPtrCollection in 's0CtrlPtrCollection.pas',
+  s0ObjTreeMapper in 's0ObjTreeMapper.pas',
+  s0CtrlProxy in 's0CtrlProxy.pas',
+  s0ObjTreeMapMenu in 's0ObjTreeMapMenu.pas',
+  s0ObjTreeMapAction in 's0ObjTreeMapAction.pas';
+
+end.

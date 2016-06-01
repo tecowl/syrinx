@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0TagPolicy: Class Ts0TagPolicyRegister</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="4330"><H1>Class Ts0TagPolicyRegister</H1>
+</A><H2>Unit</H2>
+<A href="s0TagPolicy.htm">s0TagPolicy</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0TagPolicyRegister = class</CODE></P><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicyRegister.htm#4331"><CODE>constructor <B>Create</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicyRegister.htm#4332"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicyRegister.htm#4333"><CODE>procedure <B>GetRegisteredNames</B>(Dest: TStrings);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicyRegister.htm#4334"><CODE>function <B>GetTagPolicy</B>(APolicyName: K0TagPolicyName): Ts0TagPolicy;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicyRegister.htm#4335"><CODE>class function <B>Instance</B>: Ts0TagPolicyRegister;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicyRegister.htm#4336"><CODE>function <B>IsRegistered</B>(APolicyName: K0TagPolicyName): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicyRegister.htm#4337"><CODE>procedure <B>RegisterTagPolicy</B>(APolicy: Ts0TagPolicy);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicyRegister.htm#4338"><CODE>procedure <B>RegisterTagPolicyClass</B>(APolicyName: K0TagPolicyName; APolicyClass: Ts0TagPolicyClass);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicyRegister.htm#4339"><CODE>procedure <B>UnRegisterTagPolicy</B>(APolicy: Ts0TagPolicy);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0TagPolicyRegister.htm#4340"><CODE>procedure <B>UnRegisterTagPolicyClass</B>(APolicyName: K0TagPolicyName; APolicyClass: Ts0TagPolicyClass);</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4331"><TD><CODE>constructor <B>Create</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4332"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4333"><TD><CODE>procedure <B>GetRegisteredNames</B>(Dest: TStrings);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4334"><TD><CODE>function <B>GetTagPolicy</B>(APolicyName: <A href="s0TagPolicy.htm#4276">K0TagPolicyName</A>): <A href="Ts0TagPolicy.htm">Ts0TagPolicy</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4335"><TD><CODE>class function <B>Instance</B>: <A href="Ts0TagPolicyRegister.htm">Ts0TagPolicyRegister</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4336"><TD><CODE>function <B>IsRegistered</B>(APolicyName: <A href="s0TagPolicy.htm#4276">K0TagPolicyName</A>): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4337"><TD><CODE>procedure <B>RegisterTagPolicy</B>(APolicy: <A href="Ts0TagPolicy.htm">Ts0TagPolicy</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4338"><TD><CODE>procedure <B>RegisterTagPolicyClass</B>(APolicyName: <A href="s0TagPolicy.htm#4276">K0TagPolicyName</A>; APolicyClass: <A href="s0TagPolicy.htm#4277">Ts0TagPolicyClass</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4339"><TD><CODE>procedure <B>UnRegisterTagPolicy</B>(APolicy: <A href="Ts0TagPolicy.htm">Ts0TagPolicy</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4340"><TD><CODE>procedure <B>UnRegisterTagPolicyClass</B>(APolicyName: <A href="s0TagPolicy.htm#4276">K0TagPolicyName</A>; APolicyClass: <A href="s0TagPolicy.htm#4277">Ts0TagPolicyClass</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:43</EM>
+</BODY>
+</HTML>

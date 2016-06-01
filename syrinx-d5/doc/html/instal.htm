@@ -1,0 +1,317 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language"content="ja">
+<meta http-equiv="Content-Type"content="text/html; charset=shift_jis">
+<meta name="GENERATOR"content="Microsoft FrontPage 4.0">
+<meta name="ProgId"content="FrontPage.Editor.Document">
+<title>Install Manual</title>
+<base target="_self">
+</head>
+
+<body>
+
+<a name="0001"><h1 align="center">Install Manual</h1></a>
+<p align="left">　</p>
+<a name="0002"><h2 align="left">概要</h2></a>
+<p>syrinxは、Delphi/Kylixのパッケージとそれらに関するツール群で構成されています。ツール群は通常EXEファイルあるいは、Delphi/Kylixのエキスパートなどの形式で配布されます。<br>
+パッケージファイルは、コンパイルされた形式で配布されます。</p>
+<a name="0003"><h2>表記</h2></a>
+<p>syrinxの基準ディレクトリを $(syrinx) と表記します。<br>  
+<span style="font-family:&quot;MS UI Gothic&quot;">また、<span lang="EN-US">Delphiのインストールされているディレクトリは、<o:p>
+</o:p>  
+</span></span><span lang="EN-US"style="font-family:&quot;MS UI Gothic&quot;">$(Delphi)と表記します。<o:p>  
+</o:p>  
+</span></p>
+<p><b>&quot;$(syrinx)&quot;   
+という表記は、Delphi6よりライブラリパスなどの設定に使用できるようになりました。<br>
+ただし予め環境変数に&quot;syrinx=D:\syrinx&quot;というような設定が必要です。</b></p>
+<a name="0004"><h2>ディレクトリ構造</h2></a>
+<table border="1" width="76%" height="607">
+  <tr>
+    <td width="53%"colspan="4"height="29">ディレクトリ名</td>
+    <td width="171%"height="29">内容</td>
+    <td width="171%" height="29">主なファイルの拡張子</td>
+  </tr>
+  <tr>
+    <td width="53%"colspan="4"height="29">syrinx</td>
+    <td width="171%"height="29">syrinxインストールディレクトリ</td>
+    <td width="171%" height="29"></td>
+  </tr>
+  <tr>
+    <td width="4%" height="16">&nbsp;&nbsp;&nbsp;</td>
+    <td width="49%"colspan="3"height="16">D5</td>
+    <td width="74%"height="16">Delphi 5用</td>  
+    <td width="74%" height="16"></td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%" height="16">&nbsp;&nbsp;&nbsp;</td>
+    <td width="46%"colspan="2"height="16">bpl</td>
+    <td width="74%"height="16">パッケージ</td>
+    <td width="74%" height="16">dcp, bpl</td>  
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="46%"colspan="2"height="16">demo</td>
+    <td width="74%"height="16">デモ</td>
+    <td width="74%" height="16"></td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="46%"colspan="2"height="16">lib</td>
+    <td width="74%"height="16">ライブラリ</td>
+    <td width="74%" height="16">dcu</td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="3%"height="16">&nbsp;&nbsp;&nbsp;</td>
+    <td width="43%"height="16">debug</td>
+    <td width="74%"height="16">デバッグ用ライブラリ</td>
+    <td width="74%" height="16">dcu</td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="46%"colspan="2"height="16">pasDoc</td>
+    <td width="74%"height="16"></td>
+    <td width="74%" height="16">html</td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="46%"colspan="2"height="16">source</td>
+    <td width="74%"height="16">ソース</td>
+    <td width="74%" height="16"></td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="3%" height="16"></td>
+    <td width="43%"height="16">common</td>
+    <td width="74%"height="16">VCLに依存しないユニット</td>
+    <td width="74%" height="16">pas, dfm</td>  
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="43%"height="16">Designer</td>
+    <td width="74%"height="16">コンポーネントエディタ、プロパティエディタなど</td>
+    <td width="74%" height="16">pas, dfm</td>  
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="43%"height="16">Forms</td>
+    <td width="74%"height="16">アプリケーションのプロジェクトに追加されうるフォームなど</td>
+    <td width="74%" height="16">pas, dfm</td>  
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="43%"height="16">VCL</td>
+    <td width="74%"height="16">VCLに依存するユニット</td>
+    <td width="74%" height="16">pas, dfm</td>  
+  </tr>
+  <tr>
+    <td width="4%"height="16">&nbsp;</td>
+    <td width="49%"colspan="3"height="16">D6</td>
+    <td width="74%"height="16">Delphi 6用</td>  
+    <td width="74%" height="16"></td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%" height="16">&nbsp;</td>
+    <td width="46%"colspan="2"height="16">bpl</td>
+    <td width="74%"height="16">パッケージ</td>
+    <td width="74%" height="16">dcp, bpl</td>  
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="46%"colspan="2"height="16">demo</td>
+    <td width="74%"height="16">デモ</td>
+    <td width="74%" height="16"></td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="46%"colspan="2"height="16">lib</td>
+    <td width="74%"height="16">ライブラリ</td>
+    <td width="74%" height="16">dcu</td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="3%"height="16">&nbsp;</td>
+    <td width="43%"height="16">debug</td>
+    <td width="74%"height="16">デバッグ用ライブラリ</td>
+    <td width="74%" height="16">dcu</td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="46%"colspan="2"height="16">pasDoc</td>
+    <td width="74%"height="16"></td>
+    <td width="74%" height="16">.html</td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="46%"colspan="2"height="16">source</td>
+    <td width="74%"height="16">ソース</td>
+    <td width="74%" height="16"></td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="3%" height="16"></td>
+    <td width="43%"height="16">CLX</td>
+    <td width="74%"height="16">CLXに依存するユニット</td>
+    <td width="74%" height="16">pas, dfm</td>  
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="43%"height="16">common</td>
+    <td width="74%"height="16">VCL、CLXに依存しないユニット</td>
+    <td width="74%" height="16">pas, dfm</td>  
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="43%"height="16">Designer</td>
+    <td width="74%"height="16">コンポーネントエディタ、プロパティエディタなど</td>
+    <td width="74%" height="16">pas, dfm</td>  
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="43%"height="16">Forms</td>
+    <td width="74%"height="16">アプリケーションのプロジェクトに追加されうるフォームなど</td>
+    <td width="74%" height="16">pas, dfm</td>  
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="43%"height="16">VCL</td>
+    <td width="74%"height="16">VCLに依存するユニット</td>
+    <td width="74%" height="16">pas, dfm</td>  
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="46%"colspan="2"height="16">UnitTest</td>
+    <td width="74%"height="16">テストユニット</td>
+    <td width="74%" height="16">pas, dfm</td>  
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="49%"colspan="3"height="16">doc</td>
+    <td width="74%"height="16">ドキュメント</td>
+    <td width="74%" height="16"></td>
+  </tr>
+  <tr>
+    <td width="4%"height="16"></td>
+    <td width="3%"height="16"></td>
+    <td width="46%"colspan="2"height="16">html</td>
+    <td width="74%"height="16">HTMLドキュメント</td>
+    <td width="74%" height="16">html</td> 
+  </tr>
+  <tr>
+    <td width="4%" height="16"></td>
+    <td width="49%" colspan="3" height="16">tools</td>
+    <td width="74%" height="16">ツール類</td>
+    <td width="74%" height="16">exe</td>
+  </tr>
+</table>
+<a name="0005"><h2>インストール手順</h2></a>
+<a name="0006"><h3>手動でインストール</h3></a>
+<table border="1" width="100%">
+  <tr>
+    <td width="105%"colspan="3"><br>
+      パッケージのインストール</td>
+  </tr>
+  <tr>
+    <td width="5%" rowspan="4">　</td>
+    <td width="5%">１</td>
+    <td width="95%">配布されている圧縮ファイルをインストールするフォルダに展開します。<br>
+      例: D:\syrinx</td>  
+  </tr>
+  <tr>
+    <td width="5%">２</td>
+    <td width="95%">Delphiを起動します。</td>
+  </tr>
+  <tr>
+    <td width="5%">３</td>
+    <td width="95%">Delphiのメニューの[コンポーネント|パッケージのインストール]から、[追加]を行うと、[設計時パッケージの追加]ダイアログが表示されます。</td>
+  </tr>
+  <tr>
+    <td width="5%">４</td>
+    <td width="95%">$(syrinx)\D?\bpl ディレクトリにある、*.bplファイルを全て選択し、開くと選択したパッケージがインストールされます。</td>
+  </tr>
+  <tr>
+    <td width="105%" colspan="3"><br>
+      パスの設定</td>
+  </tr>
+  <tr>
+    <td width="5%" rowspan="5">　</td>
+    <td width="5%">１</td>
+    <td width="95%">Delphiのメニューの[ツール|環境オプション]を選択し、[環境オプション]ダイアログを開きます。</td>
+  </tr>
+  <tr>
+    <td width="5%">２</td>
+    <td width="95%">[ライブラリ|ディレクトリ|ライブラリパス]に<br>
+      $(syrinx)D?\\lib, $(syrinx)\D?\bpl を追加してください。<br>  
+      <br>
+      例: $(DELPHI)\Lib;$(DELPHI)\Bin;$(DELPHI)\Imports;$(DELPHI)\Projects\Bpl;D:\syrinx\d5\lib;D:\syrinx\d5\bpl</td>  
+  </tr>
+  <tr>
+    <td width="5%">３</td>
+    <td width="95%">Delphiのメニューの[ライブラリ|ディレクトリ|ブラウザ検索パス]に<br>
+      $(syrinx)\D?\source, $(syrinx)\D?\source\common, $(syrinx)\D?\source\VCL, 
+      $(syrinx)\D?\source\CLX を追加してください。<br>  
+      <br>
+      例: $(DELPHI)\source\vcl;$(DELPHI)\source\rtl\Corba;$(DELPHI)\source\rtl\Sys;$(DELPHI)\source\rtl\Win;$(DELPHI)\source\Internet;D:\syrinx\d5\source\common;D:\syrinx\d5\source\VCL</td>  
+  </tr>
+  <tr>
+    <td width="5%">４</td>
+    <td width="95%">Delphiのメニューの[ツール|デバッガオプション]を選択し、[デバッガオプション]ダイアログを開きます。</td>
+  </tr>
+  <tr>
+    <td width="5%">５</td>
+    <td width="95%">[一般|パス|デバッグ用 DCUのパス]に $(syrinx)\D?\lib\debug を追加してください。<br>  
+      <br>
+      例: $(DELPHI)\Lib\Debug;D:\syrinx\d5\lib\debug</td>  
+  </tr>
+</table>
+<p>　</p>
+<a name="0007"><h2>Q＆A</h2></a>
+<table border="1"width="100%"height="142">
+  <tr>
+    <td width="13%"height="16"></td>
+    <td width="46%"height="16">Question</td>
+    <td width="91%"height="16">Answer</td>
+  </tr>
+  <tr>
+    <td width="13%"height="114">１</td>
+    <td width="46%"height="114">syrinxのソースを実行時にトレースしたいのですが、F7キーなどでトレース実行を行っても出来ません。どうすればできますか？</td>
+    <td width="91%"height="114">Delphiのメニューで[プロジェクト|オプション]を選択し、[プロジェクトオプション]ダイアログを開きます。<br>
+      <br>
+      そのダイアログの[コンパイラ|デバッグ|デバッグ版DCUを使う]のチェックをすると、トレース実行することができるようになります。</td>
+  </tr>
+</table>
+
+</body>
+
+</html>

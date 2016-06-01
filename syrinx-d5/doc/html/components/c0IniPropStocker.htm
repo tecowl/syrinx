@@ -1,0 +1,827 @@
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type"content="text/html; charset=shift_jis">
+<meta name="GENERATOR"content="Microsoft FrontPage 4.0">
+<meta name="ProgId"content="FrontPage.Editor.Document">
+<title>c0IniPropStocker</title>
+</head>
+
+<body>
+
+<a name="0001"><h1><span lang="EN-US">c0IniPropStocker</span></h1></a>
+<a name="0002"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">継承関係</span></h1></a>
+<p class="MsoNormal"><span lang="EN-US">[TComponent]<br>
+<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>&lt;|----[Tc0ObjPropStocker]<br>
+<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</span>&lt;|----[Tc0IniPropStocker]&nbsp;<o:p>
+</o:p>        
+</span></p>
+<a name="0003"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">目的</span></h1></a>
+<p class="MsoNormal"><span lang="EN-US">Tc0IniPropStocker</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">はオブジェクトのプロパティなどを</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルに書き込むためのコンポーネントです。オブジェクト以外のデータも書き込むことが出来ます。</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>        
+</span></p>
+<a name="0004"><h1><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">簡単な使い方</span></h1></a>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">フォーム上の</span><span lang="EN-US">Edit1(TEdit)</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の</span><span lang="EN-US">Text</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティを保存する設定を行います。<br>
+フォームまたはデータモジュール上に</span><span lang="EN-US">Tc0IniPropStocker</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を置きます。コンポーネントの名前は</span><span lang="EN-US">c0IniPropStocker1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">とします。</span></p>
+<p class="MsoNormal">　</p>
+<a name="0005"><h2><span lang="EN-US">c0IniPropStocker1</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">の設定</span></h2></a>  
+<p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shapetype id="_x0000_t75"
+coordsize="21600,21600"o:spt="75"o:preferrelative="t"path="m@4@5l@4@11@9@11@9@5xe"
+filled="f"stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f"gradientshapeok="t"o:connecttype="rect"/>
+ <o:lock v:ext="edit"aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025"type="#_x0000_t75"style='width:221.25pt;
+ height:171.75pt'>
+ <v:imagedata src="image/c0IniP2.gif"
+o:title=""/>
+</v:shape><![endif]-->
+<img src="image/c0IniP2.gif"v:shapes="_x0000_i1025"width="295"height="229"><br> 
+</span></p>
+<a name="0006"><h3><span lang="EN-US">IniFileName</span>
+</h3></a>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">このプロパティは、読み書きの対象となる</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルのファイル名です。<br>
+デフォルトで</span><span lang="EN-US">True</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">になっている</span><span lang="EN-US">IniDirOfExec</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティを</span><span lang="EN-US">False</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">にすれば相対パスで対象を指定することが出来ます。</span><span lang="EN-US"><br>
+# </span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">絶対パスでの指定はお勧めしません。<br>        
+</span><span lang="EN-US">IniDirOfExec</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティが</span><span lang="EN-US">True</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の場合、実行ファイルと同じディレクトリに指定したファイル名の</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルを対象とします。</span></p>
+<a name="0007"><h3><span lang="EN-US">SystemName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">と</span><span lang="EN-US">ApplicatoinName</span>
+</h3></a>
+
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">これらは作成しているプロジェクトがどのシステムのどのアプリケーションかを識別するためのプロパティです。<br>
+通常</span><span lang="EN-US">SystemName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">はアプリが使用されるシステムの名前を、</span><span lang="EN-US">ApplicationName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">には</span><span lang="EN-US">Exe/DLL</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルの呼称を設定します（</span><span lang="EN-US">ApplicationName         
+</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">は</span><span lang="EN-US">EXE/DLL</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイル名と同一である必要はありません）。<br>
+ここでは、</span><span lang="EN-US">SystemName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティに</span><span lang="EN-US">”TestSystem”</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">、</span><span lang="EN-US">ApplicationName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティに</span><span lang="EN-US">”TestApp”</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を設定しています。<br>
+後述する</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルに書かれる内容を参照してください。</span></p>
+<a name="0008"><h2><span lang="EN-US">&nbsp;   
+</o:p></span><span lang="EN-US">c0IniPropStocker1.Items[0]</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">の設定</span>
+</h2></a>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">次に保存するデータを指定する項目を追加します。追加するには、</span><span lang="EN-US">c0IniPropStocker1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コンポーネントの</span><span lang="EN-US">Items</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティからコレクションエディタダイアログボックスを表示して、項目を一つ追加します。</span></p>
+<a name="0009"><h3><span lang="EN-US">TargetComponent</span>
+</h3></a>
+
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">保存対象となるコンポーネントを選択します。ここでは</span><span lang="EN-US">Edit1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を選択します。<br>
+フォームやデータモジュールなどのプロパティを対象としたい場合には、</span><span lang="EN-US">TargetIsOwner</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティを</span><span lang="EN-US">True</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に設定してください。<br>
+</span><span lang="EN-US">TargetProperty</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティでコンポーネントが属するフォームあるいはデータモジュールのプロパティが表示されます。</span></p>
+<a name="0010"><h3><span lang="EN-US">TargetProperty</span>
+</h3></a>
+
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">保存対象となるプロパティを選択します。ここでは</span><span lang="EN-US">Text</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を選択します。<br>
+</span><span lang="EN-US"><!--[if gtevml1]><v:shape id="_x0000_i1027"
+type="#_x0000_t75"style='width:211.5pt;height:216.75pt'>
+ <v:imagedata src="image/c0IniP3.gif"
+o:title=""/>
+</v:shape><![endif]-->
+<img src="image/c0IniP3.gif"v:shapes="_x0000_i1027"width="282"height="289"></span></p>
+<a name="0011"><h3><span lang="EN-US">DefaultValue</span>
+</h3></a>
+
+<p class="MsoNormal"><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルが存在しない場合や、</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルは存在しても項目に対応するエントリが無い場合などに設定されるデフォルト値です。<br>
+必要が無ければ指定する必要はありません。</span><span lang="EN-US"><br>
+</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ここでは</span><span lang="EN-US">”9999”</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">と設定します。</span></p>
+<a name="0012"><h2><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">応用的な使い方</span></h2></a>
+<a name="0013"><h3><span lang="EN-US">T</span><span lang="EN-US">c0FormEventPublisher</span>
+</h3></a>
+
+<p class="MsoNormal"><span lang="EN-US">c0FormEventPublisher1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">をフォームに置いてください。<br>
+このコンポーネントは特別なプロパティやイベントはありませんが、自動的に</span><span lang="EN-US">c0IniPropStocker1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の読み書きを行うような通知をするためのコンポーネントです。</span></p>
+<a name="0014"><h3><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">実行してみる</span></h3></a>
+
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">最初に実行すると</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルが存在しないので</span><span lang="EN-US">Edit1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">には</span><span lang="EN-US">DefaultValue         
+</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に設定した値</span><span lang="EN-US">”9999”</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">が表示されるはずです。</span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">アプリを終了すると、</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルが作成されますので、終了する前に、</span><span lang="EN-US">Edit1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の値を</span><span lang="EN-US">”ABCD</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に変更します。そして終了すると、以下のように</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルが</span><span lang="EN-US">Exe</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルと同じディレクトリに作成されます。</span><span lang="EN-US"><br>
+------------------------------------------------------------------<br>
+[TestSystem.TestApp.TForm1.Edit1]<br>
+Text=ABCD<br>
+------------------------------------------------------------------
+</span></p>
+<a name="0015"><h3>
+<span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">セクション名の構造</span></h3></a>
+
+<p class="MsoNormal"><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルの</span><span lang="EN-US">Section</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">名は</span><span lang="EN-US"><br>
+[(SystemName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">).(ApplicationName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">).(</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">フォームクラス名</span><span lang="EN-US">).(</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">インスタンス名</span><span lang="EN-US">)]<br>
+</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">という構造になります。</span></p>
+<p class="MsoNormal"><span lang="EN-US">SystemName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ、</span><span lang="EN-US">ApplicationName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティは任意の設定項目ですので、</span><span lang="EN-US">SystemName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティを設定しなかった場合は以下のように、</span><span lang="EN-US"><br>
+---------------------------------------------<br>
+[TestApp.TForm1.Edit1]<br>
+Text=9999<br>
+---------------------------------------------<br>
+<br>
+SystemName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティと</span><span lang="EN-US">ApplicationName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティを設定しなかった場合は以下のようになります。</span><span lang="EN-US"><br>
+---------------------------------------------<br>
+[TForm1.Edit1]<br>
+Text=9999<br>
+---------------------------------------------<br style="mso-special-character:
+line-break">
+<br style="mso-special-character:line-break">
+ApplicationName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティだけ設定しなかった場合には、以下のようになりますが、お勧めしません。</span><span lang="EN-US"><br>
+---------------------------------------------<br>
+<span style="mso-spacerun: yes">&nbsp;</span>[TestSystem..TForm1.Edit1]<br>
+Text=9999<br>
+---------------------------------------------
+</span></p>
+<a name="0016"><h3><span lang="EN-US">AccessLevel</span></h3></a>
+
+<p class="MsoNormal"><span lang="EN-US">AccessLevel</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティを使用すると、その項目がどのレベルの項目なのかを設定できます。</span><span lang="EN-US"><br>
+AccessLevel</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティのデフォルト値は、</span><span lang="EN-US">k0ialInstance</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ですので、セクション名は</span><span lang="EN-US"><br>
+[(SystemName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">).(ApplicationName</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">).(</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">フォームクラス名</span><span lang="EN-US">).(</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">インスタンス名</span><span lang="EN-US">)]</span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">例えば、</span><span lang="EN-US">AccessLevel</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティに</span><span lang="EN-US">k0ialForm</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を設定した場合、</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルは</span><span lang="EN-US"><br>
+---------------------------------------------<br>
+[TestSystem.TestApp.TForm1]<br>
+Text=9999<br>
+---------------------------------------------<br>
+</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">となり、</span><span lang="EN-US">k0ialApplication</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を設定した場合には、</span><span lang="EN-US"><br>
+---------------------------------------------<br>
+[TestSystem.TestApp]<br>
+Text=9999<br>
+---------------------------------------------<br>
+k0ialSystem</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を設定した場合には、</span><span lang="EN-US"><br>
+---------------------------------------------<br>
+[TestSystem]<br>
+Text=9999<br>
+---------------------------------------------<br>
+</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">となります。</span></p>
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">これは、システム共通のデータなのか、アプリケーション共通なのか、フォームにおいて使用するデータなのかを分類するための仕組みです。<br>
+コンポーネントのプロパティを保存</span><span lang="EN-US">/</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">読込みするためには、</span><span lang="EN-US">k0ialInstance</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を使用するのが妥当ですが、コンポーネント以外のデータを保存する場合には、この</span><span lang="EN-US">AccessLevel</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティを設定すると便利です。</span></p>
+<a name="0017"><h3><span lang="EN-US"><o:p></o:p></span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">フォームの位置保存保存項目追加</span>
+</h3></a>
+
+<p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shape id="_x0000_i1028"
+type="#_x0000_t75"style='width:219pt;height:281.25pt'>
+ <v:imagedata src="image/c0IniP4.gif"
+o:title=""/>
+</v:shape><![endif]-->
+<img src="image/c0IniP4.gif"v:shapes="_x0000_i1028"width="292"height="375"></span></p>
+<p class="MsoNormal"><span lang="EN-US">c0IniPropStocker1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を右クリックすると、ポップアップメニューが表示され、その中には「フォームの位置保存項目追加」という項目があります。</span><span lang="EN-US"><br>
+</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">これを選択すると、以下のようにフォームの位置保存のためのプロパティを対象とする項目が追加されます。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shape id="_x0000_i1029"
+type="#_x0000_t75"style='width:110.25pt;height:163.5pt'>
+ <v:imagedata src="image/c0IniP5.gif"
+o:title=""/>
+</v:shape><![endif]-->
+<img src="image/c0IniP5.gif"v:shapes="_x0000_i1029"width="147"height="218"></span></p> 
+<a name="0018"><h3><span lang="EN-US">
+</o:p></span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">プロパティ以外の値</span></h3></a>
+
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">例えば、終了する直前の時刻を</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルに保存したい場合にはコンポーネントのプロパティを選択して設定することはできませんので、コードでその動作を記述する必要があります。</span><span lang="EN-US">&nbsp;<br>
+</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">これを実現する方法として</span><span lang="EN-US">Items</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の</span><span lang="EN-US">OnGetValueToSave         
+/ OnSetValueToLoad</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">イベントを使う方法を紹介します。</span></p>        
+<p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">まずは、対象となる項目が必要ですので、項目を新たに追加します。そして</span><span lang="EN-US">TargetProperty</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に</span><span lang="EN-US">”LastTime”</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">と設定します。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><!--[if gtevml1]><v:shape id="_x0000_i1030"
+type="#_x0000_t75"style='width:171.75pt;height:171.75pt'>
+ <v:imagedata src="image/c0IniP6.gif"
+o:title=""/>
+</v:shape><![endif]-->
+<img src="image/c0IniP6.gif"v:shapes="_x0000_i1030"width="229"height="229"></span></p> 
+<a name="0019"><h3><span lang="EN-US">
+</o:p></span><span lang="EN-US">OnGetValue</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">イベント</span></h3></a>
+
+<p class="MsoNormal"><span lang="EN-US">[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">イベント</span><span lang="EN-US">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">タブで、</span><span lang="EN-US">OnGetValueToSave</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">をダブルクリックなどを行い、イベントハンドラを設定します。</span><span lang="EN-US">&nbsp;<o:p>
+</o:p>        
+</span></p>
+<p class="MsoNormal"><span lang="EN-US">OnGetValueToSave</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">イベントは、データを</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルに保存する前に、各項目のデータ（コンポーネントのプロパティの値など）を取得するためのイベントです。<br>
+ですので、ここでは</span><span lang="EN-US">Now</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">関数で得られる時刻を文字列に変換し、引数</span><span lang="EN-US">AValue</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に設定します。</span></p>
+<p class="MsoNormal"><b><span lang="EN-US"style="font-size:10.0pt;mso-bidi-font-size:
+12.0pt">procedure</span></b><span lang="EN-US"style="font-size:10.0pt;
+mso-bidi-font-size:12.0pt"> TForm1.c0IniPropStocker1Items5GetValueToSave(<br>        
+<span style="mso-spacerun: yes">&nbsp; </span>Sender: T0ObjPropStockerItem; <b>var</b>         
+AValue: <b>String</b>; <b>var</b> ACancel: Boolean);<br>        
+<b>begin<br>
+</b><span style="mso-spacerun: yes">&nbsp; </span>AValue := DateTimeToStr(Now);<br>        
+<b>end</b>;<br style="mso-special-character:line-break">
+<br style="mso-special-character:line-break">
+</span><span lang="EN-US"># </span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">引数</span><span lang="EN-US">ACancel</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に</span><span lang="EN-US">True</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を設定した場合、</span><span lang="EN-US">AVvalue</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に設定した値は無視され使用されません。<br>
+</span></p>
+<a name="0020"><h3>
+<span lang="EN-US">OnSetValueToLoad</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">イベント</span></h3></a>
+
+<p class="MsoNormal"><span lang="EN-US">[</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">イベント</span><span lang="EN-US">]</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">タブで、</span><span lang="EN-US">OnSetValueToLoad</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">をダブルクリックなどを行い、イベントハンドラを設定します。<br>
+</span><span lang="EN-US">OnSetValueToLoad</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">イベントは、データを</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルから読み込んだ後に、各項目のデータを設定するためのイベントです。<br>
+通常、このイベントハンドラでは引数で渡された文字列が日付時刻として正しいものならば変換する、というような処理を行うと思いますが、サンプルのコードでは</span><span lang="EN-US">Edit2.Text</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に引数</span><span lang="EN-US">AValue</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の値を設定しています。</span></p>
+<p class="MsoNormal"><b><span lang="EN-US"style="font-size:10.0pt;mso-bidi-font-size:
+12.0pt">&nbsp;</span><span lang="EN-US">procedure</span></b><span lang="EN-US"> 
+TForm1.c0IniPropStocker1Items5SetValueToLoad(<br>        
+<span style="mso-spacerun: yes">&nbsp; </span>Sender: T0ObjPropStockerItem; <b>var</b>         
+AValue: <b>String</b>; <b>var</b> ACancel: Boolean);<br>        
+<b>begin</b><br>
+<span style="mso-spacerun: yes">&nbsp; </span>Edit2.Text := AValue;<br>        
+<b>end</b>;<br>
+<br style="mso-special-character:line-break">
+</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">これらのコードによって、終了時の時刻が</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルに保存され、次回実行時に</span><span lang="EN-US">Edit2</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に表示されます。</span></p>
+<a name="0021"><h3><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">実行後の</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">ファイル</span></h3></a>
+
+<p class="MsoNormal"><span lang="EN-US">------------------------------------------------------------------<br>
+[TestSystem.TestApp.TForm1.Edit1]<br>
+Text=9999<br>
+[TestSystem.TestApp.TForm1.Form1]<br>
+Left=264<br>
+Top=104<br>
+Height=139<br>
+Width=169<br>
+LastTime=2001/11/30 4:44:25<br>        
+------------------------------------------------------------------&nbsp;<o:p>
+</o:p>        
+</span></p>
+<a name="0022"><h1>
+<span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">オブジェクト指向的使用法</span>
+</h1></a>
+
+  <p class="MsoNormal"><span lang="EN-US">&nbsp;</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">例えば、最後にアプリケーションを起動したユーザの名前と起動回数と起動時刻を</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルに書き込む必要が生じた場合について考えます。</span></p>
+  <p class="MsoNormal"><span lang="EN-US">&nbsp;</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">これらのデータは、あまりフォーム上のコンポーネントのプロパティなどに使用されることはありませんが、アプリケーションの処理に使用されるもの仮定します。<br>
+  これらは、フォームなどの表示とは無関係に使用される可能性があります。例えばメインフォームが表示される前に、使用限度回数を超えていたらアプリを起動しないという処理を行うかもしれません。</span><span lang="EN-US">&nbsp;<o:p>
+  </o:p>        
+  </span></p>
+  <p class="MsoNormal"><span lang="EN-US">Tc0IniPropStocker</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">コンポーネントの</span><span lang="EN-US">Items</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">プロパティ</span><span lang="EN-US">(T0ObjPropStockerItems</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">クラス</span><span lang="EN-US">)</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">には</span><span lang="EN-US">AddAllProp</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">というメソッドがあります。このメソッドは引数に渡されたインスタンスの</span><span lang="EN-US">published</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">のプロパティを読込み、項目として追加するためのものです。<br>
+  </span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">よって、</span><span lang="EN-US">AddAllProp</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">メソッドの引数として渡せるようなクラスを作ると、</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルへのアクセスが非常に簡単になります。</span></p>
+  <a name="0023"><h2><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">オプション設定クラスを作る</span>
+</h2></a>
+  
+      <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">まずは新たなユニットを作成し、以下のようにデータを保持するクラスを作ります。<br>
+      </span><span style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: Century; mso-hansi-font-family: Century">ユニットを新規作成しなくても構いませんが、作っておいた方が後々便利です。<br>
+      </span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century"><br>
+      各種データを表すプロパティは、<b>必ず</b>可視性を</span><span lang="EN-US">published</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に設定してください。これは</span><span lang="EN-US">Tc0IniPropStocker</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">が</span><span lang="EN-US">RTTI</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">（実行時方情報）を使用しているためです。</span><span lang="EN-US"style="font-size:10.0pt;mso-bidi-font-size:
+12.0pt">&nbsp;<o:p>
+      </o:p>        
+      <br>
+      <br>
+      published</span><span style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: Century; mso-hansi-font-family: Century">のプロパティを宣言するには</span><span lang="EN-US"style="font-size:10.0pt;mso-bidi-font-size:12.0pt">TPersistent</span><span style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: Century; mso-hansi-font-family: Century">クラス、あるいはその派生クラスを継承する必要があります（正確には</span><span lang="EN-US"style="font-size:10.0pt;mso-bidi-font-size:12.0pt">{$M+}</span><span style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: Century; mso-hansi-font-family: Century">状態でコンパイルされたクラス、もしくはその派生クラスである必要があります）。ここでは</span><span lang="EN-US"style="font-size:10.0pt;mso-bidi-font-size:12.0pt">TComponent</span><span style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: Century; mso-hansi-font-family: Century">クラスから派生しています。</span><span lang="EN-US"><br>
+      <br>
+      <br>
+      &nbsp;</span><code><b><span lang="EN-US"style="color:black">unit </span></b><span lang="EN-US"style="color:black">u8Options;<br>        
+      <br>
+      </span><b><span lang="EN-US"style="color:black">interface<o:p>
+      </o:p>
+      <br>
+      <br>
+      uses<o:p>
+      </o:p>
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp; </span></b><span lang="EN-US"style="color:black">SysUtils,         
+      Classes;</span><b><span lang="EN-US"style="color:black"><br>
+      <br>
+      type<o:p>
+      </o:p>
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp; </span></b><span lang="EN-US"style="color:black">T8Options         
+      = <b>class</b>(TComponent)<o:p>        
+      </o:p>        
+      <br>
+      <span style="mso-spacerun: yes">&nbsp; </span><b>private<o:p>        
+      </o:p>        
+      <br>
+      </b></span><b><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;         
+      </span></b><span lang="EN-US"style="color:black">FExecTime: Integer;<o:p>        
+      </o:p>        
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>FLastUserName: <b>string</b>;<o:p>        
+      </o:p>        
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>FLastExecDate:         
+      TDateTime;<o:p>
+      </o:p>        
+      <br>
+      <span style="mso-spacerun: yes">&nbsp; </span><b>published<o:p>        
+      </o:p>        
+      <br>
+      </b></span><b><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;         
+      </span></b><span lang="EN-US"style="color:navy">//最終起動ユーザ<o:p>
+      </o:p>        
+      <br>
+      </span><span style="mso-spacerun: yes; color: navy"lang="EN-US">&nbsp;&nbsp;&nbsp;         
+      </span><b><span lang="EN-US"style="color:black">property </span></b><span lang="EN-US"style="color:black">LastUserName:         
+      <b>string read </b>FLastUserName <b>write </b>FLastUserName;<o:p>
+      </o:p>
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;         
+      </span><span lang="EN-US"style="color:navy">//最終起動日時<o:p>
+      </o:p>        
+      <br>
+      </span><span style="mso-spacerun: yes; color: navy"lang="EN-US">&nbsp;&nbsp;&nbsp;         
+      </span><b><span lang="EN-US"style="color:black">property </span></b><span lang="EN-US"style="color:black">LastExecDate:         
+      TDateTime <b>read </b>FLastExecDate <b>write </b>FLastExecDate;<o:p>
+      </o:p>
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;         
+      </span><span lang="EN-US"style="color:navy">//起動回数<o:p>
+      </o:p>        
+      <br>
+      </span><span style="mso-spacerun: yes; color: navy"lang="EN-US">&nbsp;&nbsp;&nbsp;         
+      </span><b><span lang="EN-US"style="color:black">property </span></b><span lang="EN-US"style="color:black">ExecTime:         
+      Integer <b>read </b>FExecTime <b>write </b>FExecTime;<o:p>
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black"><span style="mso-spacerun: yes">&nbsp;         
+      </span><b>end</b>;<o:p>
+      </o:p>        
+      <br>
+      </span><b><span lang="EN-US"style="color:black"><br>
+      implementation<o:p>
+      </o:p>
+      <br>
+      <o:p>
+      </o:p>
+      <br>
+      end</span></b><span lang="EN-US"style="color:
+black">.<br>
+      <o:p>
+      </span></code></p>
+      <a name="0024"><h2><span lang="EN-US">Singleton</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">パターンを適用する</span>
+</h2></a>
+  
+      <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">このままですと、使用するクラスがインスタンスを生成する必要が生じます。大抵、このようなクラスのインスタンスは、システム上に一つだけあればよいので、</span><span lang="EN-US">GoF</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">のデザインパターンの一つ、</span><span lang="EN-US">Singleton</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">パターンを適用します。すると以下のようになります。<br>
+      <br>
+      <br>
+      </span><code><b><span lang="EN-US"style="color:black">unit </span></b><span lang="EN-US"style="color:black">u8Options;<o:p>        
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black">&nbsp;<o:p>
+      </o:p>        
+      <br>
+      </span><b><span lang="EN-US"style="color:black">interface<o:p>
+      </o:p>        
+      <br>
+      &nbsp;<o:p>
+      </o:p>        
+      <br>
+      uses<o:p>
+      </o:p>        
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp; </span></b><span lang="EN-US"style="color:black">SysUtils,         
+      Classes;<o:p>
+      </o:p>        
+      <br>
+      &nbsp;<o:p>
+      </o:p>        
+      <br>
+      </span><b><span lang="EN-US"style="color:black">type<o:p>
+      </o:p>        
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp; </span></b><span lang="EN-US"style="color:black">T8Options         
+      = <b>class</b>(TComponent)<o:p>        
+      </o:p>        
+      <br>
+      <span style="mso-spacerun: yes">&nbsp; </span><b>private<o:p>        
+      </o:p>        
+      <br>
+      </b></span><b><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;         
+      </span></b><span lang="EN-US"style="color:black">FExecTime: Integer;<o:p>        
+      </o:p>        
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>FLastUserName: <b>string</b>;<o:p>        
+      </o:p>        
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>FLastExecDate:         
+      TDateTime;<o:p>
+      </o:p>        
+      <br>
+      <span style="mso-spacerun: yes">&nbsp; </span><b>public<o:p>        
+      </o:p>        
+      <br>
+      </b></span><b><span lang="EN-US"style="color:black"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;   
+      </span>class function </span></b><span lang="EN-US"style="color:black">Instance:         
+      T8Options;<o:p>
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black"><span style="mso-spacerun: yes">&nbsp;        
+      </span><b>published<o:p>
+      </o:p>       
+      <br>
+      </b></span><b><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;        
+      </span></b><span lang="EN-US"style="color:navy">//最終起動ユーザ<o:p>
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: navy"lang="EN-US">&nbsp;&nbsp;&nbsp;        
+      </span><b><span lang="EN-US"style="color:black">property </span></b><span lang="EN-US"style="color:black">LastUserName:        
+      <b>string read </b>FLastUserName <b>write </b>FLastUserName;<o:p>
+      </o:p>
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;        
+      </span><span lang="EN-US"style="color:navy">//最終起動日時<o:p>
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: navy"lang="EN-US">&nbsp;&nbsp;&nbsp;        
+      </span><b><span lang="EN-US"style="color:black">property </span></b><span lang="EN-US"style="color:black">LastExecDate:        
+      TDateTime <b>read </b>FLastExecDate <b>write </b>FLastExecDate;<o:p>
+      </o:p>
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;        
+      </span><span lang="EN-US"style="color:navy">//起動回数<o:p>
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: navy"lang="EN-US">&nbsp;&nbsp;&nbsp;        
+      </span><b><span lang="EN-US"style="color:black">property </span></b><span lang="EN-US"style="color:black">ExecTime:        
+      Integer <b>read </b>FExecTime <b>write </b>FExecTime;<o:p>
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black"><span style="mso-spacerun: yes">&nbsp; 
+      </span><b>end</b>;<o:p>
+      </o:p>       
+      <br>
+      &nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">implementation<o:p>
+      </o:p>       
+      <br>
+      &nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span></b><span lang="EN-US"style="color:navy">{ T8Options }<o:p>       
+      </o:p>       
+      <br>
+      &nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">var<o:p>
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp; </span></b><span lang="EN-US"style="color:black">g9Options:        
+      T8Options = <b>nil</b>;<o:p>       
+      </o:p>       
+      <br>
+      &nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">class function </span></b><span lang="EN-US"style="color:black">T8Options.Instance:        
+      T8Options;<o:p>
+      </o:p>
+      <br>
+      </span><b><span lang="EN-US"style="color:black">begin<o:p>
+      </o:p>
+      <br>
+      </span></b><b><span lang="EN-US"style="color:black"><span style="mso-spacerun: yes">&nbsp; 
+      </span>if </span></b><span lang="EN-US"style="color:black">g9Options = <b>nil        
+      then<o:p>
+      </o:p>
+      <br>
+      </b></span><b><span lang="EN-US"style="color:black"><span style="mso-spacerun: yes">&nbsp; 
+      </span>begin<o:p>
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;        
+      </span></b><span lang="EN-US"style="color:black">g9Options :=        
+      T8Options.Create(<b>nil</b>);<o:p>
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;        
+      </span><span lang="EN-US"style="color:navy">{ IniファイルのSection名としてNameプロパティが使われるので必ず設定する。}<o:p>       
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: navy"lang="EN-US">&nbsp;&nbsp;&nbsp;        
+      </span><span lang="EN-US"style="color:black">g9Options.Name := </span><span lang="EN-US"style="color:navy">'GlobalOptions'</span><span lang="EN-US"style="color:black">;<o:p>       
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black"><span style="mso-spacerun: yes">&nbsp; 
+      </span><b>end</b>;<o:p>
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp; </span>Result := g9Options;<o:p>       
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">end</span></b><span lang="EN-US"style="color:
+black">;<o:p>
+      </o:p>
+      </span><span lang="EN-US"style="color:black">&nbsp;<o:p>
+      </o:p>       
+      <br>
+      <br>
+      </span><b><span lang="EN-US"style="color:black">initialization<o:p>
+      </o:p>       
+      <br>
+      <br>
+      finalization<o:p>
+      </o:p>       
+      <br>
+      </span></b><span lang="EN-US"style="color:black"><b><span style="mso-spacerun: yes">&nbsp; 
+      </span></b>FreeAndNil(g9Options);<o:p>
+      </o:p>       
+      </span><b><span lang="EN-US"style="color:black"><br>
+      <br>
+      end</span></b><span lang="EN-US"style="color:
+black">.<o:p>
+      </o:p> 
+      <br>
+      <br>
+      </span></code><span lang="EN-US">finalization</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">部で必ず</span><span lang="EN-US">Free</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">して</span><span lang="EN-US">nil</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を代入することを忘れないでください。<br>
+      </span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">これで、オプションクラスは作成されました。後は使う部分と、</span><span lang="EN-US">Tc0IniPropStocker</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">が</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルに読み書きするように設定するだけです。<br>
+      </span></p>
+<a name="0025"><h2><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">オプション設定クラスを使用する</span></h2></a>
+<p class="MsoNormal"><span lang="EN-US"><o:p></span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">まず、起動時に</span><span lang="EN-US">c0IniPropStocker1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">が</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルのデータを読み込む前に、</span><span lang="EN-US">T8Options</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">のプロパティの項目を追加する必要があるので、</span><span lang="EN-US">OnCreate</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">イベントで</span><span lang="EN-US">Items</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">。</span><span lang="EN-US">AddAllProp</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">メソッドを呼び出します。引数はもちろん</span><span lang="EN-US">Singleton</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">パターンを適用した</span><span lang="EN-US">T8Options.Instance</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">です。<br>
+      </span><span lang="EN-US">OnShow</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">イベントが呼び出される時には、</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルからの読込みは終了しているので、そこで起動回数に</span><span lang="EN-US">1</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を加えます。<br>
+      次に、フォームが表示される前に起動回数をチェックすることにします。<br>
+      以上の処理を行うコードは以下のようになります。<br>
+      </span><span lang="EN-US"><o:p>
+      </o:p>
+      <br>
+      <br>
+      </span><code><b><span lang="EN-US"style="color:black">unit </span></b><span lang="EN-US"style="color:black">Unit1;<o:p>       
+      </o:p>
+      </span><span lang="EN-US"style="color:black"><br>
+      &nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">interface<o:p>
+      </o:p>       
+      <br>
+      &nbsp;<o:p>
+      </o:p>       
+      <br>
+      uses<o:p>
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp; </span></b><span lang="EN-US"style="color:black">Windows,        
+      Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,<o:p>       
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp; </span>c0ObjPropStocker,        
+      c0IniPropStocker, StdCtrls, c0FormEventPublisher;<o:p>       
+      </o:p>       
+      <br>
+      &nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">type<o:p>
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp; </span></b><span lang="EN-US"style="color:black">TForm1        
+      = <b>class</b>(TForm)<o:p>       
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>Edit1: TEdit;<o:p>       
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>c0FormEventPublisher1:        
+      Tc0FormEventPublisher;<o:p>
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>c0IniPropStocker1:        
+      Tc0IniPropStocker;<o:p>
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>Edit2: TEdit;<o:p>       
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><b>procedure </b>c0IniPropStocker1Items5GetValueToSave(<o:p>
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Sender:        
+      T0ObjPropStockerItem; <b>var </b>AValue: <b>String</b>;<o:p>       
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b>var 
+      </b>ACancel: Boolean);<o:p>       
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><b>procedure </b>c0IniPropStocker1Items5SetValueToLoad(<o:p>
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Sender:        
+      T0ObjPropStockerItem; <b>var </b>AValue: <b>String</b>;<o:p>       
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b>var        
+      </b>ACancel: Boolean);<o:p>       
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><b>procedure </b>FormCreate(Sender:        
+      TObject);<o:p>
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><b>procedure </b>FormShow(Sender:        
+      TObject);<o:p>
+      </o:p>       
+      <br>
+      <span style="mso-spacerun: yes">&nbsp; </span><b>private<o:p>       
+      </o:p>       
+      <br>
+      </b></span><b><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;        
+      </span></b><span lang="EN-US"style="color:navy">{ Private 宣言 }<o:p>       
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: navy"lang="EN-US">&nbsp; </span><b><span lang="EN-US"style="color:black">public<o:p>       
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;        
+      </span></b><span lang="EN-US"style="color:navy">{ Public 宣言 }<o:p>       
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: navy"lang="EN-US">&nbsp; </span><b><span lang="EN-US"style="color:black">end</span></b><span lang="EN-US"style="color:       
+black">;<o:p>
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black">&nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">var<o:p>
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp; </span></b><span lang="EN-US"style="color:black">Form1:        
+      TForm1;<o:p>
+      </o:p>       
+      <br>
+      &nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">implementation<o:p>
+      </o:p>       
+      <br>
+      &nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span></b><span lang="EN-US"style="color:navy">{$R *.DFM}<o:p>       
+      </o:p>       
+      <br>
+      &nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">uses<o:p>
+      </o:p>       
+      <br>
+      </span><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp; </span></b><span lang="EN-US"style="color:black">u8Options;<o:p>       
+      </o:p>       
+      <br>
+      &nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">procedure </span></b><span lang="EN-US"style="color:black">TForm1.c0IniPropStocker1Items5GetValueToSave(<o:p>       
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black"><span style="mso-spacerun: yes">&nbsp; 
+      </span>Sender: T0ObjPropStockerItem; <b>var </b>AValue: <b>String</b>; <b>var        
+      </b>ACancel: Boolean);<o:p>       
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">begin<o:p>
+      </o:p>
+      <br>
+      </span></b><b><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;        
+      </span></b><span lang="EN-US"style="color:black">AValue :=        
+      DateTimeToStr(Now);<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">end</span></b><span lang="EN-US"style="color:
+black">;<o:p>
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black">&nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">procedure </span></b><span lang="EN-US"style="color:black">TForm1.c0IniPropStocker1Items5SetValueToLoad(<o:p>       
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black"><span style="mso-spacerun: yes">&nbsp; 
+      </span>Sender: T0ObjPropStockerItem; <b>var </b>AValue: <b>String</b>; <b>var        
+      </b>ACancel: Boolean);<o:p>       
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">begin<o:p>
+      </o:p>
+      <br>
+      </span></b><b><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;        
+      </span></b><span lang="EN-US"style="color:black">Edit2.Text := AValue;<o:p>       
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">end</span></b><span lang="EN-US"style="color:
+black">;<o:p>
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black">&nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">procedure </span></b><span lang="EN-US"style="color:black">TForm1.FormCreate(Sender:        
+      TObject);<o:p>
+      </o:p>
+      <br>
+      </span><b><span lang="EN-US"style="color:black">begin<o:p>
+      </o:p>
+      <br>
+      </span></b><b><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;        
+      </span></b><span lang="EN-US"style="color:black">c0IniPropStocker1.Items.AddAllProp(T8Options.Instance,        
+      k0ialInstance);<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">end</span></b><span lang="EN-US"style="color:
+black">;<o:p>
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black">&nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">procedure </span></b><span lang="EN-US"style="color:black">TForm1.FormShow(Sender:        
+      TObject);<o:p>
+      </o:p>
+      <br>
+      </span><b><span lang="EN-US"style="color:black">begin<o:p>
+      </o:p>
+      <br>
+      </span></b><b><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;        
+      </span></b><span lang="EN-US"style="color:black">T8Options.Instance.ExecTime        
+      := T8Options.Instance.ExecTime + </span><span lang="EN-US"style="color:navy">1</span><span lang="EN-US"style="color:black">;<o:p>       
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black"><span style="mso-spacerun: yes">&nbsp;        
+      </span><b>if </b>T8Options.Instance.ExecTime &gt; </span><span lang="EN-US"style="color:navy">3        
+      </span><b><span lang="EN-US"style="color:black">then<o:p>
+      </o:p>
+      <br>
+      </span></b><b><span style="mso-spacerun: yes; color: black"lang="EN-US">&nbsp;&nbsp;&nbsp;        
+      </span></b><span lang="EN-US"style="color:black">ShowMessage(</span><span lang="EN-US"style="color:navy">'起動回数が3回を超えました'</span><span lang="EN-US"style="color:black">);<o:p>
+      </o:p>
+      <br>
+      </span><b><span lang="EN-US"style="color:black">end</span></b><span lang="EN-US"style="color:
+black">;<o:p>
+      </o:p>
+      <br>
+      </span><span lang="EN-US"style="color:black">&nbsp;<o:p>
+      </o:p>       
+      <br>
+      </span><b><span lang="EN-US"style="color:black">end</span></b><span lang="EN-US"style="color:
+black">.<o:p>
+      </o:p> 
+      <br>
+      <br>
+      <br>
+      </span></code><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">作成された</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイル<br>
+      </span><span lang="EN-US">------------------------------------------------------------------&nbsp;<br>
+      [TestSystem.TestApp.TForm1.Edit1]<br>
+      Text=9999<br>
+      [TestSystem.TestApp.TForm1.Form1]<br>
+      Left=264<br>
+      Top=104<br>
+      Height=132<br>
+      Width=167<br>
+      LastTime=2001/11/30 5:52:11<br>       
+      [TestSystem.TestApp.TForm1.GlobalOptions]<br>
+      LastUserName=<br>
+      LastExecDate=2001/11/30 05:52:09:042<br>       
+      ExecTime=1<br>
+      ------------------------------------------------------------------<br style="mso-special-character:line-break">
+<br>
+<a href="Sample/c0IniPropStocker/c0IniPropStocker_sample.lzh">サンプルコード</a></span></p>
+      <p class="MsoNormal">　</p>
+      <a name="0026"><h2>
+  <span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">まとめ</span>
+</h2></a>
+  
+      <p class="MsoNormal"><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">作成した</span><span lang="EN-US">T8Options</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の各項目については、</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルにどのように記述するのかは一切コードを書いておりません。</span><span lang="EN-US"><br>
+      </span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">この方法の利点は、</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルに保持するデータが増えたとしても、</span><span lang="EN-US">T8Option</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">のプロパティを新たに追加すれば済むことです。</span></p>
+      <p class="MsoNormal"><span lang="EN-US">&nbsp;</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">また、</span><span lang="EN-US">Singleton</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">パターンを適用したことによって、他のフォームやデータモジュールなどから同じ値を参照することが非常に簡単になりました。</span></p>
+      <p class="MsoNormal"><span lang="EN-US">&nbsp;</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">注意していただきたいのは、必ずしも</span><span lang="EN-US">T8Option</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">のようなクラスは１つでなければならない、などという制約は<b>ない</b>ということです。複数のインスタンスに対して</span><span lang="EN-US">AddAllProp</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">メソッドを何度も呼び出しても構いません。</span></p>
+      <p class="MsoNormal"><span lang="EN-US">&nbsp;</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">これらのオプション設定クラスは用途に応じて適度に分割することをお勧めします。</span></p>
+<a name="0027"><h1><span lang="EN-US">Q</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">＆</span><span lang="EN-US">A</span>
+</h1></a>
+<a name="0028"><h3><span lang="EN-US">Q</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">．</span><span lang="EN-US">IniFileName</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">に同じファイル名を指定した</span><span lang="EN-US">2</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">つの</span><span lang="EN-US">Tc0IniPropStocker</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">を使用することはできますか？</span>
+</h3></a>
+
+
+    <p class="MsoNormal"><span lang="EN-US">A</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">．はい。可能です。同時にいくつでも使用できます。別々のフォームに</span><span lang="EN-US">Tc0IniPropStocker</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">があっても、同じフォームにあっても構いません。<br>
+    </span><span lang="EN-US">Tc0IniPropStocker</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">は必要なときにだけ</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルにアクセスします。よって、片方が</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルを使用しているからもう片方が使えない、ということはありません。</span></p>
+<a name="0029"><h3><span lang="EN-US">Q.</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">が動的に変更されるので、</span><span lang="EN-US">Items</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">を予め登録できないデータがあります。直接</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">ファイルにアクセスしたいのですが。</span>
+</h3></a>
+
+    <p class="MsoNormal"><span lang="EN-US">A.Tc0IniPropStocker</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">の</span><span lang="EN-US">OnLoadItem</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">イベントと</span><span lang="EN-US">OnSaveItem</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">イベントを使用してください。<br>
+    これらのイベントのイベントハンドラの引数には、</span><span lang="EN-US">TCustomIniFile      
+    </span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">型の</span><span lang="EN-US">AIni</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">が渡されます。この</span><span lang="EN-US">AIni</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">に対して</span><span lang="EN-US">ReadXXXX</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">や</span><span lang="EN-US">WriteXXXX</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">メソッドを実行することで</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルにアクセスすることが出来ます。<br>
+    <br>
+    </span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ただし、</span><span lang="EN-US">Items</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">を予め登録できないと言う場合は、そのデータが本当に</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">ファイルに記述されるべきデータかどうかを見直したほうが良い場合がありますので、一度構造を見直されてはいかがでしょうか？
+    </span></p>
+    <a name="0030"><h3><span lang="EN-US">Q</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">．</span><span lang="EN-US">Ini</span><span style="mso-ascii-font-family: Arial; mso-hansi-font-family: Arial">ファイルだけでなくレジストリにも同じようにアクセスしたいのですが、そのような機能はありませんか？</span>
+</h3></a>
+    <p class="MsoNormal"><span lang="EN-US">&nbsp;A</span><span style="mso-ascii-font-family: Century; mso-hansi-font-family: Century">．はい。申し訳ありませんが、レジストリにつきましては、今のところ対応する予定はございません。<br>
+    しかし、そのようなご要望にはできるだけお答えしたいと考えておりますので、次期バージョンにできれば反映したいと考えております。</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p> 
+</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>
+</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>
+</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>
+</span></p>
+<p class="MsoNormal"><span lang="EN-US">&nbsp;<o:p>
+</o:p>
+</span></p>
+
+</body>
+
+</html>

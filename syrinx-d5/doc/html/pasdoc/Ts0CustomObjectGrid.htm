@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>Qs0ObjectGrid: Class Ts0CustomObjectGrid</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="1202"><H1>Class Ts0CustomObjectGrid</H1>
+</A><H2>Unit</H2>
+<A href="Qs0ObjectGrid.htm">Qs0ObjectGrid</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0CustomObjectGrid = class(Ts0CustomBaseGrid)</CODE></P><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1203"><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1204"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1205"><CODE>procedure <B>ChangeSize</B>(NewColCount, NewRowCount: Longint); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1206"><CODE>procedure <B>DblClick</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1207"><CODE>procedure <B>DecoDestroy</B>(Sender: TObject; AItem: Ts0CollectionItem); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1208"><CODE>procedure <B>EndUpdateView</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1209"><CODE>procedure <B>ExecAddRow</B>(ARowCount: Integer = 1); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1210"><CODE>procedure <B>ExecInsertRow</B>(ARowIndex: Integer; ARowCount: Integer = 1); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1211"><CODE>procedure <B>ExecRemoveRow</B>(ARowIndex: Integer; ARowCount: Integer = 1); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1212"><CODE>function <B>GetColUpdateSeq</B>: Ts0CollectionItemList;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1213"><CODE>procedure <B>InitColumns</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1214"><CODE>function <B>IsReadOnly</B>(ACol, ARow: Integer): Boolean; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1215"><CODE>procedure <B>KeyDown</B>(var Key: Word; Shift: TShiftState); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1216"><CODE>procedure <B>Loaded</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1217"><CODE>procedure <B>LoadFromMatrixByRect</B>(AMatrix: Ts0Matrix; ACoord: TGridCoord); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1218"><CODE>procedure <B>LoadFromTarget</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1219"><CODE>function <B>NewColums</B>: Ts0GridColumns; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1220"><CODE>function <B>NewController</B>: Ts0ObjectGridController; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1221"><CODE>function <B>NewCtrlDecos</B>: Ts0CtrlDecorators; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1222"><CODE>function <B>NewCtrlOfType</B>: Ts0GridCtrlOfType; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1223"><CODE>procedure <B>PrepareCommands</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1224"><CODE>procedure <B>SaveToTarget</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1225"><CODE>procedure <B>SetCells</B>(ACol, ARow: Integer; const Value: WideString); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1226"><CODE>procedure <B>SetRowCount</B>(Value: Integer); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomObjectGrid.htm#1227"><CODE>procedure <B>ShowObjPropEditor</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1203"><TD><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1204"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1205"><TD><CODE>procedure <B>ChangeSize</B>(NewColCount, NewRowCount: Longint); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1206"><TD><CODE>procedure <B>DblClick</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1207"><TD><CODE>procedure <B>DecoDestroy</B>(Sender: TObject; AItem: <A href="Ts0CollectionItem.htm">Ts0CollectionItem</A>); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>Entry Point</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1208"><TD><CODE>procedure <B>EndUpdateView</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1209"><TD><CODE>procedure <B>ExecAddRow</B>(ARowCount: Integer = 1); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1210"><TD><CODE>procedure <B>ExecInsertRow</B>(ARowIndex: Integer; ARowCount: Integer = 1); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1211"><TD><CODE>procedure <B>ExecRemoveRow</B>(ARowIndex: Integer; ARowCount: Integer = 1); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1212"><TD><CODE>function <B>GetColUpdateSeq</B>: <A href="Ts0CollectionItemList.htm">Ts0CollectionItemList</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>Entry Point</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1213"><TD><CODE>procedure <B>InitColumns</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1214"><TD><CODE>function <B>IsReadOnly</B>(ACol, ARow: Integer): Boolean; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1215"><TD><CODE>procedure <B>KeyDown</B>(var Key: Word; Shift: TShiftState); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1216"><TD><CODE>procedure <B>Loaded</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>Entry Point</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1217"><TD><CODE>procedure <B>LoadFromMatrixByRect</B>(AMatrix: Ts0Matrix; ACoord: <A href="Qs0Grids.htm#607">TGridCoord</A>); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1218"><TD><CODE>procedure <B>LoadFromTarget</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1219"><TD><CODE>function <B>NewColums</B>: Ts0GridColumns; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1220"><TD><CODE>function <B>NewController</B>: <A href="Ts0ObjectGridController.htm">Ts0ObjectGridController</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1221"><TD><CODE>function <B>NewCtrlDecos</B>: Ts0CtrlDecorators; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1222"><TD><CODE>function <B>NewCtrlOfType</B>: <A href="Ts0GridCtrlOfType.htm">Ts0GridCtrlOfType</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1223"><TD><CODE>procedure <B>PrepareCommands</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1224"><TD><CODE>procedure <B>SaveToTarget</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1225"><TD><CODE>procedure <B>SetCells</B>(ACol, ARow: Integer; const Value: WideString); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1226"><TD><CODE>procedure <B>SetRowCount</B>(Value: Integer); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1227"><TD><CODE>procedure <B>ShowObjPropEditor</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomObjectGrid.htm#1228"><B>AutoUpdateTarget</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomObjectGrid.htm#1229"><B>Columns</B>: Ts0ObjectGridColumns;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomObjectGrid.htm#1230"><B>Controller</B>: Ts0ObjectGridController;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomObjectGrid.htm#1231"><B>CtrlOfType</B>: Ts0GridCtrlOfType;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomObjectGrid.htm#1232"><B>CtrlOfTypeClassName</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0CustomObjectGrid.htm#1233"><B>MappingColumnBase</B>: Boolean;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1228"><CODE><B>AutoUpdateTarget</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1229"><CODE><B>Columns</B>: <A href="Ts0ObjectGridColumns.htm">Ts0ObjectGridColumns</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1230"><CODE><B>Controller</B>: <A href="Ts0ObjectGridController.htm">Ts0ObjectGridController</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1231"><CODE><B>CtrlOfType</B>: <A href="Ts0GridCtrlOfType.htm">Ts0GridCtrlOfType</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1232"><CODE><B>CtrlOfTypeClassName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1233"><CODE><B>MappingColumnBase</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:37</EM>
+</BODY>
+</HTML>

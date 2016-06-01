@@ -1,0 +1,43 @@
+package s0p_VExtCtrl;
+
+{$R *.RES}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '<syrinx VCL 09> Extended Control Components'}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl50,
+  s0p_Core50,
+  s0p_VCore50,
+  s0p_VCtrl50,
+  s0p_VBasicCtrl50;
+
+contains
+  s0BarGraph in 's0BarGraph.pas',
+  s0RegExtCtrl in 's0RegExtCtrl.pas',
+  s0PageControl in 's0PageControl.pas',
+  s0FieldImpression in 's0FieldImpression.pas',
+  s0FocusExpression in 's0FocusExpression.pas',
+  s0FocusImpression in 's0FocusImpression.pas';
+
+end.

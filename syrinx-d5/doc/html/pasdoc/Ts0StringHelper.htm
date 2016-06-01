@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0StringHelper: Class Ts0StringHelper</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="4154"><H1>Class Ts0StringHelper</H1>
+</A><H2>Unit</H2>
+<A href="s0StringHelper.htm">s0StringHelper</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0StringHelper = class</CODE></P><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4155"><CODE>class procedure <B>AddStrWithDelim</B>(var Dest: string; AStr: string; ADelim: string = ',');</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4156"><CODE>class function <B>AreLike</B>(AStr1, AStr2: string; ALikeBorder: Integer = 30): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4157"><CODE>class function <B>ConcatNameAndValue</B>(AName, Value: string; ADelim: Char = c0StrHelp_ConnectNameAndVal): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4158"><CODE>class function <B>ConcatStrings</B>(Source: TStrings; const Delimiter: Char = ';'): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4159"><CODE>class procedure <B>DecodeEscapeSeq</B>(var Str: string);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4160"><CODE>class function <B>DeleteChar</B>(AStr: string; AChar: Char): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4161"><CODE>class function <B>DivideFileName</B>(AFileName: string; var AFileNameRec: R0FileNameRec; AUpperCase: Boolean): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4162"><CODE>class procedure <B>EncodeEscapeSeq</B>(var Str: string);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4163"><CODE>class function <B>ExtractQuotedStr</B>(AStr: string; AQuote: Char = '"'): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4164"><CODE>class function <B>GetEscDecoded</B>(const Str: string): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4165"><CODE>class function <B>GetEscEncoded</B>(const Str: string): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4166"><CODE>class function <B>GetExeNameFromVer</B>(const Ver: integer; var FileName: string): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4167"><CODE>class function <B>GetFileNameBody</B>(AFileName: string): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4168"><CODE>class function <B>GetNameSliced</B>(S: string; ADelim: Char = c0StrHelp_ConnectNameAndVal): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4169"><CODE>class function <B>GetQuotedPos</B>(S: string; var ABegin, AEnd: Integer; ADelimiter: Char = '"'): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4170"><CODE>class function <B>GetQuotedStr</B>(S: string; ADelimiter: Char; var AResult: string): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4171"><CODE>class function <B>GetTokenBy</B>(Delim: Char; var Stream: string): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4172"><CODE>class function <B>GetValueSliced</B>(S: string; ADelim: Char = c0StrHelp_ConnectNameAndVal): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4173"><CODE>class function <B>IncludeChar</B>(AStr: string; AType: K0CharType): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4174"><CODE>class function <B>IndexOfArray</B>(AStr: string; StrArray: array of string): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4175"><CODE>class function <B>IndexOfArrayCaseSensitive</B>(AStr: string; StrArray: array of string): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4176"><CODE>class function <B>IsConstructedByAType</B>(AStr: string; AType: K0CharType): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4177"><CODE>class function <B>IsConstructedByTypeSet</B>(AStr: string; ATypeSet: K0CharTypeSet): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4178"><CODE>class function <B>QuotedStr</B>(AStr: string; AQuote: Char = '"'): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4179"><CODE>class procedure <B>RemoveQuated</B>(var S: string; ADelimiter: Char = '"');</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4180"><CODE>class function <B>ReverseAnsiPos</B>(ASubstr: string; S: string): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4181"><CODE>class function <B>ReversePos</B>(ASubstr: string; S: string): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4182"><CODE>class function <B>ReverseStr</B>(S: string): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4183"><CODE>class function <B>SliceNameAndValue</B>(S: string;var AName, Value: string; ADelim: Char = c0StrHelp_ConnectNameAndVal): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4184"><CODE>class procedure <B>SlicePCharByChar</B>(Dest: TStrings; AStr: PChar; const Delimiter: Char = #0);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4185"><CODE>class procedure <B>SliceStrByChar</B>(Dest: TStrings; const AStr: string; const Delimiter: Char);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0StringHelper.htm#4186"><CODE>class procedure <B>SliceString</B>(Source: string; Dest: TStrings; Delim: string = ';');</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4155"><TD><CODE>class procedure <B>AddStrWithDelim</B>(var Dest: string; AStr: string; ADelim: string = ',');</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4156"><TD><CODE>class function <B>AreLike</B>(AStr1, AStr2: string; ALikeBorder: Integer = 30): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>文字列が似・Auml;いるかどうかを判断する。</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4157"><TD><CODE>class function <B>ConcatNameAndValue</B>(AName, Value: string; ADelim: Char = <A href="s0StringHelper.htm#4136">c0StrHelp_ConnectNameAndVal</A>): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4158"><TD><CODE>class function <B>ConcatStrings</B>(Source: TStrings; const Delimiter: Char = ';'): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4159"><TD><CODE>class procedure <B>DecodeEscapeSeq</B>(var Str: string);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>\a 7 ベル(文字コード７) \b 8 バックスペース(文字コード８) \t 9 水平タブコード(文字コード９) \n 10 ニューライン(文字コード10) \v 11 垂直タブコード(文字コード11) \f 12 フォームフィード(文字コード12) \r 13 キャリッジリターン(文字コード13) \z 26 エンドオブフジARNING: @イル(EOF：文字コード26) \e 27 エスケープコード(文字コード27) DecodeEscapeSeq 文字列中の\nなどを・uuml;行などに置き換える EncodeEscapeSeq 文字列中の・uuml;行などを\nなどに置き換える</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4160"><TD><CODE>class function <B>DeleteChar</B>(AStr: string; AChar: Char): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>DeleteChar 指定した文字列から指定した文字を全・Auml;削除した文字列を返す</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4161"><TD><CODE>class function <B>DivideFileName</B>(AFileName: string; var AFileNameRec: <A href="s0StringHelper.htm#4140">R0FileNameRec</A>; AUpperCase: Boolean): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4162"><TD><CODE>class procedure <B>EncodeEscapeSeq</B>(var Str: string);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4163"><TD><CODE>class function <B>ExtractQuotedStr</B>(AStr: string; AQuote: Char = '"'): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4164"><TD><CODE>class function <B>GetEscDecoded</B>(const Str: string): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4165"><TD><CODE>class function <B>GetEscEncoded</B>(const Str: string): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4166"><TD><CODE>class function <B>GetExeNameFromVer</B>(const Ver: integer; var FileName: string): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4167"><TD><CODE>class function <B>GetFileNameBody</B>(AFileName: string): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4168"><TD><CODE>class function <B>GetNameSliced</B>(S: string; ADelim: Char = <A href="s0StringHelper.htm#4136">c0StrHelp_ConnectNameAndVal</A>): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4169"><TD><CODE>class function <B>GetQuotedPos</B>(S: string; var ABegin, AEnd: Integer; ADelimiter: Char = '"'): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4170"><TD><CODE>class function <B>GetQuotedStr</B>(S: string; ADelimiter: Char; var AResult: string): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4171"><TD><CODE>class function <B>GetTokenBy</B>(Delim: Char; var Stream: string): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4172"><TD><CODE>class function <B>GetValueSliced</B>(S: string; ADelim: Char = <A href="s0StringHelper.htm#4136">c0StrHelp_ConnectNameAndVal</A>): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4173"><TD><CODE>class function <B>IncludeChar</B>(AStr: string; AType: <A href="s0StringHelper.htm#4137">K0CharType</A>): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IncludeChar 指定した文字種が一つでも・Uuml;・Uuml;れ・Auml;いる場合True IsConstructedByAType 指定した文字種だけで文字列が構成され・Auml;いる場合True IsConstructedByTypeSet 指定した文字種セットで文字列が構成され・Auml;いる場合True</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4174"><TD><CODE>class function <B>IndexOfArray</B>(AStr: string; StrArray: array of string): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4175"><TD><CODE>class function <B>IndexOfArrayCaseSensitive</B>(AStr: string; StrArray: array of string): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4176"><TD><CODE>class function <B>IsConstructedByAType</B>(AStr: string; AType: <A href="s0StringHelper.htm#4137">K0CharType</A>): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4177"><TD><CODE>class function <B>IsConstructedByTypeSet</B>(AStr: string; ATypeSet: <A href="s0StringHelper.htm#4138">K0CharTypeSet</A>): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4178"><TD><CODE>class function <B>QuotedStr</B>(AStr: string; AQuote: Char = '"'): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4179"><TD><CODE>class procedure <B>RemoveQuated</B>(var S: string; ADelimiter: Char = '"');</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4180"><TD><CODE>class function <B>ReverseAnsiPos</B>(ASubstr: string; S: string): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4181"><TD><CODE>class function <B>ReversePos</B>(ASubstr: string; S: string): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4182"><TD><CODE>class function <B>ReverseStr</B>(S: string): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4183"><TD><CODE>class function <B>SliceNameAndValue</B>(S: string;var AName, Value: string; ADelim: Char = <A href="s0StringHelper.htm#4136">c0StrHelp_ConnectNameAndVal</A>): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4184"><TD><CODE>class procedure <B>SlicePCharByChar</B>(Dest: TStrings; AStr: PChar; const Delimiter: Char = #0);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4185"><TD><CODE>class procedure <B>SliceStrByChar</B>(Dest: TStrings; const AStr: string; const Delimiter: Char);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>SliceStrByChar 文字列を指定した文字で切り分ける</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="4186"><TD><CODE>class procedure <B>SliceString</B>(Source: string; Dest: TStrings; Delim: string = ';');</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:43</EM>
+</BODY>
+</HTML>

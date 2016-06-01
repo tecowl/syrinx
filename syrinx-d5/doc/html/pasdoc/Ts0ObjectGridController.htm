@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>Qs0ObjectGrid: Class Ts0ObjectGridController</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="1272"><H1>Class Ts0ObjectGridController</H1>
+</A><H2>Unit</H2>
+<A href="Qs0ObjectGrid.htm">Qs0ObjectGrid</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0ObjectGridController = class(<CODE><A href="Ts0CLXPersistent.htm">Ts0CLXPersistent</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0CLXPersistent.htm">Ts0CLXPersistent</A></CODE>&nbsp;&gt; <CODE><A href="Ts0Persistent.htm">Ts0Persistent</A></CODE><H2>Fields</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><A name="1273"><TD>FModifiedCount</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="1274"><TD>FOwnerGrid</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="1275"><TD>FTargetListener</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+</TABLE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1276"><CODE>constructor <B>Create</B>(AOnwer: TPersistent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1277"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1278"><CODE>procedure <B>AddItems</B>(ACount: Integer);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1279"><CODE>procedure <B>AdjustFromGrid</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1280"><CODE>procedure <B>AdjustFromTarget</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1281"><CODE>procedure <B>Assign</B>(Source: TPersistent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1282"><CODE>procedure <B>BeginUpdateTarget</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1283"><CODE>function <B>CanMapping</B>: Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1284"><CODE>procedure <B>EndUpdateTarget</B>; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1285"><CODE>function <B>GetMappingClass</B>: TClass; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1286"><CODE>function <B>GetMappingCount</B>: Integer; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1287"><CODE>function <B>GetMappingItem</B>(AIndex: Integer): TObject; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1288"><CODE>function <B>GetMappingItemByRow</B>(ARow: Integer): TObject;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1289"><CODE>function <B>IndexToRow</B>(AIndex: Integer): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1290"><CODE>procedure <B>InsertItems</B>(ARowIndex, ACount: Integer);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1291"><CODE>procedure <B>LoadFromTarget</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1292"><CODE>procedure <B>LoadFromTargetItem</B>(ARow: Integer; Accessor: Ts0RTTIPublishedAccessor);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1293"><CODE>function <B>LoadFromTargetItemProp</B>(Accessor: Ts0RTTIPublishedAccessor; ACol: Ts0ObjectGridColumn): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1294"><CODE>function <B>MappingItemExists</B>(AObj: TObject): Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1295"><CODE>function <B>NewMappingObj</B>(ARow: Integer): TObject; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1296"><CODE>procedure <B>RemoveItems</B>(ARowIndex, ACount: Integer);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1297"><CODE>procedure <B>RemoveObj</B>(ARow: Integer); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1298"><CODE>function <B>RowToIndex</B>(ARow: Integer): Integer;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1299"><CODE>procedure <B>SaveFromCell</B>(ACol, ARow: Integer; const Value: string);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1300"><CODE>procedure <B>SaveToTarget</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1301"><CODE>procedure <B>SaveToTargetItem</B>(ARow: Integer; Accessor: Ts0RTTIPublishedAccessor);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1302"><CODE>procedure <B>SaveToTargetItemProp</B>(Accessor: Ts0RTTIPublishedAccessor; ACol: Ts0ObjectGridColumn; AValue: string);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0ObjectGridController.htm#1303"><CODE>procedure <B>TargetItemUpdate</B>(Sender: TObject);</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1276"><TD><CODE>constructor <B>Create</B>(AOnwer: TPersistent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1277"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1278"><TD><CODE>procedure <B>AddItems</B>(ACount: Integer);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1279"><TD><CODE>procedure <B>AdjustFromGrid</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1280"><TD><CODE>procedure <B>AdjustFromTarget</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1281"><TD><CODE>procedure <B>Assign</B>(Source: TPersistent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1282"><TD><CODE>procedure <B>BeginUpdateTarget</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1283"><TD><CODE>function <B>CanMapping</B>: Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1284"><TD><CODE>procedure <B>EndUpdateTarget</B>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1285"><TD><CODE>function <B>GetMappingClass</B>: TClass; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1286"><TD><CODE>function <B>GetMappingCount</B>: Integer; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1287"><TD><CODE>function <B>GetMappingItem</B>(AIndex: Integer): TObject; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1288"><TD><CODE>function <B>GetMappingItemByRow</B>(ARow: Integer): TObject;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1289"><TD><CODE>function <B>IndexToRow</B>(AIndex: Integer): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1290"><TD><CODE>procedure <B>InsertItems</B>(ARowIndex, ACount: Integer);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1291"><TD><CODE>procedure <B>LoadFromTarget</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1292"><TD><CODE>procedure <B>LoadFromTargetItem</B>(ARow: Integer; Accessor: <A href="Ts0RTTIPublishedAccessor.htm">Ts0RTTIPublishedAccessor</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1293"><TD><CODE>function <B>LoadFromTargetItemProp</B>(Accessor: <A href="Ts0RTTIPublishedAccessor.htm">Ts0RTTIPublishedAccessor</A>; ACol: <A href="Ts0ObjectGridColumn.htm">Ts0ObjectGridColumn</A>): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1294"><TD><CODE>function <B>MappingItemExists</B>(AObj: TObject): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1295"><TD><CODE>function <B>NewMappingObj</B>(ARow: Integer): TObject; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1296"><TD><CODE>procedure <B>RemoveItems</B>(ARowIndex, ACount: Integer);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1297"><TD><CODE>procedure <B>RemoveObj</B>(ARow: Integer); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1298"><TD><CODE>function <B>RowToIndex</B>(ARow: Integer): Integer;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1299"><TD><CODE>procedure <B>SaveFromCell</B>(ACol, ARow: Integer; const Value: string);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1300"><TD><CODE>procedure <B>SaveToTarget</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1301"><TD><CODE>procedure <B>SaveToTargetItem</B>(ARow: Integer; Accessor: <A href="Ts0RTTIPublishedAccessor.htm">Ts0RTTIPublishedAccessor</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1302"><TD><CODE>procedure <B>SaveToTargetItemProp</B>(Accessor: <A href="Ts0RTTIPublishedAccessor.htm">Ts0RTTIPublishedAccessor</A>; ACol: <A href="Ts0ObjectGridColumn.htm">Ts0ObjectGridColumn</A>; AValue: string);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1303"><TD><CODE>procedure <B>TargetItemUpdate</B>(Sender: TObject);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0ObjectGridController.htm#1304"><B>AutoUpdate</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0ObjectGridController.htm#1305"><B>MappedItemCount</B>: Integer;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0ObjectGridController.htm#1306"><B>UpdateTargetCount</B>: Integer;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1304"><CODE><B>AutoUpdate</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1305"><CODE><B>MappedItemCount</B>: Integer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1306"><CODE><B>UpdateTargetCount</B>: Integer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:38</EM>
+</BODY>
+</HTML>

@@ -1,0 +1,42 @@
+package s0p_VDBCtrl50;
+
+{$R *.RES}
+{$R 's0DSFilterMaker.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '<syrinx VCL 05> DB Controls'}
+{$IMPLICITBUILD OFF}
+
+requires
+  Vcl50,
+  Vcldb50,
+  s0p_Core50,
+  s0p_Additional50,
+  s0p_VCore50,
+  s0p_VCtrl50;
+
+contains
+  s0DSFilterMaker in 's0DSFilterMaker.pas',
+  s0RegDBCtrl in 's0RegDBCtrl.pas',
+  s0DBGridAction in 's0DBGridAction.pas';
+
+end.

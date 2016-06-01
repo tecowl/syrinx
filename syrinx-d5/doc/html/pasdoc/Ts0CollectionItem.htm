@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0Collection: Class Ts0CollectionItem</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="1830"><H1>Class Ts0CollectionItem</H1>
+</A><H2>Unit</H2>
+<A href="s0Collection.htm">s0Collection</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0CollectionItem = class(TCollectionItem)</CODE></P><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CollectionItem.htm#1831"><CODE>constructor <B>Create</B>(ACollection: TCollection); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CollectionItem.htm#1832"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CollectionItem.htm#1833"><CODE>procedure <B>Accept</B>(v: Ts0CollectionVisitor); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CollectionItem.htm#1834"><CODE>procedure <B>Assign</B>(Source: TPersistent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CollectionItem.htm#1835"><CODE>function <B>Clone</B>: Ts0CollectionItem; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CollectionItem.htm#1836"><CODE>function <B>Equals</B>(AItem: Ts0CollectionItem): Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CollectionItem.htm#1837"><CODE>function <B>GetClassType</B>: Ts0CollectionItemClass;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CollectionItem.htm#1838"><CODE>function <B>GetCollectionAs0Level</B>: Ts0Collection;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CollectionItem.htm#1839"><CODE>function <B>GetFullName</B>: string; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CollectionItem.htm#1840"><CODE>class function <B>GetFullNameDelimiter</B>: Char; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CollectionItem.htm#1841"><CODE>function <B>GetIdentifier</B>: string; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CollectionItem.htm#1842"><CODE>function <B>GetOwnerComponent</B>: TComponent; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CollectionItem.htm#1843"><CODE>function <B>GetSubCollection</B>: Ts0Collection; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CollectionItem.htm#1844"><CODE>function <B>GetSubCollectionClass</B>: Ts0CollectionClass; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CollectionItem.htm#1845"><CODE>function <B>NewSubCollection</B>: Ts0Collection; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CollectionItem.htm#1846"><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1831"><TD><CODE>constructor <B>Create</B>(ACollection: TCollection); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>Notes: constructor Create(ACollection: TCollection); reintroduce; virtual; っ・Auml;宣言したいところだけど、絶対絶対絶対絶対絶対絶対絶対絶対絶対だ・szlig;ー！ だっ・Auml;そうしたら、IDEがインスタンスを生成したときにその宣言した コンストラクタが・Auml;び出されないんだもん。 当たり前と言えば当たり前だけど、これで3時間も無駄にし・Uuml;した。トホホ。</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1832"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1833"><TD><CODE>procedure <B>Accept</B>(v: <A href="Ts0CollectionVisitor.htm">Ts0CollectionVisitor</A>); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1834"><TD><CODE>procedure <B>Assign</B>(Source: TPersistent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1835"><TD><CODE>function <B>Clone</B>: <A href="Ts0CollectionItem.htm">Ts0CollectionItem</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1836"><TD><CODE>function <B>Equals</B>(AItem: <A href="Ts0CollectionItem.htm">Ts0CollectionItem</A>): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1837"><TD><CODE>function <B>GetClassType</B>: <A href="s0Collection.htm#1796">Ts0CollectionItemClass</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1838"><TD><CODE>function <B>GetCollectionAs0Level</B>: <A href="Ts0Collection.htm">Ts0Collection</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1839"><TD><CODE>function <B>GetFullName</B>: string; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>GetFullName Ts0CollectionItemがTs0Collectionを集約し、ネストした構造を作りうる場合、 その中のあるTs0CollectionItemを一意に決定する文字列。 親のTs0CollectionItemのFullNameプロパティに自身のGetIdentifierメソッドを デリミタ付きで加えたもの。 GetIdentifier 識別子を取得するメソッド。 GetFullNameDelimiter GetFullNameで使用するIdentifierとIdentifierを区切る文字。</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1840"><TD><CODE>class function <B>GetFullNameDelimiter</B>: Char; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1841"><TD><CODE>function <B>GetIdentifier</B>: string; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1842"><TD><CODE>function <B>GetOwnerComponent</B>: TComponent; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1843"><TD><CODE>function <B>GetSubCollection</B>: <A href="Ts0Collection.htm">Ts0Collection</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1844"><TD><CODE>function <B>GetSubCollectionClass</B>: <A href="s0Collection.htm#1795">Ts0CollectionClass</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1845"><TD><CODE>function <B>NewSubCollection</B>: <A href="Ts0Collection.htm">Ts0Collection</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="1846"><TD><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CollectionItem.htm#1847"><B>CollectionAs0Level</B>: Ts0Collection;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CollectionItem.htm#1848"><B>FullName</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CollectionItem.htm#1849"><B>Identifier</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CollectionItem.htm#1850"><B>OnDestroy</B>: Ts0Event;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CollectionItem.htm#1851"><B>OwnerComponent</B>: TComponent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CollectionItem.htm#1852"><B>OwnerItem</B>: Ts0CollectionItem;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CollectionItem.htm#1853"><B>OwnerObj</B>: TPersistent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CollectionItem.htm#1854"><B>SubCollection</B>: Ts0Collection;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1847"><CODE><B>CollectionAs0Level</B>: <A href="Ts0Collection.htm">Ts0Collection</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1848"><CODE><B>FullName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1849"><CODE><B>Identifier</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1850"><CODE><B>OnDestroy</B>: <A href="Ts0Event.htm">Ts0Event</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1851"><CODE><B>OwnerComponent</B>: TComponent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1852"><CODE><B>OwnerItem</B>: <A href="Ts0CollectionItem.htm">Ts0CollectionItem</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1853"><CODE><B>OwnerObj</B>: TPersistent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="1854"><CODE><B>SubCollection</B>: <A href="Ts0Collection.htm">Ts0Collection</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:39</EM>
+</BODY>
+</HTML>

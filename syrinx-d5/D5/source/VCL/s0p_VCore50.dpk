@@ -1,0 +1,42 @@
+package s0p_VCore50;
+
+{$R *.RES}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '<syrinx VCL 00> Core Classes'}
+{$IMPLICITBUILD OFF}
+
+requires
+  Vcl50,
+  s0p_Core50;
+
+contains
+  s0VCLClasses in 's0VCLClasses.pas',
+  s0CanvasDrawer in 's0CanvasDrawer.pas',
+  s0UserImpl in 's0UserImpl.pas',
+  s0ApplicationImpl in 's0ApplicationImpl.pas',
+  s0GraphHelper in 's0GraphHelper.pas',
+  s0ColorSet in 's0ColorSet.pas',
+  s0fDlgConfirmUser in 's0fDlgConfirmUser.pas' {frm0SXDlgConfirmUser},
+  s0regVCore in 's0regVCore.pas';
+
+end.

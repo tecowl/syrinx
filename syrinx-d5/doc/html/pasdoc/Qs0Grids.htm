@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>Qs0Grids</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<H1>Unit Qs0Grids</H1>
+<H2>Description</H2>
+<P>
+***************************************************************************</P>
+<H2>Classes, interfaces and objects</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="EInvalidGridOperation.htm">EInvalidGridOperation</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TGridScrollBar.htm">TGridScrollBar</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="Ts0CustomDrawGrid.htm">Ts0CustomDrawGrid</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="Ts0CustomGrid.htm">Ts0CustomGrid</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="Ts0CustomStringGrid.htm">Ts0CustomStringGrid</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="Ts0DrawGrid.htm">Ts0DrawGrid</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TStringGridStrings.htm">TStringGridStrings</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+<H2>Types</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><A name="603"><TD>TDrawCellEvent</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="604"><TD>TGetEditEvent</TD>
+<TD>A grid relies on the OnDrawCell event to display the cells. CellRect This method returns control relative screen coordinates of the cell or an empty rectangle if the cell is not visible. EditorMode Setting to true shows the editor, as if the F2 key was pressed, when goEditing is turned on and goAlwaysShowEditor is turned off. MouseToCell Takes control relative screen X, Y location and fills in the column and row that contain that point. OnColumnMoved Called when the user request to move a column with the mouse when the goColMoving option is on. OnDrawCell This event is passed the same information as the DrawCell method discussed above. OnGetEditMask Called to retrieve edit mask in the inplace editor when goEditing is turned on. OnGetEditText Called to retrieve text to edit when goEditing is turned on. OnRowMoved Called when the user request to move a row with the mouse when the goRowMoving option is on. OnSetEditText Called when goEditing is turned on to reflect changes to the text made by the editor. OnTopLeftChanged Invoked when TopRow or LeftCol change.</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="605"><TD>TGetExtentsFunc</TD>
+<TD>Internal grid types</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="606"><TD>TGridAxisDrawInfo</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="607"><TD>TGridCoord</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="608"><TD>TGridDrawInfo</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="609"><TD>TGridDrawState</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="610"><TD>TGridMovement</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="611"><TD>TGridOption</TD>
+<TD>Ts0CustomGrid is an abstract base class that can be used to implement general purpose grid style controls. The control will call DrawCell for each of the cells allowing the derived class to fill in the contents of the cell. The base class handles scrolling, selection, cursor keys, and scrollbars. DrawCell Called by Paint. If DefaultDrawing is true the font and brush are intialized to the control font and cell color. The cell is prepainted in the cell color and a focus rect is drawn in the focused cell after DrawCell returns. The state passed will reflect whether the cell is a fixed cell, the focused cell or in the selection. SizeChanged Called when the size of the grid has changed. BorderStyle Allows a single line border to be drawn around the control. Col The current column of the focused cell (runtime only). ColCount The number of columns in the grid. ColWidths The width of each column (up to a maximum MaxCustomExtents, runtime only). DefaultColWidth The default column width. Changing this value will throw away any customization done either visually or through ColWidths. DefaultDrawing Indicates whether the Paint should do the drawing talked about above in DrawCell. DefaultRowHeight The default row height. Changing this value will throw away any customization done either visually or through RowHeights. FixedCols The number of non-scrolling columns. This value must be at least one below ColCount. FixedRows The number of non-scrolling rows. This value must be at least one below RowCount. GridLineWidth The width of the lines drawn between the cells. LeftCol The index of the left most displayed column (runtime only). Options The following options are available: goFixedHorzLine: Draw horizontal grid lines in the fixed cell area. goFixedVertLine: Draw veritical grid lines in the fixed cell area. goHorzLine: Draw horizontal lines between cells. goVertLine: Draw vertical lines between cells. goRangeSelect: Allow a range of cells to be selected. goDrawFocusSelected: Draw the focused cell in the selected color. goRowSizing: Allows rows to be individually resized. goColSizing: Allows columns to be individually resized. goRowMoving: Allows rows to be moved with the mouse goColMoving: Allows columns to be moved with the mouse. goEditing: Places an edit control over the focused cell. goAlwaysShowEditor: Always shows the editor in place instead of waiting for a keypress or F2 to display it. goTabs: Enables the tabbing between columns. goRowSelect: Selection and movement is done a row at a time. Row The row of the focused cell (runtime only). RowCount The number of rows in the grid. RowHeights The hieght of each row (up to a maximum MaxCustomExtents, runtime only). ScrollBars Determines whether the control has scrollbars. Selection A TGridRect of the current selection. TopLeftChanged Called when the TopRow or LeftCol change. TopRow The index of the top most row displayed (runtime only) VisibleColCount The number of columns fully displayed. There could be one more column partially displayed. VisibleRowCount The number of rows fully displayed. There could be one more row partially displayed. Protected members, for implementors of Ts0CustomGrid descendents DesignOptionBoost Options mixed in only at design time to aid design-time editing. Default = [goColSizing, goRowSizing], which makes grid cols and rows resizeable at design time, regardless of the Options settings. VirtualView Controls the use of maximum screen clipping optimizations when the grid window changes size. Default = False, which means only the area exposed by the size change will be redrawn, for less flicker. VirtualView = True means the entire data area of the grid is redrawn when the size changes. This is required when the data displayed in the grid is not bound to the number of rows or columns in the grid, such as the dbgrid (a few grid rows displaying a view onto a million row table).</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="612"><TD>TGridOptions</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="613"><TD>TGridRect</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="614"><TD>TGridScrollDirection</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="615"><TD>TGridState</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="616"><TD>TMovedEvent</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="617"><TD>TSelectCellEvent</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="618"><TD>TSetEditEvent</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+</TABLE><H2>Constants</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><A name="601"><TD>MaxCustomExtents</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+<TR bgcolor=#efefef valign=top><A name="602"><TD>MaxShortInt</TD>
+<TD>&nbsp;</TD>
+</A></TR>
+</TABLE><HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:37</EM>
+</BODY>
+</HTML>

@@ -1,0 +1,1230 @@
+<html>
+
+<head>
+<meta name=Generator content="Microsoft Office HTML Filter 2.1">
+<meta http-equiv=Content-Type content="text/html; charset=shift_jis">
+<meta name=Originator content="Microsoft Word 9">
+<title>Entity Builder Manual</title>
+<style>
+<!--
+ 
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{
+	margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:Century;}
+h1
+	{
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:61.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-weight:normal;}
+h2
+	{
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:89.6pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-10.0mm;
+	page-break-after:avoid;
+	font-size:10.5pt;
+	font-family:Arial;
+	font-weight:normal;}
+h3
+	{
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:110.9pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-10.0mm;
+	page-break-after:avoid;
+	font-size:10.5pt;
+	font-family:Arial;
+	font-weight:normal;}
+h4
+	{
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:183.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-35.4pt;
+	page-break-after:avoid;
+	font-size:10.5pt;
+	font-family:Century;
+	font-weight:normal;}
+h5
+	{
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:167.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-42.5pt;
+	page-break-after:avoid;
+	font-size:10.5pt;
+	font-family:Arial;
+	font-weight:normal;}
+h6
+	{
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:203.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-20.0mm;
+	page-break-after:avoid;
+	font-size:10.5pt;
+	font-family:Century;
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{
+	margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:24.0pt;
+	font-family:Century;
+	font-weight:bold;}
+p
+	{margin-right:0mm;
+	margin-left:0mm;
+	font-size:12.0pt;
+	font-family:"ＭＳ 明朝";}
+ol
+	{margin-bottom:0mm;}
+ul
+	{margin-bottom:0mm;}
+-->
+</style>
+</head>
+
+<body lang=JA style='text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US
+style='font-size:24.0pt;'>Entity Builder Manual</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:16.0pt;'>version 3.0</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=EN-US
+style='font-size:16.0pt;'><br>
+<br>
+released 2002/05/08<br><br></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h1><span lang=EN-US>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"ＭＳ ゴシック";'>概要</span></h1>
+
+<p class=MsoNormal><span lang=EN-US>Entity Builder</span><span
+style='font-family:"ＭＳ 明朝";'>は、フレームワーク</span><span lang=EN-US>syrinx</span><span style='font-family:
+"ＭＳ 明朝";'>の</span><span
+lang=EN-US>Ts0Entity</span><span style='font-family:"ＭＳ 明朝";'>クラスやその関係クラスを用いて、既存のテーブルなどからエンティティのソースコードを生成するためのツールです。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>エンティティを生成するには、エンティティの名称や、エンティティのプロパティを生成するための「プロトタイプ」と呼ばれるデータ群を設定する必要がありますが、プロトタイプを既存のテーブルから生成することが可能です。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h1><span lang=EN-US>2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"ＭＳ ゴシック";'>基本操作</span></h1>
+
+<p class=MsoNormal><span
+style='position:absolute;z-index:2;left:0px;margin-left:
+36px;margin-top:312px;width:182px;height:38px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=182 height=38 align=left valign=top style='vertical-align:top'><span
+  style='position:absolute;left:0pt;z-index:3'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape>
+    <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>メッセージペイン</span></p>
+    </div></td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span><span
+style='position:absolute;z-index:1;left:0px;margin-left:
+144px;margin-top:168px;width:182px;height:38px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=182 height=38 align=left valign=top style='vertical-align:top'><span
+  style='position:absolute;left:0pt;z-index:2'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape>
+    <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>ディテールペイン</span></p>
+    </div></td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span><span
+style='position:absolute;z-index:0;left:0px;margin-left:
+12px;margin-top:168px;width:110px;height:38px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=110 height=38 align=left valign=top style='vertical-align:top'><span
+  style='position:absolute;left:0pt;z-index:1'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td>
+    <div style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape>
+    <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>ツリーペイン</span></p>
+    </div></td>
+   </tr>
+  </table>
+  </span>&nbsp;</td>
+ </tr>
+</table>
+
+</span><span lang=EN-US><img width=567 height=354
+src="./EntityBuilderManual.files/image002.jpg"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>EntityBuilder</span><span style='font-family:
+"ＭＳ 明朝";'>の画面は、上の図のように</span><span
+lang=EN-US>3</span><span style='font-family:"ＭＳ 明朝";'>つのペインと、メニューとツールバーによって構成されます。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>エンティティを生成するためのデータは、プロジェクトという単位でファイルに保存されます。ツリーペインには、プロジェクトに保存されるオブジェクトが表示され、ディテールペインには、各オブジェクトのプロパティが表示されて編集することが可能です。</span><span
+lang=EN-US><br><br></span></p>
+
+<h2><span lang=EN-US>2.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"ＭＳ ゴシック";'>プロジェクトを新たに作る</span></h2>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>ツールバーの</span><span lang=EN-US>[</span><span
+style='font-family:"ＭＳ 明朝";'>プロジェクトの新規作成</span><span lang=EN-US>]</span><span style='font-family:
+"ＭＳ 明朝";'>を行います。（ツリーペインで</span><span
+lang=EN-US>[Projects]</span><span style='font-family:"ＭＳ 明朝";'>ノードを選択して右クリックしても同様の項目があります。）</span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=567 height=354
+src="./EntityBuilderManual.files/image004.jpg"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>すると、ツリーペインの</span><span lang=EN-US>[Projects]</span><span
+style='font-family:"ＭＳ 明朝";'>のサブノードとして</span><span lang=EN-US>[New Project]</span><span
+style='font-family:"ＭＳ 明朝";'>というサブノードが追加されます。このサブノードには予め</span><span lang=EN-US>[BDEConnection]</span><span
+style='font-family:"ＭＳ 明朝";'>と</span><span lang=EN-US>[Entities]</span><span style='font-family:
+"ＭＳ 明朝";'>というサブノードが追加されています。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><span lang=EN-US>2.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"ＭＳ ゴシック";'>プロジェクトを保存する</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>EntityBuilder</span><span style='font-family:
+"ＭＳ 明朝";'>のツールバーやメニューはツリーペインで選択されているノードの種類によって、使用できるアクションが変わります。</span></p>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>プロジェクトを保存する場合には、保存対象となるプロジェクトのノードをツリーペインで選択すると、ツールバーの</span><span
+lang=EN-US>[</span><span style='font-family:"ＭＳ 明朝";'>プロジェクトを保存</span><span lang=EN-US>]</span><span
+style='font-family:"ＭＳ 明朝";'>が有効になり、押下すると</span><span lang=EN-US>[</span><span style='font-family:
+"ＭＳ 明朝";'>名前を付けて保存</span><span
+lang=EN-US>]</span><span style='font-family:"ＭＳ 明朝";'>ダイアログが表示されて、保存することができます。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><span lang=EN-US>2.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"ＭＳ ゴシック";'>プロジェクトを開く</span></h2>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>既に保存してあるプロジェクトを開くためには、</span><span lang=EN-US>[</span><span
+style='font-family:"ＭＳ 明朝";'>プロジェクトを開く</span><span lang=EN-US>]</span><span style='font-family:
+"ＭＳ 明朝";'>を押下すると、</span><span
+lang=EN-US>[</span><span style='font-family:"ＭＳ 明朝";'>ファイルを開く</span><span lang=EN-US>]</span><span
+style='font-family:"ＭＳ 明朝";'>ダイアログが表示されます。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h2><span lang=EN-US>2.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"ＭＳ ゴシック";'>プロジェクトを閉じる</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>EntityBuilder</span><span style='font-family:
+"ＭＳ 明朝";'>を閉じずに、プロジェクトだけを閉じる場合には、対象となるプロジェクトを選択して</span><span
+lang=EN-US>[</span><span style='font-family:"ＭＳ 明朝";'>プロジェクトを閉じる</span><span lang=EN-US>]</span><span
+style='font-family:"ＭＳ 明朝";'>を行います。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h1><span lang=EN-US>3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"ＭＳ ゴシック";'>オブジェクト</span></h1>
+
+<table border=1 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+ border-collapse:collapse;border:none;'>
+ <tr style='height:17.85pt'>
+  <td width="34%" colspan=6 valign=top style='width:34.8%;border:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:17.85pt'>
+  <p class=MsoNormal><span
+  lang=EN-US>Projects</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border:solid windowtext .5pt;
+  border-left:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:17.85pt'>
+  <p class=MsoNormal><span
+  lang=EN-US>EntityBuilder</span><span style='font-family:"ＭＳ 明朝";'>が扱うオブジェクトのルートオブジェクト</span></p>
+  </td>
+ </tr>
+ <tr style='height:34.95pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:34.95pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="32%" colspan=5 valign=top style='width:32.26%;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:34.95pt'>
+  <p class=MsoNormal><span
+  lang=EN-US>(</span><span style='font-family:"ＭＳ 明朝";'>各プロジェクト</span><span lang=EN-US>)</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:34.95pt'>
+  <p class=MsoNormal><span
+  lang=EN-US>EntityBuilder</span><span style='font-family:"ＭＳ 明朝";'>が扱うオブジェクトを保存する単位。</span><span
+  lang=EN-US><br>
+  </span><b><span style='font-size:9.0pt;font-family:
+  "ＭＳ 明朝";'>ツリーペインには、ファイル名が表示されます。</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.95pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:15.95pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:15.95pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="29%" colspan=4 valign=top style='width:29.72%;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:15.95pt'>
+  <p class=MsoNormal><span
+  lang=EN-US>BDEConnection </span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:15.95pt'>
+  <p class=MsoNormal><span
+  style='font-family:"ＭＳ 明朝";'>生成時に必要な</span><span lang=EN-US>BDE</span><span style='font-family:
+  "ＭＳ 明朝";'>への接続情報</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="29%" colspan=4 valign=top style='width:29.72%;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal><span
+  lang=EN-US>Entities</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="27%" colspan=3 valign=top style='width:27.18%;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal><span lang=EN-US>(</span><span style='font-family:"ＭＳ 明朝";'>各エンティティ</span><span
+  lang=EN-US>)</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal><span
+  style='font-family:"ＭＳ 明朝";'>生成対象となるエンティティ</span><span lang=EN-US><br>
+  </span><b><span style='font-size:9.0pt;font-family:
+  "ＭＳ 明朝";'>ツリーペインには、エンティティのクラス名が表示されます。</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.55pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:15.55pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:15.55pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:15.55pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:15.55pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="24%" colspan=2 valign=top style='width:24.64%;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:15.55pt'>
+  <p class=MsoNormal><span lang=EN-US>ProtoTypes</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:15.55pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="22%" valign=top style='width:22.1%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal><span lang=EN-US>(</span><span style='font-family:"ＭＳ 明朝";'>各プロトタイプ</span><span
+  lang=EN-US>)</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal><span
+  style='font-family:"ＭＳ 明朝";'>プロトタイプは、生成されるエンティティのプロパティに対応する。</span><span lang=EN-US><br>
+  </span><b><span style='font-size:9.0pt;font-family:
+  "ＭＳ 明朝";'>ツリーペインには、プロパティ名が表示されます。</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="24%" colspan=2 valign=top style='width:24.64%;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal><span lang=EN-US>SQLs</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal><span
+  style='font-family:"ＭＳ 明朝"'>データモジュールの各クエリーが使用する<span lang=EN-US>SQL</span></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="24%" colspan=2 valign=top style='width:24.64%;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Files</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:11.25pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="22%" valign=top style='width:22.1%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal style='line-height:11.25pt'><span lang=EN-US>EntityUnit</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝"'>生成されるエンティティを宣言するユニット</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.25pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="22%" valign=top style='width:22.1%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal style='line-height:11.25pt'><span lang=EN-US>ManagerDM</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝"'>生成されるエンティティマネージャを持つデータモジュール</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.25pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="22%" valign=top style='width:22.1%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal style='line-height:11.25pt'><span lang=EN-US>DetailForm</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝"'>エンティティに対応する詳細フォーム</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.25pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="22%" valign=top style='width:22.1%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal style='line-height:11.25pt'><span lang=EN-US>ListForm</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝"'>エンティティに対応する一覧フォーム</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="24%" colspan=2 valign=top style='width:24.64%;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Table</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:11.25pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="22%" valign=top style='width:22.1%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal style='line-height:11.25pt'><span lang=EN-US>BDEConnection</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝"'>テーブルへの接続情報</span></p>
+  </td>
+ </tr>
+ <tr style='height:10.5pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:10.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:10.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:10.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:10.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:10.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="22%" valign=top style='width:22.1%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:10.5pt'>
+  <p class=MsoNormal style='line-height:10.5pt'><span lang=EN-US>FieldDefs</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:10.5pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝"'>テーブルを生成する際の各フィールドの定義</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.25pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="22%" valign=top style='width:22.1%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal style='line-height:11.25pt'><span lang=EN-US>IndexDefs</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:11.25pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝"'>テーブルを生成する際の各インデックスの定義</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width="2%" valign=top style='width:2.54%;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;
+  height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="2%" valign=top style='width:2.54%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="24%" colspan=2 valign=top style='width:24.64%;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Enum</span></p>
+  </td>
+  <td width="65%" valign=top style='width:65.2%;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:13.5pt'>
+  <p class=MsoNormal><span
+  style='font-family:"ＭＳ 明朝"'>プロトタイプに<span lang=EN-US>EnumNameを指定した際に、対応するTs0EnumCollectionコンポーネントを生成するためのデータ</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<span lang=EN-US style='font-size:10.5pt;font-family:
+Century;'><br clear=all style='
+page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h1><span lang=EN-US>4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"ＭＳ ゴシック";'>既存のテーブルからエンティティを生成する</span></h1>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;'>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>1</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border:solid windowtext .5pt;
+  border-left:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>ツリーペインで、プロジェクトの</span><span
+  lang=EN-US>[Entities]</span><span style='font-family:"ＭＳ 明朝";'>ノードを選択します。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>2</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>メニューあるいは、ツールバーの</span><span
+  lang=EN-US>[BDE</span><span style='font-family:"ＭＳ 明朝";'>から選択</span><span lang=EN-US>]</span><span
+  style='font-family:"ＭＳ 明朝";'>を行います。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>3</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>[</span><span style='font-family:"ＭＳ 明朝";'>テーブルの選択</span><span
+  lang=EN-US>]</span><span style='font-family:"ＭＳ 明朝";'>ダイアログが表示されるので、対象となる既存のテーブルのある、</span><span
+  lang=EN-US>BDE</span><span style='font-family:"ＭＳ 明朝";'>のエイリアスを選択します。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>4</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>左側のリストから対象となるテーブルを選択し、</span><span
+  lang=EN-US>[&gt;]</span><span style='font-family:"ＭＳ 明朝";'>ボタンを押下あるいはダブルクリックします。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>5</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>[OK]</span><span style='font-family:"ＭＳ 明朝";'>ボタンを押下すると、</span><span
+  lang=EN-US>[Entities]</span><span style='font-family:"ＭＳ 明朝";'>ノードのサブノードとして、選択したテーブルに対応するエンティティが生成されます。</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h1><span lang=EN-US>5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"ＭＳ ゴシック";'>エンティティとテーブルを生成する。</span></h1>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;'>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>1</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border:solid windowtext .5pt;
+  border-left:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>ツリーペインでプロジェクトの</span><span lang=EN-US>[Entities]</span><span
+  style='font-family:"ＭＳ 明朝";'>ノードを選択します。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>2</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>右クリックして表示されるメニューの</span><span
+  lang=EN-US>[</span><span style='font-family:"ＭＳ 明朝";'>追加</span><span lang=EN-US>]</span><span
+  style='font-family:"ＭＳ 明朝";'>を行います。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>3</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>追加されたエンティティのノードを選択し、プロパティを設定します。</span><span
+  lang=EN-US><br>
+  BaseName</span><span style='font-family:"ＭＳ 明朝";'>は必須です。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>4</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>ツリーペインで追加されたエンティティの</span><span
+  lang=EN-US>[ProtoTypes]</span><span style='font-family:"ＭＳ 明朝";'>ノードを選択します。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>5</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>ツリーペインで右クリックして表示されるメニューの</span><span
+  lang=EN-US>[</span><span style='font-family:"ＭＳ 明朝";'>追加</span><span lang=EN-US>]</span><span
+  style='font-family:"ＭＳ 明朝";'>、あるいはディテールペインのグリッド上で</span><span lang=EN-US>[</span><span
+  style='font-family:"ＭＳ 明朝";'>行追加</span><span lang=EN-US>]</span><span style='font-family:"ＭＳ 明朝";'>で、必要なエンティティのプロパティを追加します。</span><span
+  lang=EN-US><br>
+  PropertyName</span><span style='font-family:"ＭＳ 明朝";'>、</span><span lang=EN-US>FieldName</span><span
+  style='font-family:"ＭＳ 明朝";'>、</span><span lang=EN-US>FieldType</span><span style='font-family:
+  "ＭＳ 明朝";'>は必須です。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>6</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>ツリーペインで追加されたエンティティの</span><span
+  lang=EN-US>[Table]</span><span style='font-family:"ＭＳ 明朝";'>ノードを選択します。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>7</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>メニューあるいはツールバーの</span><span lang=EN-US>[</span><span
+  style='font-family:"ＭＳ 明朝";'>テーブルへ</span><span lang=EN-US>Export]</span><span style='font-family:
+  "ＭＳ 明朝";'>を行います。</span><span
+  lang=EN-US><br>
+  </span><span style='font-family:"ＭＳ 明朝";'>（</span><span lang=EN-US>[Table|FieldDefs]</span><span
+  style='font-family:"ＭＳ 明朝";'>ノードのサブノードに対応するフィールド定義が追加されます）</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>8</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>ディテールペインで</span><span lang=EN-US>[TableNmae]</span><span
+  style='font-family:"ＭＳ 明朝";'>を設定します。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>9</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>ツリーペインで</span><span lang=EN-US>[Table|BDEConnection]</span><span
+  style='font-family:"ＭＳ 明朝";'>ノードを選択し、ディテールペインの</span><span lang=EN-US>[DatabaseName]</span><span
+  style='font-family:"ＭＳ 明朝";'>や</span><span lang=EN-US>[SessionName]</span><span style='font-family:
+  "ＭＳ 明朝";'>が設定されていない場合には、適切な文字列を設定します。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>10</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>メニューあるいはツールバーの</span><span lang=EN-US>[</span><span
+  style='font-family:"ＭＳ 明朝";'>テーブルを生成</span><span lang=EN-US>]</span><span style='font-family:
+  "ＭＳ 明朝";'>を行うと、テーブルが生成されます。</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<span lang=EN-US style='font-size:10.5pt;font-family:
+Century;'><br clear=all style='
+page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h1><span lang=EN-US>6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"ＭＳ ゴシック";'>ソースコードの生成</span></h1>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>ソースコードを生成するには予めクラス名や</span><span lang=EN-US>
+[ProtoTypes]</span><span style='font-family:"ＭＳ 明朝";'>ノードののサブノードが必要なだけ追加／設定されている必要があります。</span><span
+lang=EN-US><br>
+</span><span style='font-family:"ＭＳ 明朝";'>それらが設定されているならば、以下の手順でソースコードを生成します。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;'>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>1</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border:solid windowtext .5pt;
+  border-left:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>ツリーペインで生成するエンティティのノードを選択します。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>2</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>メニューあるいはツールバーの</span><span lang=EN-US>[SQL</span><span
+  style='font-family:"ＭＳ 明朝";'>を生成</span><span lang=EN-US>]</span><span style='font-family:"ＭＳ 明朝";'>を行います。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>3</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>エンティティの</span><span lang=EN-US>[SQLs]</span><span
+  style='font-family:"ＭＳ 明朝";'>を選択すると、ディテールペインに</span><span lang=EN-US>[Select]</span><span
+  style='font-family:"ＭＳ 明朝";'>、</span><span lang=EN-US>[SelectList]</span><span style='font-family:
+  "ＭＳ 明朝";'>、</span><span
+  lang=EN-US>[Insert]</span><span style='font-family:"ＭＳ 明朝";'>、</span><span lang=EN-US>[Update]</span><span
+  style='font-family:"ＭＳ 明朝";'>、</span><span lang=EN-US>[Delete]</span><span style='font-family:
+  "ＭＳ 明朝";'>の生成された</span><span
+  lang=EN-US>SQL</span><span style='font-family:"ＭＳ 明朝";'>が表示されます。</span><span lang=EN-US><br>
+  <br>
+  </span><span style='font-family:"ＭＳ 明朝";'>このときに</span><span lang=EN-US>ProtoTypes</span><span
+  style='font-family:"ＭＳ 明朝";'>の中に</span><span lang=EN-US>ID</span><span style='font-family:"ＭＳ 明朝";'>として指定されたものがなければ、警告やエラーがメッセージペインに表示されます。</span><span
+  lang=EN-US><br>
+  ID</span><span style='font-family:"ＭＳ 明朝";'>をあらわすプロパティに該当するプロトタイプの</span><span lang=EN-US>IsID</span><span
+  style='font-family:"ＭＳ 明朝";'>をチェック</span><span lang=EN-US>(True</span><span style='font-family:
+  "ＭＳ 明朝";'>に設定</span><span
+  lang=EN-US>)</span><span style='font-family:"ＭＳ 明朝";'>してください。</span><span lang=EN-US><br>
+  <br>
+  </span><span style='font-family:"ＭＳ 明朝";'>これらの</span><span lang=EN-US>SQL</span><span
+  style='font-family:"ＭＳ 明朝";'>は、変更することができます。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>4</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>メニューあるいはツールバーの</span><span lang=EN-US>[</span><span
+  style='font-family:"ＭＳ 明朝";'>ユニットを生成</span><span lang=EN-US>]</span><span style='font-family:
+  "ＭＳ 明朝";'>を行います。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>5</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>エンティティの</span><span lang=EN-US>[Files]</span><span
+  style='font-family:"ＭＳ 明朝";'>の各サブノードを選択すると、生成されたユニットのソースコードが、ディテールペインに表示されます。</span><span
+  lang=EN-US><br>
+  <br>
+  </span><span style='font-family:"ＭＳ 明朝";'>これらのソースコードは、変更することができます。</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=27 valign=top style='width:19.95pt;border:solid windowtext .5pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span lang=EN-US>6</span></p>
+  </td>
+  <td width=554 valign=top style='width:415.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0mm 4.95pt 0mm 4.95pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";'>メニューあるいはツールバーの</span><span lang=EN-US>[</span><span
+  style='font-family:"ＭＳ 明朝";'>ファイルを保存</span><span lang=EN-US>]</span><span style='font-family:
+  "ＭＳ 明朝";'>を行うと、生成されたユニットが保存されます。</span><span
+  lang=EN-US><br>
+  <br>
+  </span><span style='font-family:"ＭＳ 明朝";'>この際にプロジェクトの</span><span lang=EN-US>[EntityDir]</span><span
+  style='font-family:"ＭＳ 明朝";'>が設定されていなければ、エラーが発生します。</span><span lang=EN-US><br>
+  </span><span style='font-family:"ＭＳ 明朝";'>ソースコードを保存するディレクトリを</span><span lang=EN-US>[EntityDir]</span><span
+  style='font-family:"ＭＳ 明朝";'>に指定してください。</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

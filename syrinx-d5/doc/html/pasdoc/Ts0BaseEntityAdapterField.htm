@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0EntityAdapter: Class Ts0BaseEntityAdapterField</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="2591"><H1>Class Ts0BaseEntityAdapterField</H1>
+</A><H2>Unit</H2>
+<A href="s0EntityAdapter.htm">s0EntityAdapter</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0BaseEntityAdapterField = class(ICheckValueChange, IGetHTMLStyle, IUpdateValue, TAdapterNamedField)</CODE></P><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2592"><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2593"><CODE>procedure <B>CheckOrigValue</B>(AActionRequest: IActionRequest; AFieldIndex: Integer);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2594"><CODE>function <B>CheckValueChange</B>(AActionRequest: IActionRequest; AFieldIndex: Integer): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2595"><CODE>function <B>GetAdapter</B>: Ts0CustomEntityAdapter;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2596"><CODE>function <B>GetDisplayStyle</B>(const AAdapterMode: string): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2597"><CODE>function <B>GetDisplayStyleType</B>(const AAdapterMode: string): TAdapterDisplayHTMLElementType; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2598"><CODE>function <B>GetInputStyle</B>(const AAdapterMode: string): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2599"><CODE>function <B>GetInputStyleType</B>(const AAdapterMode: string): TAdapterInputHTMLElementType; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2600"><CODE>procedure <B>GetKeyParams</B>(Params: Ts0EtyAdptrLocation);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2601"><CODE>function <B>GetReadOnly</B>: Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2602"><CODE>function <B>GetViewMode</B>(const AAdapterMode: string): string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2603"><CODE>function <B>GetViewModeType</B>(const AAdapterMode: string): TAdapterDisplayViewModeType; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2604"><CODE>function <B>ImplAsFormatted</B>: string; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2605"><CODE>procedure <B>ImplCheckOrigValue</B>(AActionRequest: IActionRequest; AFieldIndex: Integer); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2606"><CODE>function <B>ImplCheckValueChange</B>(AActionRequest: IActionRequest; AFieldIndex: Integer): Boolean; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2607"><CODE>function <B>ImplGetDisplayLabel</B>: string; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2608"><CODE>function <B>ImplGetDisplayWidth</B>: Integer; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2609"><CODE>function <B>ImplGetRequired</B>: Boolean; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2610"><CODE>function <B>ImplGetValue</B>: Variant; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2611"><CODE>function <B>ImplGetVisible</B>: Boolean; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2612"><CODE>procedure <B>ImplSetFieldName</B>(const Value: string); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2613"><CODE>procedure <B>ImplUpdateValue</B>(AActionRequest: IActionRequest; AFieldIndex: Integer); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2614"><CODE>procedure <B>SetPropertyName</B>(const Value: string);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0BaseEntityAdapterField.htm#2615"><CODE>procedure <B>UpdateValue</B>(AActionRequest: IActionRequest; AFieldIndex: Integer);</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2592"><TD><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2593"><TD><CODE>procedure <B>CheckOrigValue</B>(AActionRequest: IActionRequest; AFieldIndex: Integer);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>ICheckOrigValue</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2594"><TD><CODE>function <B>CheckValueChange</B>(AActionRequest: IActionRequest; AFieldIndex: Integer): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>ICheckValueChange</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2595"><TD><CODE>function <B>GetAdapter</B>: <A href="Ts0CustomEntityAdapter.htm">Ts0CustomEntityAdapter</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2596"><TD><CODE>function <B>GetDisplayStyle</B>(const AAdapterMode: string): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2597"><TD><CODE>function <B>GetDisplayStyleType</B>(const AAdapterMode: string): TAdapterDisplayHTMLElementType; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2598"><TD><CODE>function <B>GetInputStyle</B>(const AAdapterMode: string): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2599"><TD><CODE>function <B>GetInputStyleType</B>(const AAdapterMode: string): TAdapterInputHTMLElementType; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2600"><TD><CODE>procedure <B>GetKeyParams</B>(Params: <A href="Ts0EtyAdptrLocation.htm">Ts0EtyAdptrLocation</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2601"><TD><CODE>function <B>GetReadOnly</B>: Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2602"><TD><CODE>function <B>GetViewMode</B>(const AAdapterMode: string): string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IGetHTMLStyle</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2603"><TD><CODE>function <B>GetViewModeType</B>(const AAdapterMode: string): TAdapterDisplayViewModeType; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2604"><TD><CODE>function <B>ImplAsFormatted</B>: string; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IWebAsFormatted</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2605"><TD><CODE>procedure <B>ImplCheckOrigValue</B>(AActionRequest: IActionRequest; AFieldIndex: Integer); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2606"><TD><CODE>function <B>ImplCheckValueChange</B>(AActionRequest: IActionRequest; AFieldIndex: Integer): Boolean; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2607"><TD><CODE>function <B>ImplGetDisplayLabel</B>: string; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IWebGetDisplayLabel</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2608"><TD><CODE>function <B>ImplGetDisplayWidth</B>: Integer; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IWebGetDisplayWidth</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2609"><TD><CODE>function <B>ImplGetRequired</B>: Boolean; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2610"><TD><CODE>function <B>ImplGetValue</B>: Variant; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2611"><TD><CODE>function <B>ImplGetVisible</B>: Boolean; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IAdapterFieldAttributes</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2612"><TD><CODE>procedure <B>ImplSetFieldName</B>(const Value: string); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IWebGetFieldValue</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2613"><TD><CODE>procedure <B>ImplUpdateValue</B>(AActionRequest: IActionRequest; AFieldIndex: Integer); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2614"><TD><CODE>procedure <B>SetPropertyName</B>(const Value: string);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2615"><TD><CODE>procedure <B>UpdateValue</B>(AActionRequest: IActionRequest; AFieldIndex: Integer);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IUpdateValue</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0BaseEntityAdapterField.htm#2616"><B>Adapter</B>: Ts0CustomEntityAdapter;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0BaseEntityAdapterField.htm#2617"><B>FieldModes</B>: K0EntityAdapterModes;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0BaseEntityAdapterField.htm#2618"><B>OnGetDisplayText</B>: TAdapterFieldGetStringEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0BaseEntityAdapterField.htm#2619"><B>OnGetValue</B>: TAdapterFieldGetValueEvent;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0BaseEntityAdapterField.htm#2620"><B>PropertyName</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0BaseEntityAdapterField.htm#2621"><B>PropProto</B>: Ts0EntityPropProto;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE><A href="Ts0BaseEntityAdapterField.htm#2622"><B>Wrapper</B>: Ts0RTTIPublishedAccessor;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2616"><CODE><B>Adapter</B>: <A href="Ts0CustomEntityAdapter.htm">Ts0CustomEntityAdapter</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2617"><CODE><B>FieldModes</B>: <A href="s0EntityAdapter.htm#2586">K0EntityAdapterModes</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2618"><CODE><B>OnGetDisplayText</B>: TAdapterFieldGetStringEvent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2619"><CODE><B>OnGetValue</B>: TAdapterFieldGetValueEvent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2620"><CODE><B>PropertyName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2621"><CODE><B>PropProto</B>: <A href="Ts0EntityPropProto.htm">Ts0EntityPropProto</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2622"><CODE><B>Wrapper</B>: <A href="Ts0RTTIPublishedAccessor.htm">Ts0RTTIPublishedAccessor</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:40</EM>
+</BODY>
+</HTML>

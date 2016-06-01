@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>Qs0CellDecorator: Class Ts0CustomDecoStringGrid</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="54"><H1>Class Ts0CustomDecoStringGrid</H1>
+</A><H2>Unit</H2>
+<A href="Qs0CellDecorator.htm">Qs0CellDecorator</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0CustomDecoStringGrid = class(<CODE><A href="Ts0CustomStringGrid.htm">Ts0CustomStringGrid</A></CODE>)</CODE></P><H2>Hierarchy</H2>
+<CODE><A href="Ts0CustomStringGrid.htm">Ts0CustomStringGrid</A></CODE>&nbsp;&gt; <CODE><A href="Ts0CustomDrawGrid.htm">Ts0CustomDrawGrid</A></CODE>&nbsp;&gt; <CODE><A href="Ts0CustomGrid.htm">Ts0CustomGrid</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDecoStringGrid.htm#55"><CODE>constructor <B>Create</B>(AOnwer: TComponent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDecoStringGrid.htm#56"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDecoStringGrid.htm#57"><CODE>procedure <B>AddToDecosList</B>(ADecos: Ts0CellDecorators);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDecoStringGrid.htm#58"><CODE>procedure <B>ColumnMoved</B>(FromIndex, ToIndex: Longint); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDecoStringGrid.htm#59"><CODE>procedure <B>DecoDestroy</B>(Sender: TObject; AItem: Ts0CollectionItem); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDecoStringGrid.htm#60"><CODE>procedure <B>GetDecoList</B>(Dest: TObjectList);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomDecoStringGrid.htm#61"><CODE>function <B>GetDecorators</B>(ADecosClass: Ts0CellDecoratorsClass): Ts0CellDecorators;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDecoStringGrid.htm#62"><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDecoStringGrid.htm#63"><CODE>procedure <B>RemoveFromDecosList</B>(ADecos: Ts0CellDecorators);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDecoStringGrid.htm#64"><CODE>procedure <B>RowMoved</B>(FromIndex, ToIndex: Longint); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomDecoStringGrid.htm#65"><CODE>procedure <B>SizeChanged</B>(OldColCount, OldRowCount: Longint); override;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="55"><TD><CODE>constructor <B>Create</B>(AOnwer: TComponent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="56"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="57"><TD><CODE>procedure <B>AddToDecosList</B>(ADecos: <A href="Ts0CellDecorators.htm">Ts0CellDecorators</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="58"><TD><CODE>procedure <B>ColumnMoved</B>(FromIndex, ToIndex: Longint); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="59"><TD><CODE>procedure <B>DecoDestroy</B>(Sender: TObject; AItem: <A href="Ts0CollectionItem.htm">Ts0CollectionItem</A>); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="60"><TD><CODE>procedure <B>GetDecoList</B>(Dest: TObjectList);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="61"><TD><CODE>function <B>GetDecorators</B>(ADecosClass: <A href="Qs0CellDecorator.htm#12">Ts0CellDecoratorsClass</A>): <A href="Ts0CellDecorators.htm">Ts0CellDecorators</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="62"><TD><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="63"><TD><CODE>procedure <B>RemoveFromDecosList</B>(ADecos: <A href="Ts0CellDecorators.htm">Ts0CellDecorators</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="64"><TD><CODE>procedure <B>RowMoved</B>(FromIndex, ToIndex: Longint); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="65"><TD><CODE>procedure <B>SizeChanged</B>(OldColCount, OldRowCount: Longint); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomDecoStringGrid.htm#66"><B>ColWidths</B>;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomDecoStringGrid.htm#67"><B>RowHeights</B>;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="66"><CODE><B>ColWidths</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="67"><CODE><B>RowHeights</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:35</EM>
+</BODY>
+</HTML>

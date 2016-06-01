@@ -1,0 +1,427 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="rjPasDoc 0.7">
+<TITLE>s0EntityAdapter: Class Ts0CustomEntityAdapter</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces, Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions, Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="2633"><H1>Class Ts0CustomEntityAdapter</H1>
+</A><H2>Unit</H2>
+<A href="s0EntityAdapter.htm">s0EntityAdapter</A><BR><H2>Declaration</H2>
+<P><CODE>type Ts0CustomEntityAdapter = class(IAdapterMode, IGetAdapterModeNames, IGetDesigntimeWarnings, IGetRecordKeys, TDefaultFieldsPagedAdapter)</CODE></P><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2634"><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2635"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2636"><CODE>procedure <B>AddDefaultActions</B>(AComponents: TWebComponentList); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2637"><CODE>procedure <B>ApplyAdapterMode</B>(AActionRequest: IActionRequest);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2638"><CODE>procedure <B>EncodeActionParams</B>(AParams: IAdapterItemRequestParams); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2639"><CODE>procedure <B>ExtractRequestParams</B>(ARequest: IUnknown); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2640"><CODE>function <B>FindSharedEntityDM</B>: Tdm0Entity; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2641"><CODE>function <B>GetAdapterMode</B>: string;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2642"><CODE>procedure <B>GetAdapterModeNames</B>(AStrings: TStrings);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2643"><CODE>function <B>GetDefaultMode</B>: K0EntityAdapterMode; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2644"><CODE>procedure <B>GetDesigntimeWarnings</B>(AWarnings: TAbstractDesigntimeWarnings);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2645"><CODE>procedure <B>GetKeyParams</B>(AParams: Ts0EtyAdptrLocation);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2646"><CODE>procedure <B>GetKeyParamStrings</B>(AValues: TStrings);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2647"><CODE>function <B>GetNeedAdapterMode</B>: Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2648"><CODE>procedure <B>GetRecordKeys</B>(AValues: TStrings; var AFullyQualify: Boolean);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2649"><CODE>function <B>ImplCanAddActionClass</B>(AParent: TComponent; AClass: TClass): Boolean; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2650"><CODE>function <B>ImplCanAddFieldClass</B>(AParent: TComponent; AClass: TClass): Boolean; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2651"><CODE>procedure <B>ImplEndIterator</B>(OwnerData: Pointer); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2652"><CODE>procedure <B>ImplGetActionsList</B>(AList: TStrings); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2653"><CODE>procedure <B>ImplGetFieldsList</B>(AList: TStrings); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2654"><CODE>procedure <B>ImplGetRecordKeys</B>(AValues: TStrings; var AFullyQualify: Boolean); virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2655"><CODE>function <B>ImplNextIteration</B>(var OwnerData: Pointer): Boolean; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2656"><CODE>function <B>ImplStartIterator</B>(var OwnerData: Pointer): Boolean; override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2657"><CODE>function <B>Locate</B>: Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2658"><CODE>function <B>LocateAndApply</B>(AActionRequest: IActionRequest): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2659"><CODE>function <B>NewEntity</B>: Ts0Entity; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2660"><CODE>function <B>NewEntityDM</B>: Tdm0Entity; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2661"><CODE>function <B>NewIterator</B>: Ts0EntityIterator; virtual;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2662"><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); override;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2663"><CODE>procedure <B>RaiseFieldChangedByAnotherUser</B>(const AFieldName: string);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2664"><CODE>procedure <B>RaiseRowNotFound</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2665"><CODE>procedure <B>RestoreDefaultAdapterMode</B>;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2666"><CODE>procedure <B>SetAdapterMode</B>(const AValue: string);</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2667"><CODE>function <B>SilentLocate</B>(AParams: Ts0EtyAdptrLocation): Boolean;</CODE></A></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A href="Ts0CustomEntityAdapter.htm#2668"><CODE>function <B>StringToMode</B>(const AValue: string): K0EntityAdapterMode;</CODE></A></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2634"><TD><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2635"><TD><CODE>destructor <B>Destroy</B>; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2636"><TD><CODE>procedure <B>AddDefaultActions</B>(AComponents: TWebComponentList); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2637"><TD><CODE>procedure <B>ApplyAdapterMode</B>(AActionRequest: IActionRequest);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2638"><TD><CODE>procedure <B>EncodeActionParams</B>(AParams: IAdapterItemRequestParams); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>called from Action</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2639"><TD><CODE>procedure <B>ExtractRequestParams</B>(ARequest: IUnknown); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2640"><TD><CODE>function <B>FindSharedEntityDM</B>: <A href="s0dEntity.htm#2430">Tdm0Entity</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2641"><TD><CODE>function <B>GetAdapterMode</B>: string;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IAdapterMode</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2642"><TD><CODE>procedure <B>GetAdapterModeNames</B>(AStrings: TStrings);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IGetAdapterModeNames</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2643"><TD><CODE>function <B>GetDefaultMode</B>: <A href="s0EntityAdapter.htm#2585">K0EntityAdapterMode</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2644"><TD><CODE>procedure <B>GetDesigntimeWarnings</B>(AWarnings: TAbstractDesigntimeWarnings);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IGetDesigntimeWarnings</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2645"><TD><CODE>procedure <B>GetKeyParams</B>(AParams: <A href="Ts0EtyAdptrLocation.htm">Ts0EtyAdptrLocation</A>);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2646"><TD><CODE>procedure <B>GetKeyParamStrings</B>(AValues: TStrings);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2647"><TD><CODE>function <B>GetNeedAdapterMode</B>: Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2648"><TD><CODE>procedure <B>GetRecordKeys</B>(AValues: TStrings; var AFullyQualify: Boolean);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IGetRecordKeys</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2649"><TD><CODE>function <B>ImplCanAddActionClass</B>(AParent: TComponent; AClass: TClass): Boolean; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2650"><TD><CODE>function <B>ImplCanAddFieldClass</B>(AParent: TComponent; AClass: TClass): Boolean; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IAdapterEditor</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2651"><TD><CODE>procedure <B>ImplEndIterator</B>(OwnerData: Pointer); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IIteratorSupport</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2652"><TD><CODE>procedure <B>ImplGetActionsList</B>(AList: TStrings); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IWebActionsList</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2653"><TD><CODE>procedure <B>ImplGetFieldsList</B>(AList: TStrings); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>IWebDataFields</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2654"><TD><CODE>procedure <B>ImplGetRecordKeys</B>(AValues: TStrings; var AFullyQualify: Boolean); virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2655"><TD><CODE>function <B>ImplNextIteration</B>(var OwnerData: Pointer): Boolean; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2656"><TD><CODE>function <B>ImplStartIterator</B>(var OwnerData: Pointer): Boolean; override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2657"><TD><CODE>function <B>Locate</B>: Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>about location</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2658"><TD><CODE>function <B>LocateAndApply</B>(AActionRequest: IActionRequest): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2659"><TD><CODE>function <B>NewEntity</B>: Ts0Entity; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2660"><TD><CODE>function <B>NewEntityDM</B>: <A href="s0dEntity.htm#2430">Tdm0Entity</A>; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2661"><TD><CODE>function <B>NewIterator</B>: Ts0EntityIterator; virtual;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2662"><TD><CODE>procedure <B>Notification</B>(AComponent: TComponent; Operation: TOperation); override;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2663"><TD><CODE>procedure <B>RaiseFieldChangedByAnotherUser</B>(const AFieldName: string);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2664"><TD><CODE>procedure <B>RaiseRowNotFound</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2665"><TD><CODE>procedure <B>RestoreDefaultAdapterMode</B>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2666"><TD><CODE>procedure <B>SetAdapterMode</B>(const AValue: string);</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2667"><TD><CODE>function <B>SilentLocate</B>(AParams: <A href="Ts0EtyAdptrLocation.htm">Ts0EtyAdptrLocation</A>): Boolean;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><A name="2668"><TD><CODE>function <B>StringToMode</B>(const AValue: string): <A href="s0EntityAdapter.htm#2585">K0EntityAdapterMode</A>;</CODE></TD>
+</A></TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2669"><B>CurrentEntity</B>: Ts0Entity;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2670"><B>EntityClass</B>: Ts0EntityClass;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2671"><B>EntityClassName</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2672"><B>EntityDM</B>: Tdm0Entity;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2673"><B>EntityDMClass</B>: Ts0dmEntityClass;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2674"><B>EntityDMClassName</B>: string;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2675"><B>EntityIterator</B>: Ts0EntityIterator;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2676"><B>EntityManager</B>: Ts0EntityManager;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2677"><B>InDefaultMode</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2678"><B>Loacation</B>: Ts0EtyAdptrLocation;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2679"><B>Mode</B>: K0EntityAdapterMode;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2680"><B>ProtoTypes</B>: Ts0EntityPropProtos;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Private"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2681"><B>ShareDM</B>: Boolean;</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE><A href="Ts0CustomEntityAdapter.htm#2682"><B>Wrapper</B>: Ts0RTTIPublishedAccessor;</A></CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2669"><CODE><B>CurrentEntity</B>: Ts0Entity;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2670"><CODE><B>EntityClass</B>: Ts0EntityClass;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2671"><CODE><B>EntityClassName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2672"><CODE><B>EntityDM</B>: <A href="s0dEntity.htm#2430">Tdm0Entity</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2673"><CODE><B>EntityDMClass</B>: <A href="s0dEntity.htm#2431">Ts0dmEntityClass</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2674"><CODE><B>EntityDMClassName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2675"><CODE><B>EntityIterator</B>: Ts0EntityIterator;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2676"><CODE><B>EntityManager</B>: Ts0EntityManager;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>通常のDM上のコンポーネントをpublishedで宣言すると、プロパティを 読み込むときに名前解決時に問題が生じちゃう。 原・ouml;はよくわかんない。だっ・Auml;ソースが複雑なんだもん。</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2677"><CODE><B>InDefaultMode</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2678"><CODE><B>Loacation</B>: <A href="Ts0EtyAdptrLocation.htm">Ts0EtyAdptrLocation</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2679"><CODE><B>Mode</B>: <A href="s0EntityAdapter.htm#2585">K0EntityAdapterMode</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2680"><CODE><B>ProtoTypes</B>: <A href="Ts0EntityPropProtos.htm">Ts0EntityPropProtos</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2681"><CODE><B>ShareDM</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><A name="2682"><CODE><B>Wrapper</B>: <A href="Ts0RTTIPublishedAccessor.htm">Ts0RTTIPublishedAccessor</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<HR noshade size=1><EM>Generated by <A href="http://www.zeitungsjunge.de/delphi/">rjPasDoc 0.7</A> on Wed 13 Mar 2002 07:08:40</EM>
+</BODY>
+</HTML>

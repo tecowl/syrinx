@@ -1,0 +1,91 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = s0p_Core50.bpl s0p_Additional50.bpl s0p_Entity50.bpl s0p_DB50.bpl \
+  s0p_EntityDB50.bpl s0p_DataSnap50.bpl s0p_VCore50.bpl s0p_VCtrl50.bpl \
+  s0p_VBasicCtrl50.bpl s0p_VGrid50.bpl s0p_VBDE50.bpl s0p_VDBCtrl50.bpl \
+  s0p_VEntityCtrls50.bpl s0p_VDrawer50.bpl s0p_VUnified50.bpl s0p_VExtCtrl.bpl \
+  SyrinxSample.exe s0p_Editors50.bpl s0p_Core50Test.exe teccompo.bpl \
+  TechnoCompoDemo.exe TestApp.exe JvDBD5R.bpl
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+s0p_Core50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\Common\s0p_Core50.dpk
+  $(DCC)
+
+s0p_Additional50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\Common\s0p_Additional50.dpk
+  $(DCC)
+
+s0p_Entity50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\Common\s0p_Entity50.dpk
+  $(DCC)
+
+s0p_DB50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\Common\s0p_DB50.dpk
+  $(DCC)
+
+s0p_DataSnap50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\Common\s0p_DataSnap50.dpk
+  $(DCC)
+
+s0p_EntityDB50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\Common\s0p_EntityDB50.dpk
+  $(DCC)
+
+s0p_VCore50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\VCL\s0p_VCore50.dpk
+  $(DCC)
+
+s0p_VCtrl50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\VCL\s0p_VCtrl50.dpk
+  $(DCC)
+
+s0p_VBasicCtrl50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\VCL\s0p_VBasicCtrl50.dpk
+  $(DCC)
+
+s0p_VGrid50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\VCL\s0p_VGrid50.dpk
+  $(DCC)
+
+s0p_VBDE50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\VCL\s0p_VBDE50.dpk
+  $(DCC)
+
+s0p_VDBCtrl50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\VCL\s0p_VDBCtrl50.dpk
+  $(DCC)
+
+s0p_VEntityCtrls50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\VCL\s0p_VEntityCtrls50.dpk
+  $(DCC)
+
+s0p_VDrawer50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\VCL\s0p_VDrawer50.dpk
+  $(DCC)
+
+s0p_VUnified50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\VCL\s0p_VUnified50.dpk
+  $(DCC)
+
+s0p_VExtCtrl.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\VCL\s0p_VExtCtrl.dpk
+  $(DCC)
+
+SyrinxSample.exe: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\demo\SyrinxSample.dpr
+  $(DCC)
+
+s0p_Editors50.bpl: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\Designer\s0p_Editors50.dpk
+  $(DCC)
+
+s0p_Core50Test.exe: ..\..\..\..\dev\asyrinx.org\syrinx\syrinx-d5\D5\source\test\s0p_Core50Test.dpr
+  $(DCC)
+
+teccompo.bpl: teccompo.dpk
+  $(DCC)
+
+TechnoCompoDemo.exe: demo\TechnoCompoDemo.dpr
+  $(DCC)
+
+TestApp.exe: demo\TestApp.dpr
+  $(DCC)
+
+JvDBD5R.bpl: ..\..\..\..\dev\delphi-jedi\JVCL300CompleteJCL195-Build1848\jvcl\packages\d5\JvDBD5R.dpk
+  $(DCC)
+
+
